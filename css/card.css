@@ -1,0 +1,12 @@
+.card-toon {
+  box-shadow: 0 2px 5px 0 rgba(31, 59, 122, 0.89), 0 2px 10px 0 rgba(20, 38, 82, 0.781);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(31, 59, 122, 0.89), 0 2px 10px 0 rgba(20, 38, 82, 0.781);
+  border: 0;
+}
+
+.news-index-img {
+  width: 100%;
+  max-width: 250px;
+  border-bottom-left-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
