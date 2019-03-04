@@ -81,7 +81,12 @@
               <a class="nav-link" href="#!">กิจกรรมวิ่ง</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-login">เข้าสู่ระบบ</a>
+              <a
+                class="btn btn-login"
+                data-toggle="modal"
+                data-target="#modalLogin"
+                >เข้าสู่ระบบ</a
+              >
             </li>
           </ul>
         </div>
@@ -419,6 +424,87 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLoginLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div
+            class="modal-header bg-060e21 white-text text-center py-4 justify-content-center"
+          >
+            <h5 class="mb-0 text-center">เข้าสู่ระบบ</h5>
+          </div>
+          <div class="modal-body">
+            <div class="card-body px-lg-5 pt-0">
+              <form class="text-center" style="color: #757575;">
+                <div class="md-form">
+                  <input
+                    type="email"
+                    id="materialLoginFormEmail"
+                    class="form-control"
+                  />
+                  <label for="materialLoginFormEmail">อีเมล</label>
+                </div>
+
+                <div class="md-form">
+                  <input
+                    type="password"
+                    id="materialLoginFormPassword"
+                    class="form-control"
+                  />
+                  <label for="materialLoginFormPassword">รหัสผ่าน</label>
+                </div>
+
+                <div class="d-flex justify-content-around">
+                  <div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="materialLoginFormRemember"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="materialLoginFormRemember"
+                        >จดจำฉัน</label
+                      >
+                    </div>
+                  </div>
+                  <div>
+                    <a href="#!">ลืมรหัสผ่าน</a>
+                  </div>
+                </div>
+
+                <button
+                  class="btn btn-login-modal btn-rounded btn-block my-4 waves-effect z-depth-0"
+                  type="submit"
+                >
+                  เข้าสู่ระบบ
+                </button>
+
+                <p>
+                  หากยังไม่ได้เป็นสมาชิก ?
+                  <a href="#!">สมัครสมาชิกคลิก</a>
+                </p>
+
+                <p>หรือเข้าสู่ระบบด้วย</p>
+                <a type="button" class="btn-floating btn-fb btn-sm">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a type="button" class="btn-floating btn-gplus btn-sm">
+                  <i class="fab fa-google"></i>
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script
     type="text/javascript"
