@@ -1,0 +1,23 @@
+.select-register {
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-left: 0;
+}
+
+.select-register:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.picker__select--month,
+.picker__select--year {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  font-size: 16px;
+}
+
+.picker__select--year {
+  width: 27%;
+}

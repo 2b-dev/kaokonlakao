@@ -13,3 +13,12 @@ html {
   float: left;
   margin-right: 15px;
 }
+
+.bg-register {
+  background-color: #fff;
+  background-image: url('../images/header_register.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  padding-top: 45vmin;
+}

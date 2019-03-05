@@ -1,104 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>มูลนิธิก้าวคนละก้าว</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/font.css" />
-    <link rel="stylesheet" href="./css/color.css" />
-    <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/button.css" />
-    <link rel="stylesheet" href="./css/checkbox.css" />
-    <link rel="stylesheet" href="./css/input.css" />
-    <link rel="stylesheet" href="./css/card.css" />
-    <link rel="stylesheet" href="./css/css.css" />
-  </head>
 
-  <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-      <div class="container">
-        <!-- Brand -->
-        <!--<a class="navbar-brand" href="#">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>มูลนิธิก้าวคนละก้าว</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/font.css" />
+  <link rel="stylesheet" href="./css/color.css" />
+  <link rel="stylesheet" href="./css/nav.css" />
+  <link rel="stylesheet" href="./css/button.css" />
+  <link rel="stylesheet" href="./css/checkbox.css" />
+  <link rel="stylesheet" href="./css/input.css" />
+  <link rel="stylesheet" href="./css/card.css" />
+  <link rel="stylesheet" href="./css/css.css" />
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+      <!-- Brand -->
+      <!--<a class="navbar-brand" href="#">
         <img src="./images/main_logo.png" alt="มูลนิธิก้าวคนละก้าว">
       </a>-->
 
-        <!-- Collapse -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Left -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#!">หน้าหลัก</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">เกี่ยวกับมูลนิธิ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">ช่องทางบริจาค</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">กิจกรรมวิ่ง</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-login"
-                data-toggle="modal"
-                data-target="#modalLogin"
-                >เข้าสู่ระบบ</a
-              >
-            </li>
-          </ul>
-        </div>
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#!">หน้าหลัก</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">เกี่ยวกับมูลนิธิ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">ช่องทางบริจาค</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">กิจกรรมวิ่ง</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-login" data-toggle="modal" data-target="#modalLogin">เข้าสู่ระบบ</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!--Carousel Wrapper-->
-    <div
-      id="carousel-index-9"
-      class="carousel carousel-index slide carousel-fade"
-      data-ride="carousel"
-    >
-      <!--
+    </div>
+  </nav>
+  <!--Carousel Wrapper-->
+  <div id="carousel-index-9" class="carousel carousel-index slide carousel-fade" data-ride="carousel">
+    <!--
       <ol class="carousel-indicators">
         <li
           data-target="#carousel-index-9"
@@ -109,23 +74,18 @@
         <li data-target="#carousel-index-9" data-slide-to="2"></li>
       </ol>
       -->
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <div
-            class="view view-index"
-            style="background-image: url('./images/banner_index.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;"
-          >
-            <div
-              class="mask rgba-black-light d-flex justify-content-center align-items-center"
-            >
-              <!-- Content -->
-            </div>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view view-index" style="background-image: url('./images/banner_index.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+            <!-- Content -->
           </div>
         </div>
       </div>
-      <!--/.Slides-->
+    </div>
+    <!--/.Slides-->
 
-      <!--
+    <!--
     <a class="carousel-control-prev" href="#carousel-index-9" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -134,428 +94,348 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-    --></div>
-    <main>
-      <section class="py-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6 mb-3">
-              <h4 class="kn wow fadeInUp text-center">ยอดเงินบริจาครวม</h4>
-              <h1 class="kn wow bounceInUp text-center">
-                X,XXX,XXX,XXX.XX บาท
-              </h1>
-              <div class="card wow fadeInUp card-toon">
-                <div class="card-body">
-                  <div class="table-responsive text-nowrap">
-                    <table class="table table-hover table-striped">
-                      <thead>
-                        <tr>
-                          <th scope="col">เวลา</th>
-                          <th scope="col">ผู้บริจาค</th>
-                          <th scope="col">ยอดบริจาค</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>xx:xx</td>
-                          <td>พี่บาส ทีเด็ด อโรม่า</td>
-                          <td>999.99 ฿</td>
-                        </tr>
-                        <tr>
-                          <td>xx:xx</td>
-                          <td>พี่โจ AR Thailand</td>
-                          <td>999.99 ฿</td>
-                        </tr>
-                        <tr>
-                          <td>xx:xx</td>
-                          <td>พี่ตั้น ClintonMSK</td>
-                          <td>999.99 ฿</td>
-                        </tr>
-                        <tr>
-                          <td>xx:xx</td>
-                          <td>พี่ปุ่น สตรีหนึ่งเดียว</td>
-                          <td>999.99 ฿</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 mb-3">
-              <h4 class="kn text-center wow fadeInUp">ช่องทางบริจาค</h4>
-              <img
-                src="./images/howtodonate.png"
-                class="img-fluid w-100 wow bounceIn"
-              />
-              <ul>
-                <li class="wow fadeInUp">
-                  บริจาคผ่านธนาคาร
-                  โดยร่วมบริจาคผ่านหมายเลขบัญชีมูลนิธิก้าวคนละก้าว เลขบัญชี
-                  xxx-xxx-xx ธนาคาร xxxxxxxxx
-                </li>
-                <li class="wow fadeInUp">
-                  บริจาคผ่านเว็บไซต์ โดยการสมัครสมัครชิกเว็บไซต์
-                  และหักค่าใช้จ่ายผ่านบัตร Debit หรือ Credit (Visa, Master card)
-                </li>
-                <li class="wow fadeInUp">
-                  บริจาคผ่านเว็บไซต์ โดยการสมัครสมัครชิกเว็บไซต์
-                  และชำระค่าบริจาคผ่าน Counter Service ต่างๆ
-                </li>
-                <li class="wow fadeInUp">
-                  บริจาคผ่านเว็บไซต์ โดยการสมัครสมัครชิกเว็บไซต์
-                  และชำระค่าผ่านบริการ PayPal
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="py-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="sponser-owl owl-carousel">
-                <div>
-                  <img src="./images/sponser-nike.png" />
-                </div>
-                <div>
-                  <img src="./images/sponser-adidas.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="py-3">
-        <div class="container">
-          <div class="row justify-content-center mb-4">
-            <div class="col-12 col-md-9 col-lg-8 text-center">
-              <h4 class="kn">ข่าวสาร/กิจกรรมวิ่ง</h4>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-lg-7">
-              <div class="card card-toon card-body p-0 mb-3 wow fadeInUp">
-                <div class="media d-block d-md-flex">
-                  <div class="view overlay">
-                    <img
-                      class="d-flex mb-md-0 mb-3 mx-auto news-index-img"
-                      src="./images/news.png"
-                      alt="news1"
-                    />
-                    <a href="#!">
-                      <div class="mask rgba-white-slight"></div>
-                    </a>
-                  </div>
-                  <div
-                    class="media-body p-3 d-flex flex-column align-self-center text-left"
-                  >
-                    <h5 class="font-weight-bold">
-                      พี่ตูนนำวิ่ง ช่วยเหลือโรงพยาบาล
-                    </h5>
-                    <p class="mb-0">
-                      รายละเอียด รายละเอียด รายละเอียด รายละเอียด รายละเอียด
-                      รายละเอียด รายละเอียด รายละเอียดรายละเอียด รายละเอียด
-                      รายละเอียด รายละเอียด รายละเอียด รายละเอียด ...
-                      <a href="#!" class="readmore-news">อ่านเพิ่มเติม</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card card-toon card-body p-0 mb-3 wow fadeInUp">
-                <div class="media d-block d-md-flex">
-                  <div class="view overlay">
-                    <img
-                      class="d-flex mb-md-0 mb-3 mx-auto news-index-img"
-                      src="./images/news.png"
-                      alt="news1"
-                    />
-                    <a href="#!">
-                      <div class="mask rgba-white-slight"></div>
-                    </a>
-                  </div>
-                  <div
-                    class="media-body p-3 d-flex flex-column align-self-center text-left"
-                  >
-                    <h5 class="font-weight-bold">
-                      พี่ตูนนำวิ่ง ช่วยเหลือโรงพยาบาล
-                    </h5>
-                    <p class="mb-0">
-                      รายละเอียด รายละเอียด รายละเอียด รายละเอียด รายละเอียด
-                      รายละเอียด รายละเอียด รายละเอียดรายละเอียด รายละเอียด
-                      รายละเอียด รายละเอียด รายละเอียด รายละเอียด ...
-                      <a href="#!" class="readmore-news">อ่านเพิ่มเติม</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card card-toon card-body p-0 mb-3 wow fadeInUp">
-                <div class="media d-block d-md-flex">
-                  <div class="view overlay">
-                    <img
-                      class="d-flex mb-md-0 mb-3 mx-auto news-index-img"
-                      src="./images/news.png"
-                      alt="news1"
-                    />
-                    <a href="#!">
-                      <div class="mask rgba-white-slight"></div>
-                    </a>
-                  </div>
-                  <div
-                    class="media-body p-3 d-flex flex-column align-self-center text-left"
-                  >
-                    <h5 class="font-weight-bold">
-                      พี่ตูนนำวิ่ง ช่วยเหลือโรงพยาบาล
-                    </h5>
-                    <p class="mb-0">
-                      รายละเอียด รายละเอียด รายละเอียด รายละเอียด รายละเอียด
-                      รายละเอียด รายละเอียด รายละเอียดรายละเอียด รายละเอียด
-                      รายละเอียด รายละเอียด รายละเอียด รายละเอียด ...
-                      <a href="#!" class="readmore-news">อ่านเพิ่มเติม</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <p class="text-center">อ่านทั้งหมด</p>
-            </div>
-            <div class="col-12 col-lg-5">
-              <div class="row">
-                <div class="col-12 mb-3">
-                  <div
-                    class="embed-responsive embed-responsive-16by9 wow fadeInUp"
-                  >
-                    <iframe
-                      class="embed-responsive-item"
-                      src="https://www.youtube.com/embed/BrEYRnUGUGc"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-                <div class="col-12 mb-3">
-                  <div
-                    class="embed-responsive embed-responsive-16by9 wow fadeInUp"
-                  >
-                    <iframe
-                      class="embed-responsive-item"
-                      src="https://www.youtube.com/embed/BrEYRnUGUGc"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer class="page-footer font-small pt-4">
-      <!-- Footer Links -->
-      <div class="container text-center text-md-left">
-        <!-- Grid row -->
+    -->
+  </div>
+  <main>
+    <section class="py-3">
+      <div class="container">
         <div class="row">
-          <!-- Grid column -->
-          <div class="col-md-6 mt-md-0 mt-3">
-            <!-- Content -->
-            <img src="./images/main_logo.png" class="footer-logo" />
-            <h5 class="mt-2">มูลนิธิก้าวคนละก้าว</h5>
-            <p>
-              รายละเอียดข้อมูลมูลนิธิแบบสั้นๆ
-            </p>
+          <div class="col-12 col-lg-6 mb-3">
+            <h4 class="kn wow fadeInUp text-center">ยอดเงินบริจาครวม</h4>
+            <h1 class="kn wow bounceInUp text-center">
+              X,XXX,XXX,XXX.XX บาท
+            </h1>
+            <div class="card wow fadeInUp card-toon">
+              <div class="card-body">
+                <div class="table-responsive text-nowrap">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">เวลา</th>
+                        <th scope="col">ผู้บริจาค</th>
+                        <th scope="col">ยอดบริจาค</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>xx:xx</td>
+                        <td>พี่บาส ทีเด็ด อโรม่า</td>
+                        <td>999.99 ฿</td>
+                      </tr>
+                      <tr>
+                        <td>xx:xx</td>
+                        <td>พี่โจ AR Thailand</td>
+                        <td>999.99 ฿</td>
+                      </tr>
+                      <tr>
+                        <td>xx:xx</td>
+                        <td>พี่ตั้น ClintonMSK</td>
+                        <td>999.99 ฿</td>
+                      </tr>
+                      <tr>
+                        <td>xx:xx</td>
+                        <td>พี่ปุ่น สตรีหนึ่งเดียว</td>
+                        <td>999.99 ฿</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Grid column -->
-
-          <hr class="clearfix w-100 d-md-none pb-3" />
-
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-            <!-- Links -->
-            <h5 class="text-uppercase">ติดต่อเรา</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!">ที่อยู่ : xxxxxxxxxxxx x x x x xxxxx xxx x </a>
+          <div class="col-12 col-lg-6 mb-3">
+            <h4 class="kn text-center wow fadeInUp">ช่องทางบริจาค</h4>
+            <img src="./images/howtodonate.png" class="img-fluid w-100 wow bounceIn" />
+            <ul>
+              <li class="wow fadeInUp">
+                บริจาคผ่านธนาคาร
+                โดยร่วมบริจาคผ่านหมายเลขบัญชีมูลนิธิก้าวคนละก้าว เลขบัญชี
+                xxx-xxx-xx ธนาคาร xxxxxxxxx
               </li>
-              <li>
-                <a href="#!">โทรศัพท์ : xxx-xxx-xxxx</a>
+              <li class="wow fadeInUp">
+                บริจาคผ่านเว็บไซต์ โดยการสมัครสมัครชิกเว็บไซต์
+                และหักค่าใช้จ่ายผ่านบัตร Debit หรือ Credit (Visa, Master card)
               </li>
-              <li>
-                <a href="#!">โทรสาร : xxx-xxx-xxxx</a>
+              <li class="wow fadeInUp">
+                บริจาคผ่านเว็บไซต์ โดยการสมัครสมัครชิกเว็บไซต์
+                และชำระค่าบริจาคผ่าน Counter Service ต่างๆ
               </li>
-              <li>
-                <a href="#!">อีเมล : xxxx@xxxx.com</a>
+              <li class="wow fadeInUp">
+                บริจาคผ่านเว็บไซต์ โดยการสมัครสมัครชิกเว็บไซต์
+                และชำระค่าผ่านบริการ PayPal
               </li>
             </ul>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-            <!-- Links -->
-            <h5 class="text-uppercase">Social network</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!">Facebook : มูลนิธิก้าวคนละก้าว</a>
-              </li>
-              <li>
-                <a href="#!">Youtube : มูลนิธิก้าวคนละก้าว</a>
-              </li>
-              <li>
-                <a href="#!">Twitter : มูลนิธิก้าวคนละก้าว</a>
-              </li>
-              <li>
-                <a href="#!">Instagram : มูลนิธิก้าวคนละก้าว</a>
-              </li>
-            </ul>
-          </div>
-          <!-- Grid column -->
         </div>
-        <!-- Grid row -->
       </div>
-      <!-- Footer Links -->
-
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">
-        © 2019 Copyright:
-        <a href="#!"> มูลนิธิก้าวคนละก้าว</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-    <div
-      class="modal fade"
-      id="modalLogin"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modalLoginLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div
-            class="modal-header bg-060e21 white-text text-center py-4 justify-content-center"
-          >
-            <h5 class="mb-0 text-center">เข้าสู่ระบบ</h5>
+    </section>
+    <section class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="sponser-owl owl-carousel">
+              <div>
+                <img src="./images/sponser-nike.png" />
+              </div>
+              <div>
+                <img src="./images/sponser-adidas.png" />
+              </div>
+            </div>
           </div>
-          <div class="modal-body">
-            <div class="card-body px-lg-5 pt-0">
-              <form class="text-center" style="color: #757575;">
-                <div class="md-form">
-                  <input
-                    type="email"
-                    id="materialLoginFormEmail"
-                    class="form-control"
-                  />
-                  <label for="materialLoginFormEmail">อีเมล</label>
+        </div>
+      </div>
+    </section>
+    <section class="py-3">
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-12 col-md-9 col-lg-8 text-center">
+            <h4 class="kn">ข่าวสาร/กิจกรรมวิ่ง</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-7">
+            <div class="card card-toon card-body p-0 mb-3 wow fadeInUp">
+              <div class="media d-block d-md-flex">
+                <div class="view overlay">
+                  <img class="d-flex mb-md-0 mb-3 mx-auto news-index-img" src="./images/news.png" alt="news1" />
+                  <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
                 </div>
-
-                <div class="md-form">
-                  <input
-                    type="password"
-                    id="materialLoginFormPassword"
-                    class="form-control"
-                  />
-                  <label for="materialLoginFormPassword">รหัสผ่าน</label>
+                <div class="media-body p-3 d-flex flex-column align-self-center text-left">
+                  <h5 class="font-weight-bold">
+                    พี่ตูนนำวิ่ง ช่วยเหลือโรงพยาบาล
+                  </h5>
+                  <p class="mb-0">
+                    รายละเอียด รายละเอียด รายละเอียด รายละเอียด รายละเอียด
+                    รายละเอียด รายละเอียด รายละเอียดรายละเอียด รายละเอียด
+                    รายละเอียด รายละเอียด รายละเอียด รายละเอียด ...
+                    <a href="#!" class="readmore-news">อ่านเพิ่มเติม</a>
+                  </p>
                 </div>
+              </div>
+            </div>
+            <div class="card card-toon card-body p-0 mb-3 wow fadeInUp">
+              <div class="media d-block d-md-flex">
+                <div class="view overlay">
+                  <img class="d-flex mb-md-0 mb-3 mx-auto news-index-img" src="./images/news.png" alt="news1" />
+                  <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <div class="media-body p-3 d-flex flex-column align-self-center text-left">
+                  <h5 class="font-weight-bold">
+                    พี่ตูนนำวิ่ง ช่วยเหลือโรงพยาบาล
+                  </h5>
+                  <p class="mb-0">
+                    รายละเอียด รายละเอียด รายละเอียด รายละเอียด รายละเอียด
+                    รายละเอียด รายละเอียด รายละเอียดรายละเอียด รายละเอียด
+                    รายละเอียด รายละเอียด รายละเอียด รายละเอียด ...
+                    <a href="#!" class="readmore-news">อ่านเพิ่มเติม</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card card-toon card-body p-0 mb-3 wow fadeInUp">
+              <div class="media d-block d-md-flex">
+                <div class="view overlay">
+                  <img class="d-flex mb-md-0 mb-3 mx-auto news-index-img" src="./images/news.png" alt="news1" />
+                  <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <div class="media-body p-3 d-flex flex-column align-self-center text-left">
+                  <h5 class="font-weight-bold">
+                    พี่ตูนนำวิ่ง ช่วยเหลือโรงพยาบาล
+                  </h5>
+                  <p class="mb-0">
+                    รายละเอียด รายละเอียด รายละเอียด รายละเอียด รายละเอียด
+                    รายละเอียด รายละเอียด รายละเอียดรายละเอียด รายละเอียด
+                    รายละเอียด รายละเอียด รายละเอียด รายละเอียด ...
+                    <a href="#!" class="readmore-news">อ่านเพิ่มเติม</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="text-center">อ่านทั้งหมด</p>
+          </div>
+          <div class="col-12 col-lg-5">
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="embed-responsive embed-responsive-16by9 wow fadeInUp">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BrEYRnUGUGc" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <div class="embed-responsive embed-responsive-16by9 wow fadeInUp">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BrEYRnUGUGc" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="page-footer font-small pt-4">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+          <!-- Content -->
+          <img src="./images/main_logo.png" class="footer-logo" />
+          <h5 class="mt-2">มูลนิธิก้าวคนละก้าว</h5>
+          <p>
+            รายละเอียดข้อมูลมูลนิธิแบบสั้นๆ
+          </p>
+        </div>
+        <!-- Grid column -->
 
-                <div class="d-flex justify-content-around">
-                  <div>
-                    <div class="form-check">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="materialLoginFormRemember"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="materialLoginFormRemember"
-                        >จดจำฉัน</label
-                      >
-                    </div>
+        <hr class="clearfix w-100 d-md-none pb-3" />
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Links -->
+          <h5 class="text-uppercase">ติดต่อเรา</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">ที่อยู่ : xxxxxxxxxxxx x x x x xxxxx xxx x </a>
+            </li>
+            <li>
+              <a href="#!">โทรศัพท์ : xxx-xxx-xxxx</a>
+            </li>
+            <li>
+              <a href="#!">โทรสาร : xxx-xxx-xxxx</a>
+            </li>
+            <li>
+              <a href="#!">อีเมล : xxxx@xxxx.com</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Links -->
+          <h5 class="text-uppercase">Social network</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Facebook : มูลนิธิก้าวคนละก้าว</a>
+            </li>
+            <li>
+              <a href="#!">Youtube : มูลนิธิก้าวคนละก้าว</a>
+            </li>
+            <li>
+              <a href="#!">Twitter : มูลนิธิก้าวคนละก้าว</a>
+            </li>
+            <li>
+              <a href="#!">Instagram : มูลนิธิก้าวคนละก้าว</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2019 Copyright:
+      <a href="#!"> มูลนิธิก้าวคนละก้าว</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-060e21 white-text text-center py-4 justify-content-center">
+          <h5 class="mb-0 text-center">เข้าสู่ระบบ</h5>
+        </div>
+        <div class="modal-body">
+          <div class="card-body px-lg-5 pt-0">
+            <div class="text-center" style="color: #757575;">
+              <div class="md-form">
+                <input type="email" id="materialLoginFormEmail" class="form-control" />
+                <label for="materialLoginFormEmail">อีเมล</label>
+              </div>
+
+              <div class="md-form">
+                <input type="password" id="materialLoginFormPassword" class="form-control" />
+                <label for="materialLoginFormPassword">รหัสผ่าน</label>
+              </div>
+
+              <div class="d-flex justify-content-around">
+                <div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="materialLoginFormRemember" />
+                    <label class="form-check-label" for="materialLoginFormRemember">จดจำฉัน</label>
                   </div>
-                  <div>
-                    <a href="#!">ลืมรหัสผ่าน</a>
-                  </div>
                 </div>
+                <div>
+                  <a href="#!">ลืมรหัสผ่าน</a>
+                </div>
+              </div>
 
-                <button
-                  class="btn btn-login-modal btn-rounded btn-block my-4 waves-effect z-depth-0"
-                  type="submit"
-                >
-                  เข้าสู่ระบบ
-                </button>
+              <button class="btn btn-login-modal btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">
+                เข้าสู่ระบบ
+              </button>
 
-                <p>
-                  หากยังไม่ได้เป็นสมาชิก ?
-                  <a href="#!">สมัครสมาชิกคลิก</a>
-                </p>
+              <p>
+                หากยังไม่ได้เป็นสมาชิก ?
+                <a href="#!">สมัครสมาชิกคลิก</a>
+              </p>
 
-                <p>หรือเข้าสู่ระบบด้วย</p>
-                <a type="button" class="btn-floating btn-fb btn-sm">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a type="button" class="btn-floating btn-gplus btn-sm">
-                  <i class="fab fa-google"></i>
-                </a>
-              </form>
+              <p>หรือเข้าสู่ระบบด้วย</p>
+              <a type="button" class="btn-floating btn-fb btn-sm">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a type="button" class="btn-floating btn-gplus btn-sm">
+                <i class="fab fa-google"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/sweetalert2@8"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"
-  ></script>
-  <script>
-    new WOW().init();
-    $(".sponser-owl").owlCarousel({
-      loop: true,
-      margin: 10,
-      autoplay: true,
-      autoplayTimeout: 2000,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 2,
-          nav: false
-        },
-        600: {
-          items: 3,
-          nav: false
-        },
-        1000: {
-          items: 5,
-          nav: false
-        }
+  </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+<script>
+  new WOW().init();
+  $(".sponser-owl").owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 2,
+        nav: false
+      },
+      600: {
+        items: 3,
+        nav: false
+      },
+      1000: {
+        items: 5,
+        nav: false
       }
-    });
-  </script>
+    }
+  });
+</script>
+
 </html>
