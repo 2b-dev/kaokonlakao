@@ -22,3 +22,8 @@ html {
   background-position: top center;
   padding-top: 45vmin;
 }
+
+.img-logo-about {
+  width: 10vmin;
+  margin-bottom: 1rem;
+}

@@ -13,3 +13,8 @@
 .readmore-news {
   color: #b43d3e;
 }
+
+p.pabout {
+  text-indent: 1.5rem;
+  text-align: justify;
+}
