@@ -27,6 +27,18 @@
   margin-bottom: 0;
 }
 
+.btn-detail-donate {
+  background-color: #b43d3e;
+  padding: 0.3rem 2rem;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.btn-detail-donate:hover {
+  color: #ffffff;
+}
+
 .btn-floating {
   -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
