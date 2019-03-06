@@ -50,7 +50,7 @@
           <li class="nav-item">
             <a class="nav-link" href="about.html">เกี่ยวกับมูลนิธิ</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="project_donate.html">โครงการบริจาค</a>
           </li>
           <li class="nav-item">
@@ -72,120 +72,139 @@
   <main>
     <section class="bg-register">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 mb-3">
-            <h4 class="kn wow fadeInUp text-center">สมัครสมาชิก</h4>
-            <div class="card wow fadeIn card-toon">
-              <div class="card-body px-md-5">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="md-form mb-0">
-                      <input type="email" id="emailip" class="form-control">
-                      <label for="emailip">อีเมล</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="md-form mb-0">
-                      <input type="password" id="passwordip" class="form-control">
-                      <label for="passwordip">รหัสผ่าน</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="md-form mb-0">
-                      <input type="password" id="passwordip2" class="form-control">
-                      <label for="passwordip2">ยืนยันรหัสผ่าน</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="fname" class="form-control">
-                      <label for="fname">ชื่อ</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="lname" class="form-control">
-                      <label for="lname">นามสกุล</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="md-form mb-0">
-                      <input type="text" id="pname" class="form-control">
-                      <label for="pname">ชื่อโปรไฟล์</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <select class="browser-default custom-select select-register">
-                        <option selected disabled>เพศ</option>
-                        <option value="1">ชาย</option>
-                        <option value="2">หญิง</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="birthdate" class="form-control datepicker">
-                      <label for="birthdate">วันเกิด</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="phonenum" class="form-control">
-                      <label for="phonenum">เบอร์ติดต่อ(มือถือ)</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="iden" class="form-control">
-                      <label for="iden">เลขบัตรประชาชน</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="md-form">
-                      <textarea id="form7" class="md-textarea form-control" rows="2"></textarea>
-                      <label for="form7">ที่อยู่</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <select class="browser-default custom-select select-register">
-                        <option selected disabled>จังหวัด</option>
-                        <option value="1">กรุงเทพฯ</option>
-                        <option value="2">ปทุมธานี</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <select class="browser-default custom-select select-register">
-                        <option selected disabled>อำเภอ/เขต</option>
-                        <option value="1">xxxxx</option>
-                        <option value="2">xxxxxx</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <select class="browser-default custom-select select-register">
-                        <option selected disabled>ตำบล/แขวง</option>
-                        <option value="1">xxxxx</option>
-                        <option value="2">xxxxxx</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="password" id="idenpro" class="form-control">
-                      <label for="idenpro">รหัสไปรษณีย์</label>
-                    </div>
-                  </div>
-                  <div class="col-12 text-center">
-                    <button class="btn btn-login-modal btn-rounded btn-block my-4 waves-effect z-depth-0">
-                      เข้าสู่ระบบ
-                    </button>
-                  </div>
-                </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card card-toon">
+              <div class="view overlay">
+                <img class="card-img-top img-fluid w-100" src="./images/project.png" alt="project">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title text-left">ชื่อโครงการ</h4>
+                <p class="card-text text-left">รายละเอียดโครงการแบบย่อ</p>
+                <a href="#" class="btn btn-readmore">ดูเพิ่มเติม</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card card-toon">
+              <div class="view overlay">
+                <img class="card-img-top img-fluid w-100" src="./images/project.png" alt="project">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title text-left">ชื่อโครงการ</h4>
+                <p class="card-text text-left">รายละเอียดโครงการแบบย่อ</p>
+                <a href="#" class="btn btn-readmore">ดูเพิ่มเติม</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card card-toon">
+              <div class="view overlay">
+                <img class="card-img-top img-fluid w-100" src="./images/project.png" alt="project">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title text-left">ชื่อโครงการ</h4>
+                <p class="card-text text-left">รายละเอียดโครงการแบบย่อ</p>
+                <a href="#" class="btn btn-readmore">ดูเพิ่มเติม</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card card-toon">
+              <div class="view overlay">
+                <img class="card-img-top img-fluid w-100" src="./images/project.png" alt="project">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title text-left">ชื่อโครงการ</h4>
+                <p class="card-text text-left">รายละเอียดโครงการแบบย่อ</p>
+                <a href="#" class="btn btn-readmore">ดูเพิ่มเติม</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card card-toon">
+              <div class="view overlay">
+                <img class="card-img-top img-fluid w-100" src="./images/project.png" alt="project">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title text-left">ชื่อโครงการ</h4>
+                <p class="card-text text-left">รายละเอียดโครงการแบบย่อ</p>
+                <a href="#" class="btn btn-readmore">ดูเพิ่มเติม</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card card-toon">
+              <div class="view overlay">
+                <img class="card-img-top img-fluid w-100" src="./images/project.png" alt="project">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title text-left">ชื่อโครงการ</h4>
+                <p class="card-text text-left">รายละเอียดโครงการแบบย่อ</p>
+                <a href="#" class="btn btn-readmore">ดูเพิ่มเติม</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card card-toon">
+              <div class="view overlay">
+                <img class="card-img-top img-fluid w-100" src="./images/project.png" alt="project">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title text-left">ชื่อโครงการ</h4>
+                <p class="card-text text-left">รายละเอียดโครงการแบบย่อ</p>
+                <a href="#" class="btn btn-readmore">ดูเพิ่มเติม</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card card-toon">
+              <div class="view overlay">
+                <img class="card-img-top img-fluid w-100" src="./images/project.png" alt="project">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title text-left">ชื่อโครงการ</h4>
+                <p class="card-text text-left">รายละเอียดโครงการแบบย่อ</p>
+                <a href="#" class="btn btn-readmore">ดูเพิ่มเติม</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card card-toon">
+              <div class="view overlay">
+                <img class="card-img-top img-fluid w-100" src="./images/project.png" alt="project">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title text-left">ชื่อโครงการ</h4>
+                <p class="card-text text-left">รายละเอียดโครงการแบบย่อ</p>
+                <a href="#" class="btn btn-readmore">ดูเพิ่มเติม</a>
               </div>
             </div>
           </div>
@@ -357,86 +376,6 @@
     }
   });
 </script>
-<script>
-  $("#birthdate").pickadate({
-    today: "",
-    close: "",
-    clear: "",
-    selectYears: true,
-    selectMonths: true,
-    monthPrev: "&larr;",
-    monthNext: "&rarr;",
-    formatSubmit: "dd/mm/yyyy",
-    monthsFull: [
-      "มกราคม",
-      "กุมภาพันธ์",
-      "มีนาคม",
-      "เมษายน",
-      "พฤษภาคม",
-      "มิถุนายน",
-      "กรกฎาคม",
-      "สิงหาคม",
-      "กันยายน",
-      "ตุลาคม",
-      "พฤศจิกายน",
-      "ธันวาคม"
-    ],
-    monthsShort: [
-      "ม.ค.",
-      "ก.พ.",
-      "มี.ค.",
-      "เม.ย.",
-      "พ.ค.",
-      "มิ.ย.",
-      "ก.ค.",
-      "ส.ค.",
-      "ก.ย.",
-      "ต.ค.",
-      "พ.ย.",
-      "ธ.ค."
-    ],
-    weekdaysShort: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"],
-    weekdaysFull: [
-      "อาทิตย์",
-      "จันทร์",
-      "อังคาร",
-      "พุธ",
-      "พฤหัส",
-      "ศุกร์",
-      "เสาร์"
-    ],
-    klass: {
-      selectMonth: 'picker__select--month browser-default',
-      selectYear: 'picker__select--year browser-default'
-    },
-    onOpen: function () {
-      $(".picker__header select:first-child option").each(function () {
-        var yearBE = parseInt($(this).val()) + 543;
-        $(this).html(yearBE);
-      });
-    },
-    onSet: function (data) {
-      $(".picker__header select:first-child option").each(function () {
-        //var yearBE = parseInt($(this).val()) + 543;
-        var yearBE = parseInt($(this).val()) + 543;
-        $(this).html(yearBE);
 
-      });
-    },
-    onClose: function () {
-      var ddd = $('#birthdate').val();
-      /* var newYear = ddd[6] + ddd[7] + ddd[8] + ddd[9];
-      newYear = parseInt(newYear) + 543;
-      $('input[name="_submit"]').val(newYear);*/
-      var aaa = "";
-      aaa = ddd[ddd.length - 4] + ddd[ddd.length - 3] + ddd[ddd.length - 2] + ddd[ddd.length - 1];
-      var str = ddd;
-      var res = str.replace(aaa, "");
-      var bbb = parseInt(aaa) + 543;
-      var correct = res + bbb;
-      $('#birthdate').val(correct);
-    }
-  });
-</script>
 
 </html>

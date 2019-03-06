@@ -21,6 +21,7 @@ html {
   background-size: 100% auto;
   background-position: top center;
   padding-top: 45vmin;
+  min-height: 85vmin;
 }
 
 .img-logo-about {
