@@ -30,6 +30,16 @@
   box-shadow: none;
 }
 
+.pagination .page-item.active .page-link {
+  background-color: #b43d3e;
+}
+
+.pagination .page-item.active:hover .page-link,
+.pagination .page-item:hover .page-link {
+  background-color: #060e21;
+  color: #ffffff;
+}
+
 .page-footer,
 .top-nav-collapse {
   background-color: #060e21;
