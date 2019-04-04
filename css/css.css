@@ -7,7 +7,9 @@ body,
 html {
   height: 100%;
 }
-
+body, html{
+  overflow: hidden;
+}
 .footer-logo {
   width: 100px;
   float: left;
