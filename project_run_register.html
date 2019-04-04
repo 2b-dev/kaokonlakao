@@ -141,15 +141,15 @@
                             >
                           </li>
                           <li>
-                            <a href="#check-data"
-                              >ขั้นตอนที่ 3<br /><small
-                                >สรุปและตรวจสอบข้อมูลผู้สมัคร</small
-                              ></a
+                            <a href="#data-address"
+                              >ขั้นตอนที่ 3<br /><small>ข้อมูลจัดส่ง</small></a
                             >
                           </li>
                           <li>
-                            <a href="#data-address"
-                              >ขั้นตอนที่ 4<br /><small>ข้อมูลจัดส่ง</small></a
+                            <a href="#check-data"
+                              >ขั้นตอนที่ 4<br /><small
+                                >สรุปและตรวจสอบข้อมูลผู้สมัคร</small
+                              ></a
                             >
                           </li>
                         </ul>
@@ -282,6 +282,73 @@
                                           />
                                           <label for="birthdate_reg_run_1"
                                             >วันเกิด</label
+                                          >
+                                        </div>
+                                      </div>
+                                      <div class="col-12 mb-3">
+                                        <p>เพศ</p>
+                                        <div class="row">
+                                          <div class="col-6 col-md-3 mb-3">
+                                            <div
+                                              class="custom-control custom-radio custom-control-inline"
+                                            >
+                                              <input
+                                                type="radio"
+                                                class="custom-control-input"
+                                                id="sex1_reg_run_1"
+                                                name="sex_run_1"
+                                              />
+                                              <label
+                                                class="custom-control-label"
+                                                for="sex1_reg_run_1"
+                                                >ชาย</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="col-6 col-md-3 mb-3">
+                                            <div
+                                              class="custom-control custom-radio custom-control-inline"
+                                            >
+                                              <input
+                                                type="radio"
+                                                class="custom-control-input"
+                                                id="sex2_reg_run_1"
+                                                name="sex_run_1"
+                                              />
+                                              <label
+                                                class="custom-control-label"
+                                                for="sex2_reg_run_1"
+                                                >หญิง</label
+                                              >
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-md-6 mb-3">
+                                        <div class="md-form mb-0">
+                                          <input
+                                            type="text"
+                                            id="phone_reg_run_1"
+                                            class="form-control"
+                                          />
+                                          <label
+                                            for="phone_reg_run_1"
+                                            class="active"
+                                            >เบอร์ติดต่อฉุกเฉิน</label
+                                          >
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-md-6 mb-3">
+                                        <div class="md-form mb-0">
+                                          <input
+                                            type="text"
+                                            id="relation_reg_run_1"
+                                            class="form-control"
+                                          />
+                                          <label
+                                            for="relation_reg_run_1"
+                                            class="active"
+                                            >ความสัมพันธ์</label
                                           >
                                         </div>
                                       </div>
@@ -442,18 +509,176 @@
                               </div>
                               <div class="col-12 text-center">
                                 <a
+                                  id="prev-step2"
+                                  href="#select-type"
+                                  class="btn btn-detail-donate"
+                                  >ย้อนกลับ
+                                </a>
+                                <a
                                   id="nxt-step2"
-                                  href="#check-data"
+                                  href="#data-address"
                                   class="btn btn-detail-donate disabled"
                                   >ต่อไป
                                 </a>
                               </div>
                             </div>
                           </div>
-                          <div id="check-data" class="">
-                            Step Content
+                          <div id="data-address" class="py-3">
+                            <div class="row justify-content-center">
+                              <div class="col-12 col-md-10 col-lg-8">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <div class="row">
+                                      <div class="col-12 mb-3">
+                                        <p>การรับเสื้อและ BIP</p>
+                                        <div class="row">
+                                          <div class="col-6 col-md-3 mb-3">
+                                            <div
+                                              class="custom-control custom-radio custom-control-inline"
+                                            >
+                                              <input
+                                                type="radio"
+                                                class="custom-control-input"
+                                                id="dataaddress1"
+                                                name="dataaddress"
+                                              />
+                                              <label
+                                                class="custom-control-label"
+                                                for="dataaddress1"
+                                                >รับเอง</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="col-6 col-md-3 mb-3">
+                                            <div
+                                              class="custom-control custom-radio custom-control-inline"
+                                            >
+                                              <input
+                                                type="radio"
+                                                class="custom-control-input"
+                                                id="dataaddress2"
+                                                name="dataaddress"
+                                              />
+                                              <label
+                                                class="custom-control-label"
+                                                for="dataaddress2"
+                                                >ส่งไปรษณีย์</label
+                                              >
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="row">
+                                          <div class="col-12">
+                                            <hr />
+                                          </div>
+                                          <div class="col-12 mb-3 text-center">
+                                            <h5>
+                                              ที่อยู่สำหรับจดส่งทางไปรษณีย์
+                                            </h5>
+                                          </div>
+                                          <div class="col-12 col-md-6 mb-3">
+                                            <div class="md-form mb-0">
+                                              <input
+                                                type="text"
+                                                id="name-sent"
+                                                class="form-control"
+                                              />
+                                              <label for="name-sent"
+                                                >ชื่อ-นามสกุล</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="col-12 col-md-6 mb-3">
+                                            <div class="md-form mb-0">
+                                              <input
+                                                type="text"
+                                                id="phonenum-sent"
+                                                class="form-control"
+                                              />
+                                              <label for="phonenum-sent"
+                                                >เบอร์ติดต่อ(มือถือ)</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="col-12 mb-3">
+                                            <div class="md-form">
+                                              <textarea
+                                                id="form7"
+                                                class="md-textarea form-control"
+                                                rows="2"
+                                              ></textarea>
+                                              <label for="form7">ที่อยู่</label>
+                                            </div>
+                                          </div>
+                                          <div class="col-12 col-md-6 mb-3">
+                                            <div class="md-form mb-0">
+                                              <select
+                                                class="browser-default custom-select select-register"
+                                              >
+                                                <option selected disabled
+                                                  >จังหวัด</option
+                                                >
+                                                <option value="1"
+                                                  >กรุงเทพฯ</option
+                                                >
+                                                <option value="2"
+                                                  >ปทุมธานี</option
+                                                >
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-12 col-md-6 mb-3">
+                                            <div class="md-form mb-0">
+                                              <select
+                                                class="browser-default custom-select select-register"
+                                              >
+                                                <option selected disabled
+                                                  >อำเภอ/เขต</option
+                                                >
+                                                <option value="1">xxxxx</option>
+                                                <option value="2"
+                                                  >xxxxxx</option
+                                                >
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-12 col-md-6 mb-3">
+                                            <div class="md-form mb-0">
+                                              <select
+                                                class="browser-default custom-select select-register"
+                                              >
+                                                <option selected disabled
+                                                  >ตำบล/แขวง</option
+                                                >
+                                                <option value="1">xxxxx</option>
+                                                <option value="2"
+                                                  >xxxxxx</option
+                                                >
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-12 col-md-6 mb-3">
+                                            <div class="md-form mb-0">
+                                              <input
+                                                type="password"
+                                                id="idenpro"
+                                                class="form-control"
+                                              />
+                                              <label for="idenpro"
+                                                >รหัสไปรษณีย์</label
+                                              >
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div id="data-address" class="">
+                          <div id="check-data" class="">
                             Step Content
                           </div>
                         </div>
@@ -826,6 +1051,93 @@
             >
         </div>
         </div>
+        <div class="col-12 mb-3">
+                                        <p>เพศ</p>
+                                        <div class="row">
+                                          <div class="col-6 col-md-3 mb-3">
+                                            <div
+                                              class="custom-control custom-radio custom-control-inline"
+                                            >
+                                              <input
+                                                type="radio"
+                                                class="custom-control-input"
+                                                id="sex1_reg_run_` +
+            numUser +
+            `"
+                                                name="sex_run_` +
+            numUser +
+            `"
+                                              />
+                                              <label
+                                                class="custom-control-label"
+                                                for="sex1_reg_run_` +
+            numUser +
+            `"
+                                                >ชาย</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="col-6 col-md-3 mb-3">
+                                            <div
+                                              class="custom-control custom-radio custom-control-inline"
+                                            >
+                                              <input
+                                                type="radio"
+                                                class="custom-control-input"
+                                                id="sex2_reg_run_` +
+            numUser +
+            `"
+                                                name="sex_run_` +
+            numUser +
+            `"
+                                              />
+                                              <label
+                                                class="custom-control-label"
+                                                for="sex2_reg_run_` +
+            numUser +
+            `"
+                                                >หญิง</label
+                                              >
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-md-6 mb-3">
+                                        <div class="md-form mb-0">
+                                          <input
+                                            type="text"
+                                            id="phone_reg_run_` +
+            numUser +
+            `"
+                                            class="form-control"
+                                          />
+                                          <label
+                                            for="phone_reg_run_` +
+            numUser +
+            `"
+                                            class="active"
+                                            >เบอร์ติดต่อฉุกเฉิน</label
+                                          >
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-md-6 mb-3">
+                                        <div class="md-form mb-0">
+                                          <input
+                                            type="text"
+                                            id="relation_reg_run_` +
+            numUser +
+            `"
+                                            class="form-control"
+                                          />
+                                          <label
+                                            for="relation_reg_run_` +
+            numUser +
+            `"
+                                            class="active"
+                                            >ความสัมพันธ์</label
+                                          >
+                                        </div>
+                                      </div>
         <div class="col-12 mb-3">
         <p>ขนาดไซส์เสื้อ</p>
         <div class="row">
