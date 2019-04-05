@@ -161,6 +161,8 @@
                                   <div
                                     class="card card-radio mb-3"
                                     data-value="bip"
+                                    data-text1="BIP อย่างเดียว"
+                                    data-text2="100 บาท"
                                   >
                                     <div class="card-body">
                                       <div class="row">
@@ -184,6 +186,8 @@
                                   <div
                                     class="card card-radio mb-3"
                                     data-value="shirt"
+                                    data-text1="เสื้อ"
+                                    data-text2="400 บาท"
                                   >
                                     <div class="card-body">
                                       <div class="row">
@@ -207,6 +211,8 @@
                                   <div
                                     class="card card-radio mb-3"
                                     data-value="shirtandbip"
+                                    data-text1="BIP เสื้อ"
+                                    data-text2="500 บาท"
                                   >
                                     <div class="card-body">
                                       <div class="row">
@@ -730,7 +736,82 @@
                             </div>
                           </div>
                           <div id="check-data" class="">
-                            Step Content
+                            <div class="row">
+                              <div class="col-12 text-center mb-3">
+                                <h5>
+                                  ตรวจสอบและยืนยันข้อมูลผู้สมัคร
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-12 col-md-6 col-lg-5 mb-3">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <div class="row">
+                                      <div class="col-6">
+                                        <div class="view overlay zoom">
+                                          <img
+                                            src="./images/800x600.png"
+                                            class="img-fluid"
+                                          />
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="col-6 d-flex flex-column justify-content-center align-items-center"
+                                      >
+                                        <h5 id="select-bip-check1"></h5>
+                                        <h5 id="select-bip-check2"></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 text-center mb-3">
+                                <h5>ข้อมูลผู้สมัครวิ่ง</h5>
+                              </div>
+                              <div class="col-12 col-md-10 col-lg-8 mb-3">
+                                <div class="card mb-3">
+                                  <div class="card-body">
+                                    <div class="row">
+                                      <div class="col-12 col-md-12">
+                                        <p><u>ข้อมูลคนที่ 1</u></p>
+                                        <p></p>
+                                      </div>
+                                      <div class="col-12">
+                                        <p>
+                                          xxxxxx xxxxxxx วันเกิด xxxx เพศ xxx
+                                          เบอร์ติดต่อฉุกเฉิน xxxxxx ความสัมพันธ์
+                                          xxxx ขนาดไซต์เสื้อ xx
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 text-center">
+                                <h5>ข้อมูลการจัดส่ง</h5>
+                              </div>
+                              <div class="col-12 col-md-10 col-lg-8 mb-3">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <p>รับเอง/ส่งไปรษณีย์ ที่ xxxxxxx</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 text-center mb-3">
+                                <h5>ยอดเงินที่ต้องชำระ</h5>
+                              </div>
+                              <div class="col-12 col-md-10 col-lg-8 mb-3">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <p>
+                                      ยอดเงินที่ต้องชำระทั้งหมด :
+                                      <span class="c-b43d3e">xxxxxx</span> บาท
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1049,7 +1130,11 @@
         .removeClass("selected-radio");
       $(this).addClass("selected-radio");
       var valbip = $(this).attr("data-value");
+      var textselect1 = $(this).attr("data-text1");
+      var textselect2 = $(this).attr("data-text2");
       $("#bipshirt-option").val(valbip);
+      $("#select-bip-check1").text(textselect1);
+      $("#select-bip-check2").text(textselect2);
       $("#nxt-step1").removeClass("disabled");
     });
     $(".datepicker").pickadate(optiondate);
