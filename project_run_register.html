@@ -525,7 +525,7 @@
                           </div>
                           <div id="data-address" class="py-3">
                             <div class="row justify-content-center">
-                              <div class="col-12 col-md-10 col-lg-8">
+                              <div class="col-12 col-md-10 col-lg-8 mb-3">
                                 <div class="card">
                                   <div class="card-body">
                                     <div class="row">
@@ -541,6 +541,7 @@
                                                 class="custom-control-input"
                                                 id="dataaddress1"
                                                 name="dataaddress"
+                                                value="dataaddress1"
                                               />
                                               <label
                                                 class="custom-control-label"
@@ -558,6 +559,7 @@
                                                 class="custom-control-input"
                                                 id="dataaddress2"
                                                 name="dataaddress"
+                                                value="dataaddress2"
                                               />
                                               <label
                                                 class="custom-control-label"
@@ -567,8 +569,24 @@
                                             </div>
                                           </div>
                                         </div>
-
-                                        <div class="row">
+                                        <div id="post1" class="row">
+                                          <div class="col-12">
+                                            <hr />
+                                          </div>
+                                          <div class="col-12 mb-3 text-center">
+                                            <h5>
+                                              สถานที่สำหรับรับเอง
+                                            </h5>
+                                          </div>
+                                          <div class="col-12 mb-3">
+                                            <p>
+                                              XXXXXXXXXX xxx/xxxx หมู่ที่ xxx
+                                              ต.xxxxxx อ.xxxxxxxx จ.xxxxxxxx
+                                              xxxxx โทรศัพท์ xx-xxxx-xxxx
+                                            </p>
+                                          </div>
+                                        </div>
+                                        <div id="post2" class="row">
                                           <div class="col-12">
                                             <hr />
                                           </div>
@@ -583,6 +601,7 @@
                                                 type="text"
                                                 id="name-sent"
                                                 class="form-control"
+                                                onchange="checkdatasent();"
                                               />
                                               <label for="name-sent"
                                                 >ชื่อ-นามสกุล</label
@@ -595,6 +614,7 @@
                                                 type="text"
                                                 id="phonenum-sent"
                                                 class="form-control"
+                                                onchange="checkdatasent();"
                                               />
                                               <label for="phonenum-sent"
                                                 >เบอร์ติดต่อ(มือถือ)</label
@@ -607,6 +627,7 @@
                                                 id="form7"
                                                 class="md-textarea form-control"
                                                 rows="2"
+                                                onchange="checkdatasent();"
                                               ></textarea>
                                               <label for="form7">ที่อยู่</label>
                                             </div>
@@ -614,9 +635,14 @@
                                           <div class="col-12 col-md-6 mb-3">
                                             <div class="md-form mb-0">
                                               <select
+                                                id="province-sent"
                                                 class="browser-default custom-select select-register"
+                                                onchange="checkdatasent();"
                                               >
-                                                <option selected disabled
+                                                <option
+                                                  value="0"
+                                                  selected
+                                                  disabled
                                                   >จังหวัด</option
                                                 >
                                                 <option value="1"
@@ -631,9 +657,14 @@
                                           <div class="col-12 col-md-6 mb-3">
                                             <div class="md-form mb-0">
                                               <select
+                                                id="district-sent"
                                                 class="browser-default custom-select select-register"
+                                                onchange="checkdatasent();"
                                               >
-                                                <option selected disabled
+                                                <option
+                                                  value="0"
+                                                  selected
+                                                  disabled
                                                   >อำเภอ/เขต</option
                                                 >
                                                 <option value="1">xxxxx</option>
@@ -646,9 +677,14 @@
                                           <div class="col-12 col-md-6 mb-3">
                                             <div class="md-form mb-0">
                                               <select
+                                                id="tumbon-sent"
                                                 class="browser-default custom-select select-register"
+                                                onchange="checkdatasent();"
                                               >
-                                                <option selected disabled
+                                                <option
+                                                  selected
+                                                  disabled
+                                                  value="0"
                                                   >ตำบล/แขวง</option
                                                 >
                                                 <option value="1">xxxxx</option>
@@ -662,10 +698,11 @@
                                             <div class="md-form mb-0">
                                               <input
                                                 type="password"
-                                                id="idenpro"
+                                                id="idenpost-sent"
                                                 class="form-control"
+                                                onchange="checkdatasent();"
                                               />
-                                              <label for="idenpro"
+                                              <label for="idenpost-sent"
                                                 >รหัสไปรษณีย์</label
                                               >
                                             </div>
@@ -675,6 +712,20 @@
                                     </div>
                                   </div>
                                 </div>
+                              </div>
+                              <div class="col-12 text-center">
+                                <a
+                                  id="prev-step3"
+                                  href="#detail-runner"
+                                  class="btn btn-detail-donate"
+                                  >ย้อนกลับ
+                                </a>
+                                <a
+                                  id="nxt-step3"
+                                  href="#check-data"
+                                  class="btn btn-detail-donate disabled"
+                                  >ต่อไป
+                                </a>
                               </div>
                             </div>
                           </div>
@@ -1010,315 +1061,358 @@
       if (numUser < 11) {
         $("#append-data-user").append(
           `<div class="card mb-3">
-    <div class="card-body">
-    <div class="row">
-        <div class="col-12 col-md-12 mb-3">
-        <h5>ข้อมูลคนที่ ` +
+        <div class="card-body">
+        <div class="row">
+            <div class="col-12 col-md-12 mb-3">
+            <h5>ข้อมูลคนที่ ` +
             numUser +
             `</h5>
-        </div>
-        <div class="col-12 col-md-6 mb-3">
-        <div class="md-form mb-0">
-            <input
-            type="text"
-            id="name_reg_run_` +
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+            <div class="md-form mb-0">
+                <input
+                type="text"
+                id="name_reg_run_` +
             numUser +
             `"
-            class="form-control"
-            />
-            <label
-            for="name_reg_run_` +
+                class="form-control"
+                />
+                <label
+                for="name_reg_run_` +
             numUser +
             `"
-            class="active"
-            >ชื่อ-นามสกุล</label
-            >
-        </div>
-        </div>
-        <div class="col-12 col-md-6 mb-3">
-        <div class="md-form mb-0">
-            <input
-            type="text"
-            id="birthdate_reg_run_` +
+                class="active"
+                >ชื่อ-นามสกุล</label
+                >
+            </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+            <div class="md-form mb-0">
+                <input
+                type="text"
+                id="birthdate_reg_run_` +
             numUser +
             `"
-            class="form-control datepicker"
-            />
-            <label for="birthdate_reg_run_` +
+                class="form-control datepicker"
+                />
+                <label for="birthdate_reg_run_` +
             numUser +
             `"
-            >วันเกิด</label
-            >
-        </div>
-        </div>
-        <div class="col-12 mb-3">
-                                        <p>เพศ</p>
-                                        <div class="row">
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
+                >วันเกิด</label
+                >
+            </div>
+            </div>
+            <div class="col-12 mb-3">
+                                            <p>เพศ</p>
+                                            <div class="row">
+                                              <div class="col-6 col-md-3 mb-3">
+                                                <div
+                                                  class="custom-control custom-radio custom-control-inline"
+                                                >
+                                                  <input
+                                                    type="radio"
+                                                    class="custom-control-input"
+                                                    id="sex1_reg_run_` +
+            numUser +
+            `"
+                                                    name="sex_run_` +
+            numUser +
+            `"
+                                                  />
+                                                  <label
+                                                    class="custom-control-label"
+                                                    for="sex1_reg_run_` +
+            numUser +
+            `"
+                                                    >ชาย</label
+                                                  >
+                                                </div>
+                                              </div>
+                                              <div class="col-6 col-md-3 mb-3">
+                                                <div
+                                                  class="custom-control custom-radio custom-control-inline"
+                                                >
+                                                  <input
+                                                    type="radio"
+                                                    class="custom-control-input"
+                                                    id="sex2_reg_run_` +
+            numUser +
+            `"
+                                                    name="sex_run_` +
+            numUser +
+            `"
+                                                  />
+                                                  <label
+                                                    class="custom-control-label"
+                                                    for="sex2_reg_run_` +
+            numUser +
+            `"
+                                                    >หญิง</label
+                                                  >
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-12 col-md-6 mb-3">
+                                            <div class="md-form mb-0">
                                               <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="sex1_reg_run_` +
+                                                type="text"
+                                                id="phone_reg_run_` +
             numUser +
             `"
-                                                name="sex_run_` +
-            numUser +
-            `"
+                                                class="form-control"
                                               />
                                               <label
-                                                class="custom-control-label"
-                                                for="sex1_reg_run_` +
+                                                for="phone_reg_run_` +
             numUser +
             `"
-                                                >ชาย</label
+                                                class="active"
+                                                >เบอร์ติดต่อฉุกเฉิน</label
                                               >
                                             </div>
                                           </div>
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
+                                          <div class="col-12 col-md-6 mb-3">
+                                            <div class="md-form mb-0">
                                               <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="sex2_reg_run_` +
+                                                type="text"
+                                                id="relation_reg_run_` +
             numUser +
             `"
-                                                name="sex_run_` +
-            numUser +
-            `"
+                                                class="form-control"
                                               />
                                               <label
-                                                class="custom-control-label"
-                                                for="sex2_reg_run_` +
+                                                for="relation_reg_run_` +
             numUser +
             `"
-                                                >หญิง</label
+                                                class="active"
+                                                >ความสัมพันธ์</label
                                               >
                                             </div>
                                           </div>
-                                        </div>
-                                      </div>
-                                      <div class="col-12 col-md-6 mb-3">
-                                        <div class="md-form mb-0">
-                                          <input
-                                            type="text"
-                                            id="phone_reg_run_` +
-            numUser +
-            `"
-                                            class="form-control"
-                                          />
-                                          <label
-                                            for="phone_reg_run_` +
-            numUser +
-            `"
-                                            class="active"
-                                            >เบอร์ติดต่อฉุกเฉิน</label
-                                          >
-                                        </div>
-                                      </div>
-                                      <div class="col-12 col-md-6 mb-3">
-                                        <div class="md-form mb-0">
-                                          <input
-                                            type="text"
-                                            id="relation_reg_run_` +
-            numUser +
-            `"
-                                            class="form-control"
-                                          />
-                                          <label
-                                            for="relation_reg_run_` +
-            numUser +
-            `"
-                                            class="active"
-                                            >ความสัมพันธ์</label
-                                          >
-                                        </div>
-                                      </div>
-        <div class="col-12 mb-3">
-        <p>ขนาดไซส์เสื้อ</p>
-        <div class="row">
-            <div class="col-6 col-md-3 mb-3">
-            <div
-                class="custom-control custom-radio custom-control-inline"
-            >
-                <input
-                type="radio"
-                class="custom-control-input"
-                id="ss_reg_run_` +
-            numUser +
-            `"
-                name="size_shirt"
-                />
-                <label
-                class="custom-control-label"
-                for="ss_reg_run_` +
-            numUser +
-            `"
-                >SS</label
+            <div class="col-12 mb-3">
+            <p>ขนาดไซส์เสื้อ</p>
+            <div class="row">
+                <div class="col-6 col-md-3 mb-3">
+                <div
+                    class="custom-control custom-radio custom-control-inline"
                 >
-            </div>
-            </div>
-            <div class="col-6 col-md-3 mb-3">
-            <div
-                class="custom-control custom-radio custom-control-inline"
-            >
-                <input
-                type="radio"
-                class="custom-control-input"
-                id="s_reg_run_` +
+                    <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="ss_reg_run_` +
             numUser +
             `"
-                name="size_shirt"
-                />
-                <label
-                class="custom-control-label"
-                for="s_reg_run_` +
+                    name="size_shirt"
+                    />
+                    <label
+                    class="custom-control-label"
+                    for="ss_reg_run_` +
             numUser +
             `"
-                >S</label
+                    >SS</label
+                    >
+                </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                <div
+                    class="custom-control custom-radio custom-control-inline"
                 >
-            </div>
-            </div>
-            <div class="col-6 col-md-3 mb-3">
-            <div
-                class="custom-control custom-radio custom-control-inline"
-            >
-                <input
-                type="radio"
-                class="custom-control-input"
-                id="m_reg_run_` +
+                    <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="s_reg_run_` +
             numUser +
             `"
-                name="size_shirt"
-                />
-                <label
-                class="custom-control-label"
-                for="m_reg_run_` +
+                    name="size_shirt"
+                    />
+                    <label
+                    class="custom-control-label"
+                    for="s_reg_run_` +
             numUser +
             `"
-                >M</label
+                    >S</label
+                    >
+                </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                <div
+                    class="custom-control custom-radio custom-control-inline"
                 >
-            </div>
-            </div>
-            <div class="col-6 col-md-3 mb-3">
-            <div
-                class="custom-control custom-radio custom-control-inline"
-            >
-                <input
-                type="radio"
-                class="custom-control-input"
-                id="l_reg_run_` +
+                    <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="m_reg_run_` +
             numUser +
             `"
-                name="size_shirt"
-                />
-                <label
-                class="custom-control-label"
-                for="l_reg_run_` +
+                    name="size_shirt"
+                    />
+                    <label
+                    class="custom-control-label"
+                    for="m_reg_run_` +
             numUser +
             `"
-                >L</label
+                    >M</label
+                    >
+                </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                <div
+                    class="custom-control custom-radio custom-control-inline"
                 >
-            </div>
-            </div>
-            <div class="col-6 col-md-3 mb-3">
-            <div
-                class="custom-control custom-radio custom-control-inline"
-            >
-                <input
-                type="radio"
-                class="custom-control-input"
-                id="xl_reg_run_` +
+                    <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="l_reg_run_` +
             numUser +
             `"
-                name="size_shirt"
-                />
-                <label
-                class="custom-control-label"
-                for="xl_reg_run_` +
+                    name="size_shirt"
+                    />
+                    <label
+                    class="custom-control-label"
+                    for="l_reg_run_` +
             numUser +
             `"
-                >XL</label
+                    >L</label
+                    >
+                </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                <div
+                    class="custom-control custom-radio custom-control-inline"
                 >
-            </div>
-            </div>
-            <div class="col-6 col-md-3 mb-3">
-            <div
-                class="custom-control custom-radio custom-control-inline"
-            >
-                <input
-                type="radio"
-                class="custom-control-input"
-                id="2xl_reg_run_` +
+                    <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="xl_reg_run_` +
             numUser +
             `"
-                name="size_shirt"
-                />
-                <label
-                class="custom-control-label"
-                for="2xl_reg_run_` +
+                    name="size_shirt"
+                    />
+                    <label
+                    class="custom-control-label"
+                    for="xl_reg_run_` +
             numUser +
             `"
-                >2XL</label
+                    >XL</label
+                    >
+                </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                <div
+                    class="custom-control custom-radio custom-control-inline"
                 >
-            </div>
-            </div>
-            <div class="col-6 col-md-3 mb-3">
-            <div
-                class="custom-control custom-radio custom-control-inline"
-            >
-                <input
-                type="radio"
-                class="custom-control-input"
-                id="3xl_reg_run_` +
+                    <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="2xl_reg_run_` +
             numUser +
             `"
-                name="size_shirt"
-                />
-                <label
-                class="custom-control-label"
-                for="3xl_reg_run_` +
+                    name="size_shirt"
+                    />
+                    <label
+                    class="custom-control-label"
+                    for="2xl_reg_run_` +
             numUser +
             `"
-                >3XL</label
+                    >2XL</label
+                    >
+                </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                <div
+                    class="custom-control custom-radio custom-control-inline"
                 >
-            </div>
-            </div>
-            <div class="col-6 col-md-3 mb-3">
-            <div
-                class="custom-control custom-radio custom-control-inline"
-            >
-                <input
-                type="radio"
-                class="custom-control-input"
-                id="4xl_reg_run_` +
+                    <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="3xl_reg_run_` +
             numUser +
             `"
-                name="size_shirt"
-                />
-                <label
-                class="custom-control-label"
-                for="4xl_reg_run_` +
+                    name="size_shirt"
+                    />
+                    <label
+                    class="custom-control-label"
+                    for="3xl_reg_run_` +
             numUser +
             `"
-                >4XL</label
+                    >3XL</label
+                    >
+                </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                <div
+                    class="custom-control custom-radio custom-control-inline"
                 >
+                    <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="4xl_reg_run_` +
+            numUser +
+            `"
+                    name="size_shirt"
+                    />
+                    <label
+                    class="custom-control-label"
+                    for="4xl_reg_run_` +
+            numUser +
+            `"
+                    >4XL</label
+                    >
+                </div>
+                </div>
             </div>
             </div>
         </div>
         </div>
-    </div>
-    </div>
-</div>`
+    </div>`
         );
         $(".datepicker").pickadate(optiondate);
       } else {
         Swal.fire("ผิดพลาด!", "คุณได้เพิ่มผู้สมัครครบ 10 คนแล้ว", "error");
       }
     });
+    $("#post1").hide();
+    $("#post2").hide();
+    $("input[name='dataaddress']").change(function() {
+      if ($("#dataaddress1").is(":checked")) {
+        $("#post1").show(200);
+        $("#post2").hide();
+        $("#nxt-step3").removeClass("disabled");
+      }
+      if ($("#dataaddress2").is(":checked")) {
+        $("#post2").show(200);
+        $("#post1").hide();
+        if (
+          $("#dataaddress2").is(":checked") &&
+          $("#name-sent").val() != "" &&
+          $("#phonenum-sent").val() != "" &&
+          $("#form7").val() != "" &&
+          $("#province-sent").val() != "0" &&
+          $("#district-sent").val() != "0" &&
+          $("#tumbon-sent").val() != "0" &&
+          $("#idenpost-sent").val() != ""
+        ) {
+          $("#nxt-step3").removeClass("disabled");
+        } else {
+          $("#nxt-step3").addClass("disabled");
+        }
+      }
+    });
+    function checkdatasent() {
+      if (
+        $("#dataaddress2").is(":checked") &&
+        $("#name-sent").val() != "" &&
+        $("#phonenum-sent").val() != "" &&
+        $("#form7").val() != "" &&
+        $("#province-sent").val() != "0" &&
+        $("#district-sent").val() != "0" &&
+        $("#tumbon-sent").val() != "0" &&
+        $("#idenpost-sent").val() != ""
+      ) {
+        $("#nxt-step3").removeClass("disabled");
+      } else {
+        $("#nxt-step3").addClass("disabled");
+      }
+    }
   </script>
 </html>

@@ -11,7 +11,7 @@
   border-top-left-radius: 0.25rem;
 }
 
-.card-radio .card-body{
+.card-radio .card-body {
   border-radius: 0.25rem;
   background-color: transparent;
   cursor: pointer;
@@ -19,7 +19,8 @@
   width: 100%;
   height: 100%;
 }
-.card-radio:hover .card-body , .card-radio.selected-radio .card-body{
-  background-color: #b43d3e;
-  color: #ffffff;
+
+.card-radio:hover .card-body,
+.card-radio.selected-radio .card-body {
+  border: 1px solid #b43d3e;
 }
