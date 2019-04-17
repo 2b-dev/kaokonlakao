@@ -16,7 +16,7 @@ html {
 
 .bg-register {
   background-color: #fff;
-  background-image: url('../images/header_register.png');
+  background-image: url("../images/bg-new-register.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top center;
@@ -31,7 +31,7 @@ html {
 
 .bg-project-donate-detail {
   background-color: #ffffff;
-  background-image: url('../images/header_detail.png');
+  background-image: url("../images/header_detail.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top center;
@@ -59,4 +59,34 @@ html {
   line-height: 1.4rem;
   height: 4.2rem;
   overflow: hidden;
+}
+
+@media (max-width: 575px) {
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
+  .bg-register {
+    padding-top: 20vmin;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .bg-register {
+    padding-top: 15vmin;
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) {
 }
