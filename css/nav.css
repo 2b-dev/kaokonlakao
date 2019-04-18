@@ -1,23 +1,21 @@
-.navbar.navbar-dark .breadcrumb .nav-item>.nav-link,
-.navbar.navbar-dark .navbar-nav .nav-item>.nav-link {
+.navbar.navbar-dark .breadcrumb .nav-item > .nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item > .nav-link {
   font-size: 1rem;
   background-color: transparent;
-  color: #fff;
+  color: #060e21;
   font-weight: 400;
-
 }
 
-.navbar.navbar-dark .breadcrumb .nav-item.active>.nav-link,
-.navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link {
+.navbar.navbar-dark .breadcrumb .nav-item.active > .nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link {
   background-color: rgba(180, 61, 62, 0.9);
-  ;
   color: #fff;
   font-weight: 400;
   font-size: 1rem;
 }
 
-.navbar.navbar-dark .breadcrumb .nav-item:hover>.nav-link,
-.navbar.navbar-dark .navbar-nav .nav-item:hover>.nav-link {
+.navbar.navbar-dark .breadcrumb .nav-item:hover > .nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item:hover > .nav-link {
   background-color: rgba(180, 61, 62, 0.9);
   color: #fff;
   font-weight: 400;
@@ -44,8 +42,9 @@
 .top-nav-collapse {
   background-color: #060e21;
 }
-
-
+.navbar.navbar-dark.top-nav-collapse .navbar-nav .nav-item > .nav-link {
+  color: #fff;
+}
 .nav-tabs.nav-profile .nav-item.show .nav-link,
 .nav-tabs.nav-profile .nav-link.active {
   background-color: #b43d3e;

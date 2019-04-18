@@ -60,7 +60,16 @@ html {
   height: 4.2rem;
   overflow: hidden;
 }
-
+.over-img-logo {
+  width: auto;
+  height: 80vh;
+  position: absolute;
+}
+.over-img-logo .img-logo-banner {
+  max-width: 100%;
+  width: auto;
+  height: 80vh;
+}
 @media (max-width: 575px) {
 }
 
