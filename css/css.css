@@ -89,6 +89,12 @@ html {
 }
 
 @media (max-width: 991px) {
+  .over-img-logo .img-logo-banner {
+    margin: 0 auto;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
