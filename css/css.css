@@ -23,12 +23,21 @@ html {
   padding-top: 45vmin;
   min-height: 85vmin;
 }
-
+.qr-preview {
+  width: 100px;
+  height: 100px;
+}
 .img-logo-about {
   width: 10vmin;
   margin-bottom: 1rem;
 }
-
+.table-preview-running thead tr th {
+  text-align: center;
+}
+.table-preview-running tbody tr td {
+  vertical-align: middle;
+  text-align: center;
+}
 .bg-project-donate-detail {
   background-color: #ffffff;
   background-image: url("../images/header_detail.png");
