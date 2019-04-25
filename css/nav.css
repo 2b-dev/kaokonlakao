@@ -59,13 +59,23 @@
 }
 
 .nav-tabs.nav-profile a.nav-link {
-  color: #b43d3e;
+  color: #ffffff;
   font-weight: 400;
+  background-color: #7e7e7e;
+}
+
+@media (max-width: 575px) {
+  .navbar.navbar-dark .navbar-nav .nav-item > .nav-link {
+    color: #ffffff;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .navbar {
     background-color: #060e21;
+  }
+  .navbar.navbar-dark .navbar-nav .nav-item > .nav-link {
+    color: #ffffff;
   }
 }
 
