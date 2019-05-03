@@ -23,6 +23,15 @@ html {
   padding-top: 45vmin;
   min-height: 85vmin;
 }
+.bg-virsualrun {
+  background-color: #fff;
+  background-image: url("../images/bg-new-register.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  padding-top: 8vmin;
+  min-height: 85vmin;
+}
 .qr-preview {
   width: 100px;
   height: 100px;
@@ -89,8 +98,77 @@ html {
   .bg-register {
     padding-top: 20vmin;
   }
+  .bg-virsualrun {
+    padding-top: 20vmin;
+  }
 }
-
+@media (min-width: 768px) {
+  .rank_num {
+    height: 300px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom center;
+  }
+  .rank_num_1 {
+    background-image: url("../images/stadi1.png");
+  }
+  .rank_num_2 {
+    background-image: url("../images/stadi2.png");
+  }
+  .rank_num_3 {
+    background-image: url("../images/stadi3.png");
+  }
+  .contain-img-rank {
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+  .contain-img-rank .img-rank {
+    width: 80%;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .contain-img-rank .img-medal {
+    position: absolute;
+    width: 40%;
+    left: 0;
+    bottom: 0;
+  }
+  .rank_num_1 .contain-img-rank .img-rank {
+    border: 5px solid #fbc815;
+  }
+  .rank_num_2 .contain-img-rank {
+    padding-top: 35%;
+  }
+  .rank_num_2 .contain-img-rank .img-rank {
+    border: 5px solid #afafaf;
+  }
+  .rank_num_3 .contain-img-rank {
+    padding-top: 53%;
+  }
+  .rank_num_3 .contain-img-rank .img-rank {
+    border: 5px solid #ff9900f1;
+  }
+  .contain-detail-rank {
+    margin-top: 0.5rem;
+  }
+  .contain-detail-rank p {
+    margin-bottom: 0;
+    color: #ffffff;
+  }
+  .contain-detail-rank .rank-text {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .my-medal {
+    width: 80px;
+  }
+  .table-my-rank thead tr th,
+  .table-my-rank tbody tr td {
+    text-align: center;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .bg-register {
     padding-top: 15vmin;
