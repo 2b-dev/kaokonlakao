@@ -57,14 +57,19 @@ html {
   min-height: 85vmin;
   padding-bottom: 5vmin;
 }
-
+.table-my-rank {
+  border: 1px solid #c13800;
+  background-color: #c13800;
+}
 .md-form label {
   -webkit-transform: translateY(-140%) !important;
   -ms-transform: translateY(-140%) !important;
   transform: translateY(-140%) !important;
   font-size: 0.8rem !important;
 }
-
+.theme-explorer-fas .explorer-caption {
+  word-break: break-all;
+}
 .text-2line {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -72,6 +77,12 @@ html {
   overflow: hidden;
 }
 
+.input-group-text.input-time-visual {
+  background-color: #b43d3e;
+  color: #ffffff;
+  min-width: 100px;
+  text-align: center;
+}
 .text-3line {
   font-size: 0.9rem;
   line-height: 1.4rem;
@@ -88,6 +99,9 @@ html {
   width: auto;
   height: 80vh;
 }
+.my-medal {
+  width: 50px;
+}
 @media (max-width: 575px) {
 }
 
@@ -103,6 +117,15 @@ html {
   }
 }
 @media (min-width: 768px) {
+  .table-my-rank thead tr th,
+  .table-my-rank tbody tr td {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .bg-register {
+    padding-top: 15vmin;
+  }
   .rank_num {
     height: 300px;
     text-align: center;
@@ -162,16 +185,7 @@ html {
     font-size: 18px;
   }
   .my-medal {
-    width: 80px;
-  }
-  .table-my-rank thead tr th,
-  .table-my-rank tbody tr td {
-    text-align: center;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .bg-register {
-    padding-top: 15vmin;
+    width: 50px;
   }
 }
 
@@ -186,7 +200,69 @@ html {
 
 @media (min-width: 992px) and (max-width: 1199px) {
 }
-
+@media (min-width: 992px) {
+  .rank_num {
+    height: 300px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom center;
+  }
+  .rank_num_1 {
+    background-image: url("../images/stadi1.png");
+  }
+  .rank_num_2 {
+    background-image: url("../images/stadi2.png");
+  }
+  .rank_num_3 {
+    background-image: url("../images/stadi3.png");
+  }
+  .contain-img-rank {
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+  .contain-img-rank .img-rank {
+    width: 80%;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .contain-img-rank .img-medal {
+    position: absolute;
+    width: 40%;
+    left: 0;
+    bottom: 0;
+  }
+  .rank_num_1 .contain-img-rank .img-rank {
+    border: 5px solid #fbc815;
+  }
+  .rank_num_2 .contain-img-rank {
+    padding-top: 35%;
+  }
+  .rank_num_2 .contain-img-rank .img-rank {
+    border: 5px solid #afafaf;
+  }
+  .rank_num_3 .contain-img-rank {
+    padding-top: 53%;
+  }
+  .rank_num_3 .contain-img-rank .img-rank {
+    border: 5px solid #ff9900f1;
+  }
+  .contain-detail-rank {
+    margin-top: 0.5rem;
+  }
+  .contain-detail-rank p {
+    margin-bottom: 0;
+    color: #ffffff;
+  }
+  .contain-detail-rank .rank-text {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .my-medal {
+    width: 50px;
+  }
+}
 @media (max-width: 1199px) {
 }
 

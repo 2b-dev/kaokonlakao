@@ -137,9 +137,11 @@
       <section class="bg-virsualrun">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-12 col-md-8 col-lg-6">
+            <div class="col-12 col-md-9 col-lg-6">
               <div class="row">
-                <div class="col-12 col-md-4 order-md-2 rank_num rank_num_1">
+                <div
+                  class="col-12 col-md-4 order-md-2 rank_num rank_num_1 d-none d-md-block"
+                >
                   <div class="contain-img-rank">
                     <img
                       src="./images/profile.jpg"
@@ -153,7 +155,9 @@
                     <p class="rank-distance">500 km.</p>
                   </div>
                 </div>
-                <div class="col-12 col-md-4 order-md-1 rank_num rank_num_2">
+                <div
+                  class="col-12 col-md-4 order-md-1 rank_num rank_num_2 d-none d-md-block"
+                >
                   <div class="contain-img-rank">
                     <img
                       src="./images/profile.jpg"
@@ -167,7 +171,9 @@
                     <p class="rank-distance">499 km.</p>
                   </div>
                 </div>
-                <div class="col-12 col-md-4 order-md-3 rank_num rank_num_3">
+                <div
+                  class="col-12 col-md-4 order-md-3 rank_num rank_num_3 d-none d-md-block"
+                >
                   <div class="contain-img-rank">
                     <img
                       src="./images/profile.jpg"
@@ -183,12 +189,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-9 col-lg-7">
+            <div class="col-12 col-md-10 col-lg-7">
               <div class="row">
                 <div class="col-12">
                   <div class="myrank">
                     <div class="table-responsive">
-                      <table class="table table-borderless table-my-rank">
+                      <table class="table table-bordered table-my-rank">
                         <thead>
                           <tr>
                             <th>ยศของคุณ</th>
@@ -201,8 +207,12 @@
                         <tbody>
                           <tr>
                             <td>
-                              <img src="./images/medal.png" class="my-medal">
+                              <img src="./images/medal.png" class="my-medal" />
                             </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                           </tr>
                         </tbody>
                       </table>
@@ -248,26 +258,24 @@
                             <tr>
                               <th scope="col" class="text-center">#</th>
                               <th scope="col" class="text-center">
-                                เลขที่ใบสมัคร
+                                รหัสบันทึก
                               </th>
-                              <th scope="col" class="text-center">วัน เวลา</th>
                               <th scope="col" class="text-center">
-                                ของที่สั่ง
+                                วัน เวลาที่บันทึก
                               </th>
-                              <th scope="col" class="text-center">จำนวนเงิน</th>
+                              <th scope="col" class="text-center">ระยะทาง</th>
                               <th scope="col" class="text-center">
-                                ดูรายละเอียด
+                                ระยะเวลาที่วิ่ง
                               </th>
-                              <th scope="col" class="text-center">ใบเสร็จ</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
                               <td scope="row" class="text-center">1</td>
-                              <td class="text-center">INV-0-00000001</td>
+                              <td class="text-center">RUN-0-00000001</td>
                               <td class="text-center">2019-02-25 15:27:11</td>
-                              <td class="text-center">เสื้อ,ปี๊บ</td>
-                              <td class="text-center">500.00</td>
+                              <td class="text-center">600 เมตร</td>
+                              <td class="text-center">10 นาที</td>
                               <td class="text-center">
                                 <a
                                   class="btn-pdf"
@@ -276,11 +284,6 @@
                                 >
                                   <i class="far fa-eye"></i>
                                 </a>
-                              </td>
-                              <td class="text-center">
-                                <a class="btn-pdf"
-                                  ><i class="fas fa-file-alt"></i
-                                ></a>
                               </td>
                             </tr>
                           </tbody>
@@ -307,6 +310,11 @@
                           </li>
                         </ul>
                       </nav>
+                    </div>
+                    <div class="col-12 text-center mb-3">
+                      <a href="add_visual_run.html" class="btn btn-login"
+                        >เพิ่มการวิ่ง</a
+                      >
                     </div>
                   </div>
                 </div>
