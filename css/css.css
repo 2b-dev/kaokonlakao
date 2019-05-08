@@ -76,7 +76,14 @@ html {
   height: 3.5rem;
   overflow: hidden;
 }
-
+.bottom {
+  margin-top: 10px;
+}
+.dataTables_wrapper .dataTables_paginate {
+  display: flex;
+  justify-content: center;
+  float: none;
+}
 .input-group-text.input-time-visual {
   background-color: #b43d3e;
   color: #ffffff;

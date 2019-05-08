@@ -28,8 +28,12 @@
   box-shadow: none;
 }
 
-.pagination .page-item.active .page-link {
-  background-color: #b43d3e;
+.pagination .page-item.active .page-link,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  background: none;
+  color: #ffffff !important;
+  background-color: #b43d3e !important;
 }
 
 .pagination .page-item.active:hover .page-link,
