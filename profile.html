@@ -1,496 +1,746 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>มูลนิธิก้าวคนละก้าว</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/themes/default.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/themes/default.date.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.2/css/fileinput.min.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.2/themes/explorer-fas/theme.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/color.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="stylesheet" href="./css/checkbox.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/card.css" />
+    <link rel="stylesheet" href="./css/css.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>มูลนิธิก้าวคนละก้าว</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/themes/default.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/themes/default.date.css">
-  <link rel="stylesheet" href="./css/font.css" />
-  <link rel="stylesheet" href="./css/color.css" />
-  <link rel="stylesheet" href="./css/nav.css" />
-  <link rel="stylesheet" href="./css/button.css" />
-  <link rel="stylesheet" href="./css/checkbox.css" />
-  <link rel="stylesheet" href="./css/input.css" />
-  <link rel="stylesheet" href="./css/card.css" />
-  <link rel="stylesheet" href="./css/css.css" />
-</head>
-
-<body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
-      <!-- Brand -->
-      <!--<a class="navbar-brand" href="#">
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+      <div class="container">
+        <!-- Brand -->
+        <!--<a class="navbar-brand" href="#">
         <img src="./images/main_logo.png" alt="มูลนิธิก้าวคนละก้าว">
       </a>-->
 
-      <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Collapse -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Left -->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">หน้าหลัก</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">เกี่ยวกับมูลนิธิ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="project_donate.html">โครงการบริจาค</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="project_run.html">โครงการวิ่ง</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="news.html">ข่าวสาร</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="donate.html">ร่วมบริจาค</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-login" data-toggle="modal" data-target="#modalLogin">เข้าสู่ระบบ</a>
-          </li>
-          <li class="nav-item active dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              <i class="fas fa-user"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-              <a class="dropdown-item" href="profile.html">ข้อมูลส่วนตัว</a>
-              <a class="dropdown-item" href="change_password.html">เปลี่ยนรหัสผ่าน</a>
-              <a class="dropdown-item" href="history_donate.html">ประวัติการบริจาค</a>
-              <a class="dropdown-item" href="history_run.html">ประวัติการสมัครวิ่ง</a>
-              <a class="dropdown-item" href="#">ออกจากระบบ</a>
-            </div>
-          </li>
-        </ul>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">หน้าหลัก</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">เกี่ยวกับมูลนิธิ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project_donate.html">โครงการบริจาค</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project_run.html">โครงการวิ่ง</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">ข่าวสาร</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donate.html">ร่วมบริจาค</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-login"
+                data-toggle="modal"
+                data-target="#modalLogin"
+                >เข้าสู่ระบบ</a
+              >
+            </li>
+            <li class="nav-item active dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink-333"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fas fa-user"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right dropdown-default"
+                aria-labelledby="navbarDropdownMenuLink-333"
+              >
+                <a class="dropdown-item" href="profile.html">ข้อมูลส่วนตัว</a>
+                <a class="dropdown-item" href="change_password.html"
+                  >เปลี่ยนรหัสผ่าน</a
+                >
+                <a class="dropdown-item" href="history_donate.html"
+                  >ประวัติการบริจาค</a
+                >
+                <a class="dropdown-item" href="history_run.html"
+                  >ประวัติการสมัครวิ่ง</a
+                >
+                <a class="dropdown-item" href="#">ออกจากระบบ</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <main>
-    <section class="bg-register">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 mt-5 mb-3">
-            <ul class="nav nav-profile nav-tabs nav-justified" id="myTab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                  aria-selected="true">ข้อมูลส่วนตัว</a>
+    </nav>
+    <main>
+      <section class="bg-virsualrun">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 mt-5 mb-3">
+              <ul
+                class="nav nav-profile nav-tabs nav-justified"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="profile-tab"
+                    data-toggle="tab"
+                    href="#profile"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="true"
+                    >ข้อมูลส่วนตัว</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="changepass-tab"
+                    href="change_password.html"
+                    aria-controls="changepass"
+                    aria-selected="false"
+                    >เปลี่ยนรหัสผ่าน</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content bg-ffffff py-3 px-4" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <input id="input-id" type="file" class="file" />
+                    </div>
+                    <div class="col-12">
+                      <div class="md-form mb-0">
+                        <input
+                          type="email"
+                          id="emailip"
+                          class="form-control"
+                          value="anc.chaimongkon@gmail.com"
+                          disabled
+                        />
+                        <label for="emailip">อีเมล</label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="md-form mb-0">
+                        <input
+                          type="text"
+                          id="fname"
+                          class="form-control"
+                          value="อนุชา"
+                          disabled
+                        />
+                        <label for="fname">ชื่อ</label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="md-form mb-0">
+                        <input
+                          type="text"
+                          id="lname"
+                          class="form-control"
+                          value="ชัยมงคล"
+                          disabled
+                        />
+                        <label for="lname">นามสกุล</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="md-form mb-0">
+                        <input
+                          type="text"
+                          id="pname"
+                          class="form-control"
+                          value="Nu Chaimongkon"
+                          disabled
+                        />
+                        <label for="pname">ชื่อโปรไฟล์</label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="md-form mb-0">
+                        <select
+                          class="browser-default custom-select select-register"
+                          disabled
+                        >
+                          <option disabled>เพศ</option>
+                          <option selected value="1">ชาย</option>
+                          <option value="2">หญิง</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="md-form mb-0">
+                        <input
+                          type="text"
+                          id="birthdate"
+                          class="form-control datepicker"
+                          disabled
+                        />
+                        <label for="birthdate">วันเกิด</label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="md-form mb-0">
+                        <input
+                          type="text"
+                          id="phonenum"
+                          class="form-control"
+                          value="0946688902"
+                          disabled
+                        />
+                        <label for="phonenum">เบอร์ติดต่อ(มือถือ)</label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="md-form mb-0">
+                        <input
+                          type="text"
+                          id="iden"
+                          class="form-control"
+                          value="xxxxxxxxxxxxx"
+                          disabled
+                        />
+                        <label for="iden">เลขบัตรประชาชน</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="md-form">
+                        <textarea
+                          id="address"
+                          class="md-textarea form-control"
+                          rows="2"
+                          disabled
+                        >
+                        xxxx/xxxx หมู่ xx 
+                      </textarea
+                        >
+                        <label for="address">ที่อยู่</label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="md-form mb-0">
+                        <select
+                          class="browser-default custom-select select-register"
+                          disabled
+                        >
+                          <option selected disabled>จังหวัด</option>
+                          <option value="1">กรุงเทพฯ</option>
+                          <option value="2">ปทุมธานี</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="md-form mb-0">
+                        <select
+                          class="browser-default custom-select select-register"
+                          disabled
+                        >
+                          <option selected disabled>อำเภอ/เขต</option>
+                          <option value="1">xxxxx</option>
+                          <option value="2">xxxxxx</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="md-form mb-0">
+                        <select
+                          class="browser-default custom-select select-register"
+                          disabled
+                        >
+                          <option selected disabled>ตำบล/แขวง</option>
+                          <option value="1">xxxxx</option>
+                          <option value="2">xxxxxx</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="md-form mb-0">
+                        <input
+                          type="password"
+                          id="idenpro"
+                          class="form-control"
+                          disabled
+                        />
+                        <label for="idenpro">รหัสไปรษณีย์</label>
+                      </div>
+                    </div>
+                    <div class="col-12 text-center my-3">
+                      <button id="btnedit" class="btn btn-detail-donate">
+                        แก้ไขข้อมูลส่วนตัว
+                      </button>
+                      <button id="btnsave" class="btn btn-detail-donate">
+                        บันทึก
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <img src="./images/main_logo.png" class="footer-logo" />
+            <h5 class="mt-2">มูลนิธิก้าวคนละก้าว</h5>
+            <p>
+              รายละเอียดข้อมูลมูลนิธิแบบสั้นๆ
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">ติดต่อเรา</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">ที่อยู่ : xxxxxxxxxxxx x x x x xxxxx xxx x </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" id="changepass-tab" href="change_password.html" aria-controls="changepass"
-                  aria-selected="false">เปลี่ยนรหัสผ่าน</a>
+              <li>
+                <a href="#!">โทรศัพท์ : xxx-xxx-xxxx</a>
+              </li>
+              <li>
+                <a href="#!">โทรสาร : xxx-xxx-xxxx</a>
+              </li>
+              <li>
+                <a href="#!">อีเมล : xxxx@xxxx.com</a>
               </li>
             </ul>
-            <div class="tab-content py-3" id="myTabContent">
-              <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="md-form mb-0">
-                      <input type="email" id="emailip" class="form-control" value="anc.chaimongkon@gmail.com" disabled>
-                      <label for="emailip">อีเมล</label>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Social network</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Facebook : มูลนิธิก้าวคนละก้าว</a>
+              </li>
+              <li>
+                <a href="#!">Youtube : มูลนิธิก้าวคนละก้าว</a>
+              </li>
+              <li>
+                <a href="#!">Twitter : มูลนิธิก้าวคนละก้าว</a>
+              </li>
+              <li>
+                <a href="#!">Instagram : มูลนิธิก้าวคนละก้าว</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2019 Copyright:
+        <a href="#!"> มูลนิธิก้าวคนละก้าว</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLoginLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div
+            class="modal-header bg-060e21 white-text text-center py-4 justify-content-center"
+          >
+            <h5 class="mb-0 text-center">เข้าสู่ระบบ</h5>
+          </div>
+          <div class="modal-body">
+            <div class="card-body px-lg-5 pt-0">
+              <div class="text-center" style="color: #757575;">
+                <div class="md-form">
+                  <input
+                    type="email"
+                    id="materialLoginFormEmail"
+                    class="form-control"
+                  />
+                  <label for="materialLoginFormEmail">อีเมล</label>
+                </div>
+
+                <div class="md-form">
+                  <input
+                    type="password"
+                    id="materialLoginFormPassword"
+                    class="form-control"
+                  />
+                  <label for="materialLoginFormPassword">รหัสผ่าน</label>
+                </div>
+
+                <div class="d-flex justify-content-around">
+                  <div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="materialLoginFormRemember"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="materialLoginFormRemember"
+                        >จดจำฉัน</label
+                      >
                     </div>
                   </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="fname" class="form-control" value="อนุชา" disabled>
-                      <label for="fname">ชื่อ</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="lname" class="form-control" value="ชัยมงคล" disabled>
-                      <label for="lname">นามสกุล</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="md-form mb-0">
-                      <input type="text" id="pname" class="form-control" value="Nu Chaimongkon" disabled>
-                      <label for="pname">ชื่อโปรไฟล์</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <select class="browser-default custom-select select-register" disabled>
-                        <option disabled>เพศ</option>
-                        <option selected value="1">ชาย</option>
-                        <option value="2">หญิง</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="birthdate" class="form-control datepicker" disabled>
-                      <label for="birthdate">วันเกิด</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="phonenum" class="form-control" value="0946688902" disabled>
-                      <label for="phonenum">เบอร์ติดต่อ(มือถือ)</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="iden" class="form-control" value="xxxxxxxxxxxxx" disabled>
-                      <label for="iden">เลขบัตรประชาชน</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="md-form">
-                      <textarea id="address" class="md-textarea form-control" rows="2" disabled>
-                        xxxx/xxxx หมู่ xx 
-                      </textarea>
-                      <label for="address">ที่อยู่</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <select class="browser-default custom-select select-register" disabled>
-                        <option selected disabled>จังหวัด</option>
-                        <option value="1">กรุงเทพฯ</option>
-                        <option value="2">ปทุมธานี</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <select class="browser-default custom-select select-register" disabled>
-                        <option selected disabled>อำเภอ/เขต</option>
-                        <option value="1">xxxxx</option>
-                        <option value="2">xxxxxx</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <select class="browser-default custom-select select-register" disabled>
-                        <option selected disabled>ตำบล/แขวง</option>
-                        <option value="1">xxxxx</option>
-                        <option value="2">xxxxxx</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="password" id="idenpro" class="form-control" disabled>
-                      <label for="idenpro">รหัสไปรษณีย์</label>
-                    </div>
-                  </div>
-                  <div class="col-12 text-center my-3">
-                    <button id="btnedit" class="btn btn-detail-donate">แก้ไขข้อมูลส่วนตัว</button>
-                    <button id="btnsave" class="btn btn-detail-donate">บันทึก</button>
+                  <div>
+                    <a href="#!">ลืมรหัสผ่าน</a>
                   </div>
                 </div>
+
+                <button
+                  class="btn btn-login-modal btn-rounded btn-block my-4 waves-effect z-depth-0"
+                >
+                  เข้าสู่ระบบ
+                </button>
+
+                <p>
+                  หากยังไม่ได้เป็นสมาชิก ?
+                  <a href="register.html">สมัครสมาชิกคลิก</a>
+                </p>
+
+                <p>หรือเข้าสู่ระบบด้วย</p>
+                <a type="button" class="btn-floating btn-fb btn-sm">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a type="button" class="btn-floating btn-gplus btn-sm">
+                  <i class="fab fa-google"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
-  <!-- Footer -->
-  <footer class="page-footer font-small pt-4">
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
-      <!-- Grid row -->
-      <div class="row">
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-          <!-- Content -->
-          <img src="./images/main_logo.png" class="footer-logo" />
-          <h5 class="mt-2">มูลนิธิก้าวคนละก้าว</h5>
-          <p>
-            รายละเอียดข้อมูลมูลนิธิแบบสั้นๆ
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none pb-3" />
-
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-          <!-- Links -->
-          <h5 class="text-uppercase">ติดต่อเรา</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">ที่อยู่ : xxxxxxxxxxxx x x x x xxxxx xxx x </a>
-            </li>
-            <li>
-              <a href="#!">โทรศัพท์ : xxx-xxx-xxxx</a>
-            </li>
-            <li>
-              <a href="#!">โทรสาร : xxx-xxx-xxxx</a>
-            </li>
-            <li>
-              <a href="#!">อีเมล : xxxx@xxxx.com</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-          <!-- Links -->
-          <h5 class="text-uppercase">Social network</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Facebook : มูลนิธิก้าวคนละก้าว</a>
-            </li>
-            <li>
-              <a href="#!">Youtube : มูลนิธิก้าวคนละก้าว</a>
-            </li>
-            <li>
-              <a href="#!">Twitter : มูลนิธิก้าวคนละก้าว</a>
-            </li>
-            <li>
-              <a href="#!">Instagram : มูลนิธิก้าวคนละก้าว</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Grid column -->
-      </div>
-      <!-- Grid row -->
     </div>
-    <!-- Footer Links -->
+  </body>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/sweetalert2@8"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"
+  ></script>
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">
-      © 2019 Copyright:
-      <a href="#!"> มูลนิธิก้าวคนละก้าว</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header bg-060e21 white-text text-center py-4 justify-content-center">
-          <h5 class="mb-0 text-center">เข้าสู่ระบบ</h5>
-        </div>
-        <div class="modal-body">
-          <div class="card-body px-lg-5 pt-0">
-            <div class="text-center" style="color: #757575;">
-              <div class="md-form">
-                <input type="email" id="materialLoginFormEmail" class="form-control" />
-                <label for="materialLoginFormEmail">อีเมล</label>
-              </div>
-
-              <div class="md-form">
-                <input type="password" id="materialLoginFormPassword" class="form-control" />
-                <label for="materialLoginFormPassword">รหัสผ่าน</label>
-              </div>
-
-              <div class="d-flex justify-content-around">
-                <div>
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="materialLoginFormRemember" />
-                    <label class="form-check-label" for="materialLoginFormRemember">จดจำฉัน</label>
-                  </div>
-                </div>
-                <div>
-                  <a href="#!">ลืมรหัสผ่าน</a>
-                </div>
-              </div>
-
-              <button class="btn btn-login-modal btn-rounded btn-block my-4 waves-effect z-depth-0">
-                เข้าสู่ระบบ
-              </button>
-
-              <p>
-                หากยังไม่ได้เป็นสมาชิก ?
-                <a href="register.html">สมัครสมาชิกคลิก</a>
-              </p>
-
-              <p>หรือเข้าสู่ระบบด้วย</p>
-              <a type="button" class="btn-floating btn-fb btn-sm">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a type="button" class="btn-floating btn-gplus btn-sm">
-                <i class="fab fa-google"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/compressed/picker.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/compressed/picker.date.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/legacy.js"></script>
-<script>
-  new WOW().init();
-  $("#btnsave").hide();
-  $("#btnedit").click(function () {
-    Swal.fire({
-      title: 'คุณแน่ใจหรือไม่?',
-      text: "ที่ต้องการแก้ไขข้อมูลส่วนตัว",
-      type: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#b43d3e',
-      cancelButtonColor: '#060e21',
-      confirmButtonText: 'ใช่ ต้องการแก้ไข',
-      cancelButtonText: 'ยกเลิก'
-    }).then((result) => {
-      if (result.value) {
-        $("input").removeAttr('disabled');
-        $("select").removeAttr('disabled');
-        $("textarea").removeAttr('disabled');
-        $("#btnedit").hide();
-        $("#btnsave").show();
-      }
-    })
-  });
-  $("#btnsave").click(function () {
-    Swal.fire({
-      title: 'คุณแน่ใจหรือไม่?',
-      text: "ที่ต้องการบันทึกการแก้ไขข้อมูลส่วนตัว",
-      type: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#b43d3e',
-      cancelButtonColor: '#060e21',
-      confirmButtonText: 'ใช่ ต้องการบันทึก',
-      cancelButtonText: 'ยกเลิก'
-    }).then((result) => {
-      /*ตรงนี้ ก็รับค่าโพสมานะ แล้วก็เอา repon กลับมา*/
-
-      /*สำเร็จ*/
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/compressed/picker.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/compressed/picker.date.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/legacy.js"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.2/js/plugins/piexif.min.js"
+    type="text/javascript"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.2/js/plugins/sortable.min.js"
+    type="text/javascript"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.2/js/plugins/purify.min.js"
+    type="text/javascript"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.2/js/fileinput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.2/js/locales/th.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.2/themes/explorer-fas/theme.min.js"></script>
+  <script>
+    new WOW().init();
+    $("#btnsave").hide();
+    $("#btnedit").click(function() {
       Swal.fire({
-        title: 'สำเร็จ',
-        text: "การแก้ไขถูกบันทึกแล้ว",
-        type: 'success',
-        showCancelButton: false,
-        confirmButtonColor: '#b43d3e',
-        confirmButtonText: 'ปิด',
-      }).then((result) => {
+        title: "คุณแน่ใจหรือไม่?",
+        text: "ที่ต้องการแก้ไขข้อมูลส่วนตัว",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#b43d3e",
+        cancelButtonColor: "#060e21",
+        confirmButtonText: "ใช่ ต้องการแก้ไข",
+        cancelButtonText: "ยกเลิก"
+      }).then(result => {
         if (result.value) {
-          $("input").prop('disabled', true);
-          $("select").prop('disabled', true);
-          $("textarea").prop('disabled', true);
-          $("#btnsave").hide();
-          $("#btnedit").show();
+          $("input").removeAttr("disabled");
+          $("select").removeAttr("disabled");
+          $("textarea").removeAttr("disabled");
+          $("#btnedit").hide();
+          $("#btnsave").show();
         }
-      })
-      /*ไม่สำเร็จ*/
-      /*Swal.fire(
+      });
+    });
+    $("#btnsave").click(function() {
+      Swal.fire({
+        title: "คุณแน่ใจหรือไม่?",
+        text: "ที่ต้องการบันทึกการแก้ไขข้อมูลส่วนตัว",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#b43d3e",
+        cancelButtonColor: "#060e21",
+        confirmButtonText: "ใช่ ต้องการบันทึก",
+        cancelButtonText: "ยกเลิก"
+      }).then(result => {
+        /*ตรงนี้ ก็รับค่าโพสมานะ แล้วก็เอา repon กลับมา*/
+
+        /*สำเร็จ*/
+        Swal.fire({
+          title: "สำเร็จ",
+          text: "การแก้ไขถูกบันทึกแล้ว",
+          type: "success",
+          showCancelButton: false,
+          confirmButtonColor: "#b43d3e",
+          confirmButtonText: "ปิด"
+        }).then(result => {
+          if (result.value) {
+            $("input").prop("disabled", true);
+            $("select").prop("disabled", true);
+            $("textarea").prop("disabled", true);
+            $("#btnsave").hide();
+            $("#btnedit").show();
+          }
+        });
+        /*ไม่สำเร็จ*/
+        /*Swal.fire(
         'ผิดพลาด',
         'มีบางอย่างผิดพลาด กรุณาลองใหม่อีกครับ',
         'error'
       )*/
-    })
-
-  })
-</script>
-<script>
-  $("#birthdate").pickadate({
-    today: "",
-    close: "",
-    clear: "",
-    selectYears: true,
-    selectMonths: true,
-    monthPrev: "&larr;",
-    monthNext: "&rarr;",
-    formatSubmit: "dd/mm/yyyy",
-    monthsFull: [
-      "มกราคม",
-      "กุมภาพันธ์",
-      "มีนาคม",
-      "เมษายน",
-      "พฤษภาคม",
-      "มิถุนายน",
-      "กรกฎาคม",
-      "สิงหาคม",
-      "กันยายน",
-      "ตุลาคม",
-      "พฤศจิกายน",
-      "ธันวาคม"
-    ],
-    monthsShort: [
-      "ม.ค.",
-      "ก.พ.",
-      "มี.ค.",
-      "เม.ย.",
-      "พ.ค.",
-      "มิ.ย.",
-      "ก.ค.",
-      "ส.ค.",
-      "ก.ย.",
-      "ต.ค.",
-      "พ.ย.",
-      "ธ.ค."
-    ],
-    weekdaysShort: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"],
-    weekdaysFull: [
-      "อาทิตย์",
-      "จันทร์",
-      "อังคาร",
-      "พุธ",
-      "พฤหัส",
-      "ศุกร์",
-      "เสาร์"
-    ],
-    klass: {
-      selectMonth: 'picker__select--month browser-default',
-      selectYear: 'picker__select--year browser-default'
-    },
-    onOpen: function () {
-      $(".picker__header select:first-child option").each(function () {
-        var yearBE = parseInt($(this).val()) + 543;
-        $(this).html(yearBE);
       });
-    },
-    onSet: function (data) {
-      $(".picker__header select:first-child option").each(function () {
-        //var yearBE = parseInt($(this).val()) + 543;
-        var yearBE = parseInt($(this).val()) + 543;
-        $(this).html(yearBE);
-
-      });
-    },
-    onClose: function () {
-      var ddd = $('#birthdate').val();
-      /* var newYear = ddd[6] + ddd[7] + ddd[8] + ddd[9];
+    });
+    $("#input-id").fileinput({
+      showUpload: false,
+      previewFileType: "image",
+      language: "th",
+      theme: "explorer-fas",
+      browseClass: "btn btn-file my-0",
+      zoomClass: "btn btn-outline-kao",
+      previewZoomButtonClasses: {
+        prev: "btn btn-navigate",
+        next: "btn btn-navigate",
+        toggleheader: "btn btn-outline-kao",
+        fullscreen: "btn btn-outline-kao",
+        borderless: "btn btn-outline-kao",
+        close: "btn btn-outline-kao"
+      },
+      removeClass: "btn btn-outline-kao my-0",
+      maxFileSize: "5120",
+      msgSizeTooLarge: "รูปของคุณมีขนาดใหญ่กว่า 5 MB",
+      dropZoneTitle: "โยนรูปของคุณลงที่นี้",
+      allowedFileTypes: ["image"],
+      allowedFileExtensions: ["jpg", "png", "jpeg"],
+      msgInvalidFileType: "กรุณาอัพโหลดไฟล์รูปภาพเท่านั้น"
+    });
+  </script>
+  <script>
+    $("#birthdate").pickadate({
+      today: "",
+      close: "",
+      clear: "",
+      selectYears: true,
+      selectMonths: true,
+      monthPrev: "&larr;",
+      monthNext: "&rarr;",
+      formatSubmit: "dd/mm/yyyy",
+      monthsFull: [
+        "มกราคม",
+        "กุมภาพันธ์",
+        "มีนาคม",
+        "เมษายน",
+        "พฤษภาคม",
+        "มิถุนายน",
+        "กรกฎาคม",
+        "สิงหาคม",
+        "กันยายน",
+        "ตุลาคม",
+        "พฤศจิกายน",
+        "ธันวาคม"
+      ],
+      monthsShort: [
+        "ม.ค.",
+        "ก.พ.",
+        "มี.ค.",
+        "เม.ย.",
+        "พ.ค.",
+        "มิ.ย.",
+        "ก.ค.",
+        "ส.ค.",
+        "ก.ย.",
+        "ต.ค.",
+        "พ.ย.",
+        "ธ.ค."
+      ],
+      weekdaysShort: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"],
+      weekdaysFull: [
+        "อาทิตย์",
+        "จันทร์",
+        "อังคาร",
+        "พุธ",
+        "พฤหัส",
+        "ศุกร์",
+        "เสาร์"
+      ],
+      klass: {
+        selectMonth: "picker__select--month browser-default",
+        selectYear: "picker__select--year browser-default"
+      },
+      onOpen: function() {
+        $(".picker__header select:first-child option").each(function() {
+          var yearBE = parseInt($(this).val()) + 543;
+          $(this).html(yearBE);
+        });
+      },
+      onSet: function(data) {
+        $(".picker__header select:first-child option").each(function() {
+          //var yearBE = parseInt($(this).val()) + 543;
+          var yearBE = parseInt($(this).val()) + 543;
+          $(this).html(yearBE);
+        });
+      },
+      onClose: function() {
+        var ddd = $("#birthdate").val();
+        /* var newYear = ddd[6] + ddd[7] + ddd[8] + ddd[9];
       newYear = parseInt(newYear) + 543;
       $('input[name="_submit"]').val(newYear);*/
-      var aaa = "";
-      aaa = ddd[ddd.length - 4] + ddd[ddd.length - 3] + ddd[ddd.length - 2] + ddd[ddd.length - 1];
-      var str = ddd;
-      var res = str.replace(aaa, "");
-      var bbb = parseInt(aaa) + 543;
-      var correct = res + bbb;
-      $('#birthdate').val(correct);
-    }
-  });
-  var date = new Date(1993, 2, 20);
-  var picker = $('#birthdate').pickadate('picker');
-  picker.set('select', date);
-</script>
-
-
+        var aaa = "";
+        aaa =
+          ddd[ddd.length - 4] +
+          ddd[ddd.length - 3] +
+          ddd[ddd.length - 2] +
+          ddd[ddd.length - 1];
+        var str = ddd;
+        var res = str.replace(aaa, "");
+        var bbb = parseInt(aaa) + 543;
+        var correct = res + bbb;
+        $("#birthdate").val(correct);
+      }
+    });
+    var date = new Date(1993, 2, 20);
+    var picker = $("#birthdate").pickadate("picker");
+    picker.set("select", date);
+  </script>
 </html>
