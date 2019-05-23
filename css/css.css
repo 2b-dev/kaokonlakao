@@ -373,21 +373,23 @@ form.credit #number {
 }
 .box-rank .box-rank-1 {
   position: absolute;
-  top: 80px;
-  left: 202px;
+  top: 78px;
+  left: 190px;
   cursor: pointer;
   z-index: 50;
+  width: 238px;
+  text-align: center;
 }
 .box-rank .box-rank-1 .box-rank-1-data {
   text-align: center;
 }
 .box-rank .box-rank-1 .box-rank-1-data .img-rank-1 {
-  top: 17px;
-  left: 65px;
-  width: 80px;
+  top: 22px;
+  left: 76px;
+  width: 85px;
 }
 .box-rank .box-rank-1 .box-rank-1-data .img-cup-1 {
-  width: 210px;
+  width: 238px;
 }
 .score.score-rank-1 {
   margin-top: 6vh;
@@ -395,20 +397,22 @@ form.credit #number {
 
 .box-rank .box-rank-2 {
   position: absolute;
-  top: 130px;
-  left: 120px;
+  top: 125px;
+  left: 15px;
   cursor: pointer;
+  width: 230px;
+  text-align: center;
 }
 .box-rank .box-rank-2 .box-rank-2-data {
   text-align: center;
 }
 .box-rank .box-rank-2 .box-rank-2-data .img-rank-2 {
   top: 6px;
-  left: 6px;
-  width: 80px;
+  left: 70px;
+  width: 90px;
 }
 .box-rank .box-rank-2 .box-rank-2-data .img-cup-2 {
-  width: 110px;
+  width: 142px;
 }
 .score.score-rank-2 {
   margin-top: 3vh;
@@ -416,8 +420,8 @@ form.credit #number {
 
 .box-rank .box-rank-3 {
   position: absolute;
-  top: 152px;
-  right: 95px;
+  top: 138px;
+  right: 54px;
   cursor: pointer;
 }
 .box-rank .box-rank-3 .box-rank-3-data {
@@ -425,14 +429,48 @@ form.credit #number {
 }
 .box-rank .box-rank-3 .box-rank-3-data .img-rank-3 {
   top: 6px;
-  left: 6px;
-  width: 80px;
+  left: 21px;
+  width: 90px;
 }
 .box-rank .box-rank-3 .box-rank-3-data .img-cup-3 {
-  width: 110px;
+  width: 137px;
 }
 .score.score-rank-3 {
   margin-top: 0.8vh;
+}
+.table-rank-responsive {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.table-rank {
+  width: 100%;
+}
+.table-rank-num {
+  width: 50px;
+}
+.table-rank thead tr th {
+  text-align: center;
+  font-size: 1rem;
+  color: #148ec1;
+  line-height: 1rem;
+  padding-bottom: 1rem;
+}
+.table-rank thead tr th span.sup-th {
+  font-size: 0.8rem;
+  color: #000000;
+  line-height: 0rem;
+}
+.table-rank-profile {
+  border-radius: 50%;
+  width: 50px;
+}
+.table-rank tbody tr td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cde5f0;
 }
 @media (max-width: 575px) {
 }
