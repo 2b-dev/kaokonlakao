@@ -13,7 +13,9 @@ html {
   float: left;
   margin-right: 15px;
 }
-
+.logo-nav {
+  height: 100px;
+}
 .bg-register {
   background-color: #fff;
   background-image: url("../images/banner_index3.png");
