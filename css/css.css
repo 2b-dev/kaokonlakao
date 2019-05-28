@@ -7,7 +7,23 @@ body,
 html {
   height: 100%;
 }
-
+.text-welcome-1 {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.text-welcome-2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.text-welcome-3 {
+  font-size: 41px;
+  margin-bottom: 0;
+  font-weight: 600;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
 .footer-logo {
   width: 100px;
   float: left;
