@@ -1,187 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>มูลนิธิก้าวคนละก้าว</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/themes/default.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/themes/default.date.css"
+    />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/color.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="stylesheet" href="./css/checkbox.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/card.css" />
+    <link rel="stylesheet" href="./css/css.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>มูลนิธิก้าวคนละก้าว</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/themes/default.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/themes/default.date.css">
-  <link rel="stylesheet" href="./css/font.css" />
-  <link rel="stylesheet" href="./css/color.css" />
-  <link rel="stylesheet" href="./css/nav.css" />
-  <link rel="stylesheet" href="./css/button.css" />
-  <link rel="stylesheet" href="./css/checkbox.css" />
-  <link rel="stylesheet" href="./css/input.css" />
-  <link rel="stylesheet" href="./css/card.css" />
-  <link rel="stylesheet" href="./css/css.css" />
-</head>
-
-<body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
-      <!-- Brand -->
-      <!--<a class="navbar-brand" href="#">
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+      <div class="container">
+        <!-- Brand -->
+        <!--<a class="navbar-brand" href="#">
         <img src="./images/main_logo.png" alt="มูลนิธิก้าวคนละก้าว">
       </a>-->
 
-      <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Collapse -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Left -->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">หน้าหลัก</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="about.html">เกี่ยวกับมูลนิธิ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="project_donate.html">โครงการบริจาค</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="project_run.html">โครงการวิ่ง</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="news.html">ข่าวสาร</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="donate.html">ร่วมบริจาค</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-login" data-toggle="modal" data-target="#modalLogin">เข้าสู่ระบบ</a>
-          </li>
-        </ul>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">หน้าหลัก</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">เกี่ยวกับมูลนิธิ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project_donate.html">โครงการบริจาค</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project_run.html">โครงการวิ่ง</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">ข่าวสาร</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donate.html">ร่วมบริจาค</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-login"
+                data-toggle="modal"
+                data-target="#modalLogin"
+                >เข้าสู่ระบบ</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <main>
-    <section class="bg-register">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-12 col-lg-12 mt-5 mb-3">
-            <div class="card wow fadeIn card-toon">
-              <div class="card-body px-md-5">
-                <div class="row">
-                  <div class="col-12 text-center">
-                    <img src="./images/main_logo.png" class="img-logo-about">
-                  </div>
-                  <div class="col-12">
-                    <p class="pabout">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean velit tellus,
-                      commodo et
-                      dignissim ac, consectetur non leo. Donec nec hendrerit arcu, id interdum odio. Nunc ut mi sed
-                      arcu cursus dapibus. Nulla egestas, felis in facilisis cursus, nisi nunc sollicitudin lacus, quis
-                      faucibus enim orci at ipsum. Aliquam erat volutpat. Vivamus ac lacinia neque. Etiam vel tincidunt
-                      enim, vel scelerisque metus. Curabitur laoreet purus vitae urna interdum, eu volutpat nisi
-                      posuere. Nunc vitae consectetur orci, sed iaculis felis. Proin ac arcu et ante posuere egestas
-                      nec vehicula nulla.
-                    </p>
-                    <p class="pabout">
-                      Proin in eros nulla. Vivamus hendrerit, neque id lobortis vestibulum, lacus velit pretium ligula,
-                      id congue erat nisi a lorem. Nam elementum nisi libero, vel dignissim felis egestas sed. Donec
-                      luctus ut dolor at mollis. Sed quis fringilla quam, id interdum magna. Maecenas rhoncus
-                      pellentesque orci at semper. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                      fames ac turpis egestas. Ut gravida ex a enim ultrices commodo. Donec ac porta ipsum. Maecenas
-                      vel sem purus. Nulla pellentesque, est eu gravida pharetra, nisl ex suscipit purus, quis
-                      imperdiet nunc est quis nulla. Maecenas iaculis, nisi in rhoncus placerat, orci augue dapibus
-                      mauris, nec vehicula neque sem vel arcu. Vivamus eget felis arcu.
-                    </p>
-                    <p class="pabout">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel facilisis ante, sed
-                      aliquet justo. In id metus gravida, fermentum nisi quis, pulvinar tortor. Phasellus eu porttitor
-                      magna. Pellentesque velit purus, maximus ac neque pulvinar, gravida consequat nisl. Suspendisse
-                      faucibus ultrices tempus. Suspendisse efficitur vitae eros quis rutrum. Ut nec eros a arcu
-                      iaculis aliquet quis non eros.
-                    </p>
-                    <p class="pabout">
-                      Ut eu dictum lectus. Sed vehicula metus ac dignissim gravida. Nam dui eros, consequat ac vehicula
-                      id, laoreet ac turpis. Praesent nunc mauris, congue quis lectus a, commodo egestas ipsum.
-                      Pellentesque non nulla nisl. Nulla tincidunt rhoncus est sed gravida. Sed erat turpis, bibendum
-                      vel sodales vitae, varius luctus neque.
-                    </p>
-                    <p class="pabout">
-                      Aenean eu posuere velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                      cubilia Curae; Etiam maximus, leo vel tristique pretium, purus metus pellentesque quam, eget
-                      scelerisque metus ex sed nulla. Morbi cursus pharetra vestibulum. Nunc ut diam vel dui volutpat
-                      varius a pellentesque enim. Integer sit amet lorem eget massa gravida molestie. Nulla dignissim
-                      tempus risus sit amet imperdiet. Nam luctus nulla risus, et aliquet dolor pulvinar ac. Interdum
-                      et malesuada fames ac ante ipsum primis in faucibus. Fusce fermentum eros ligula, eu vulputate
-                      purus molestie a. Proin a luctus nulla. Nulla varius ex et tortor volutpat consectetur. Praesent
-                      pulvinar placerat sollicitudin. Nam tincidunt lorem quis porta sodales. Ut fermentum nisl vitae
-                      nisl egestas convallis. Nullam ligula nisl, ornare sit amet odio ut, dignissim cursus nulla.
-                    </p>
-                    <p class="pabout">
-                      Suspendisse vel commodo turpis, eget posuere risus. Ut nisi orci, molestie eget quam ac, vehicula
-                      lobortis mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                      Curae; Quisque convallis scelerisque magna vel pretium. Proin risus justo, dignissim eget turpis
-                      vel, finibus dapibus lectus. Vestibulum scelerisque, lorem quis ullamcorper facilisis, augue
-                      tellus eleifend ante, at viverra est libero sed metus. Morbi id tincidunt tortor, a dictum
-                      tellus. Pellentesque tristique maximus scelerisque. Nullam a quam in dolor luctus elementum.
-                      Aliquam vehicula est risus, non tincidunt justo vulputate nec. Donec pellentesque nec purus eu
-                      dignissim. Sed odio ex, vestibulum sit amet turpis sed, tristique placerat eros. Phasellus congue
-                      viverra ligula eget molestie.
-                    </p>
-                    <p class="pabout">
-                      Aliquam erat volutpat. Pellentesque in vulputate tortor. Vivamus sodales tempus odio, a pulvinar
-                      eros ultrices id. Nam quam leo, tristique sed quam non, vestibulum elementum odio. Duis
-                      consectetur, risus at euismod vulputate, nisl felis scelerisque nisl, eget faucibus nisl erat non
-                      urna. Morbi ullamcorper id velit eget lobortis. Proin lobortis iaculis nisi sollicitudin aliquam.
-                      Ut hendrerit nunc lacus, eu accumsan ligula maximus eu. Fusce volutpat lacinia pulvinar. Donec
-                      tincidunt tempor placerat. Nullam mi sem, pharetra mollis auctor ut, sagittis at justo. Proin
-                      metus orci, efficitur non mollis eget, volutpat quis nisl. Orci varius natoque penatibus et
-                      magnis dis parturient montes, nascetur ridiculus mus. Donec viverra leo eget massa ornare, at
-                      tincidunt nisl eleifend. Aenean laoreet viverra velit egestas volutpat.
-                    </p>
-                    <p class="pabout">
-                      Nunc gravida convallis condimentum. Nulla porta volutpat interdum. In pharetra massa vel justo
-                      hendrerit, ultricies ullamcorper nunc posuere. Donec accumsan, nulla sit amet euismod elementum,
-                      sapien nulla sodales magna, at blandit ante ligula quis nibh. In hac habitasse platea dictumst.
-                      Nulla blandit egestas lectus in posuere. Proin in interdum massa, vitae pretium nulla. Sed eu
-                      gravida justo. Nulla porta augue orci, consectetur porta justo malesuada sit amet.
-                    </p>
-                    <p class="pabout">
-                      Mauris purus lacus, faucibus in rhoncus sit amet, lobortis nec leo. Ut hendrerit ut lorem vitae
-                      laoreet. Nunc suscipit nunc vel sapien posuere laoreet. In molestie urna nulla, at imperdiet sem
-                      eleifend vel. Donec eleifend nunc velit, sed porta sem cursus at. Vivamus blandit imperdiet justo
-                      eu mattis. Aenean eu varius arcu. Nulla a odio justo. Quisque dapibus tincidunt est, in laoreet
-                      nibh fermentum id. Ut eu neque id nibh vestibulum ultricies. Sed eu sagittis sem, eu elementum
-                      diam. Mauris eleifend, ligula vel commodo lacinia, magna risus rutrum nisl, ut tempus purus ex
-                      eleifend massa. Nulla posuere, tellus efficitur scelerisque dignissim, dui nisl euismod nunc,
-                      quis congue libero lacus nec velit. Curabitur consequat bibendum arcu, sed molestie mi volutpat
-                      eu. Proin lacinia sagittis ligula, sit amet laoreet enim elementum ac. Ut non ligula nec diam
-                      mattis lobortis sit amet eget metus.
-                    </p>
-                    <p class="pabout">
-                      Sed sed vulputate mi, eget ultrices turpis. Maecenas eu molestie mi. Etiam quis ultricies diam.
-                      In in lacus eget libero suscipit fringilla quis sit amet risus. In ut vestibulum felis. Aenean
-                      vitae eleifend turpis. Integer volutpat lacus vel felis dignissim gravida. Aenean iaculis lacus
-                      sit amet ante varius, nec molestie quam suscipit. Fusce ut odio efficitur, convallis dui a,
-                      porttitor nisi. Integer eleifend nibh ac nunc mattis, quis ornare massa tincidunt. Ut ex tellus,
-                      euismod at nisi vitae, rutrum vehicula ex. Sed finibus et nunc sit amet gravida. Nam pulvinar
-                      lectus id augue aliquet porttitor.
-                    </p>
-                  </div>
-                  <div class="col-12">
-                    <div class="sponser-owl owl-carousel">
-                      <div>
-                        <img src="./images/sponser-nike.png" />
+    </nav>
+    <main>
+      <section class="bg-register">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-lg-12 mt-5 mb-3">
+              <div class="card wow fadeIn card-toon">
+                <div class="card-body px-md-5">
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <img
+                        src="./images/main_logo.png"
+                        class="img-logo-about"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <p class="pabout">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenean velit tellus, commodo et dignissim ac,
+                        consectetur non leo. Donec nec hendrerit arcu, id
+                        interdum odio. Nunc ut mi sed arcu cursus dapibus. Nulla
+                        egestas, felis in facilisis cursus, nisi nunc
+                        sollicitudin lacus, quis faucibus enim orci at ipsum.
+                        Aliquam erat volutpat. Vivamus ac lacinia neque. Etiam
+                        vel tincidunt enim, vel scelerisque metus. Curabitur
+                        laoreet purus vitae urna interdum, eu volutpat nisi
+                        posuere. Nunc vitae consectetur orci, sed iaculis felis.
+                        Proin ac arcu et ante posuere egestas nec vehicula
+                        nulla.
+                      </p>
+                      <p class="pabout">
+                        Proin in eros nulla. Vivamus hendrerit, neque id
+                        lobortis vestibulum, lacus velit pretium ligula, id
+                        congue erat nisi a lorem. Nam elementum nisi libero, vel
+                        dignissim felis egestas sed. Donec luctus ut dolor at
+                        mollis. Sed quis fringilla quam, id interdum magna.
+                        Maecenas rhoncus pellentesque orci at semper.
+                        Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames ac turpis egestas. Ut gravida ex a
+                        enim ultrices commodo. Donec ac porta ipsum. Maecenas
+                        vel sem purus. Nulla pellentesque, est eu gravida
+                        pharetra, nisl ex suscipit purus, quis imperdiet nunc
+                        est quis nulla. Maecenas iaculis, nisi in rhoncus
+                        placerat, orci augue dapibus mauris, nec vehicula neque
+                        sem vel arcu. Vivamus eget felis arcu.
+                      </p>
+                      <p class="pabout">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse vel facilisis ante, sed aliquet justo. In id
+                        metus gravida, fermentum nisi quis, pulvinar tortor.
+                        Phasellus eu porttitor magna. Pellentesque velit purus,
+                        maximus ac neque pulvinar, gravida consequat nisl.
+                        Suspendisse faucibus ultrices tempus. Suspendisse
+                        efficitur vitae eros quis rutrum. Ut nec eros a arcu
+                        iaculis aliquet quis non eros.
+                      </p>
+                      <p class="pabout">
+                        Ut eu dictum lectus. Sed vehicula metus ac dignissim
+                        gravida. Nam dui eros, consequat ac vehicula id, laoreet
+                        ac turpis. Praesent nunc mauris, congue quis lectus a,
+                        commodo egestas ipsum. Pellentesque non nulla nisl.
+                        Nulla tincidunt rhoncus est sed gravida. Sed erat
+                        turpis, bibendum vel sodales vitae, varius luctus neque.
+                      </p>
+                      <p class="pabout">
+                        Aenean eu posuere velit. Vestibulum ante ipsum primis in
+                        faucibus orci luctus et ultrices posuere cubilia Curae;
+                        Etiam maximus, leo vel tristique pretium, purus metus
+                        pellentesque quam, eget scelerisque metus ex sed nulla.
+                        Morbi cursus pharetra vestibulum. Nunc ut diam vel dui
+                        volutpat varius a pellentesque enim. Integer sit amet
+                        lorem eget massa gravida molestie. Nulla dignissim
+                        tempus risus sit amet imperdiet. Nam luctus nulla risus,
+                        et aliquet dolor pulvinar ac. Interdum et malesuada
+                        fames ac ante ipsum primis in faucibus. Fusce fermentum
+                        eros ligula, eu vulputate purus molestie a. Proin a
+                        luctus nulla. Nulla varius ex et tortor volutpat
+                        consectetur. Praesent pulvinar placerat sollicitudin.
+                        Nam tincidunt lorem quis porta sodales. Ut fermentum
+                        nisl vitae nisl egestas convallis. Nullam ligula nisl,
+                        ornare sit amet odio ut, dignissim cursus nulla.
+                      </p>
+                      <p class="pabout">
+                        Suspendisse vel commodo turpis, eget posuere risus. Ut
+                        nisi orci, molestie eget quam ac, vehicula lobortis
+                        mauris. Vestibulum ante ipsum primis in faucibus orci
+                        luctus et ultrices posuere cubilia Curae; Quisque
+                        convallis scelerisque magna vel pretium. Proin risus
+                        justo, dignissim eget turpis vel, finibus dapibus
+                        lectus. Vestibulum scelerisque, lorem quis ullamcorper
+                        facilisis, augue tellus eleifend ante, at viverra est
+                        libero sed metus. Morbi id tincidunt tortor, a dictum
+                        tellus. Pellentesque tristique maximus scelerisque.
+                        Nullam a quam in dolor luctus elementum. Aliquam
+                        vehicula est risus, non tincidunt justo vulputate nec.
+                        Donec pellentesque nec purus eu dignissim. Sed odio ex,
+                        vestibulum sit amet turpis sed, tristique placerat eros.
+                        Phasellus congue viverra ligula eget molestie.
+                      </p>
+                      <p class="pabout">
+                        Aliquam erat volutpat. Pellentesque in vulputate tortor.
+                        Vivamus sodales tempus odio, a pulvinar eros ultrices
+                        id. Nam quam leo, tristique sed quam non, vestibulum
+                        elementum odio. Duis consectetur, risus at euismod
+                        vulputate, nisl felis scelerisque nisl, eget faucibus
+                        nisl erat non urna. Morbi ullamcorper id velit eget
+                        lobortis. Proin lobortis iaculis nisi sollicitudin
+                        aliquam. Ut hendrerit nunc lacus, eu accumsan ligula
+                        maximus eu. Fusce volutpat lacinia pulvinar. Donec
+                        tincidunt tempor placerat. Nullam mi sem, pharetra
+                        mollis auctor ut, sagittis at justo. Proin metus orci,
+                        efficitur non mollis eget, volutpat quis nisl. Orci
+                        varius natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus mus. Donec viverra leo eget
+                        massa ornare, at tincidunt nisl eleifend. Aenean laoreet
+                        viverra velit egestas volutpat.
+                      </p>
+                      <p class="pabout">
+                        Nunc gravida convallis condimentum. Nulla porta volutpat
+                        interdum. In pharetra massa vel justo hendrerit,
+                        ultricies ullamcorper nunc posuere. Donec accumsan,
+                        nulla sit amet euismod elementum, sapien nulla sodales
+                        magna, at blandit ante ligula quis nibh. In hac
+                        habitasse platea dictumst. Nulla blandit egestas lectus
+                        in posuere. Proin in interdum massa, vitae pretium
+                        nulla. Sed eu gravida justo. Nulla porta augue orci,
+                        consectetur porta justo malesuada sit amet.
+                      </p>
+                      <p class="pabout">
+                        Mauris purus lacus, faucibus in rhoncus sit amet,
+                        lobortis nec leo. Ut hendrerit ut lorem vitae laoreet.
+                        Nunc suscipit nunc vel sapien posuere laoreet. In
+                        molestie urna nulla, at imperdiet sem eleifend vel.
+                        Donec eleifend nunc velit, sed porta sem cursus at.
+                        Vivamus blandit imperdiet justo eu mattis. Aenean eu
+                        varius arcu. Nulla a odio justo. Quisque dapibus
+                        tincidunt est, in laoreet nibh fermentum id. Ut eu neque
+                        id nibh vestibulum ultricies. Sed eu sagittis sem, eu
+                        elementum diam. Mauris eleifend, ligula vel commodo
+                        lacinia, magna risus rutrum nisl, ut tempus purus ex
+                        eleifend massa. Nulla posuere, tellus efficitur
+                        scelerisque dignissim, dui nisl euismod nunc, quis
+                        congue libero lacus nec velit. Curabitur consequat
+                        bibendum arcu, sed molestie mi volutpat eu. Proin
+                        lacinia sagittis ligula, sit amet laoreet enim elementum
+                        ac. Ut non ligula nec diam mattis lobortis sit amet eget
+                        metus.
+                      </p>
+                      <p class="pabout">
+                        Sed sed vulputate mi, eget ultrices turpis. Maecenas eu
+                        molestie mi. Etiam quis ultricies diam. In in lacus eget
+                        libero suscipit fringilla quis sit amet risus. In ut
+                        vestibulum felis. Aenean vitae eleifend turpis. Integer
+                        volutpat lacus vel felis dignissim gravida. Aenean
+                        iaculis lacus sit amet ante varius, nec molestie quam
+                        suscipit. Fusce ut odio efficitur, convallis dui a,
+                        porttitor nisi. Integer eleifend nibh ac nunc mattis,
+                        quis ornare massa tincidunt. Ut ex tellus, euismod at
+                        nisi vitae, rutrum vehicula ex. Sed finibus et nunc sit
+                        amet gravida. Nam pulvinar lectus id augue aliquet
+                        porttitor.
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <ul
+                        class="nav nav-profile nav-tabs nav-justified"
+                        id="myTab"
+                        role="tablist"
+                      >
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active"
+                            id="credit_tabs-tab"
+                            data-toggle="tab"
+                            href="#credit_tabs"
+                            aria-controls="credit_tabs"
+                            aria-selected="true"
+                            >ข้อมูลส่วนตัว</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            id="qr_tabs-tab"
+                            data-toggle="tab"
+                            href="#qr_tabs"
+                            role="tab"
+                            aria-controls="qr_tabs"
+                            aria-selected="false"
+                            >เปลี่ยนรหัสผ่าน</a
+                          >
+                        </li>
+                      </ul>
+                      <div
+                        class="tab-content bg-ffffff py-3 px-4"
+                        id="myTabContent"
+                      >
+                        <div
+                          class="tab-pane fade show active"
+                          id="credit_tabs"
+                          role="tabpanel"
+                          aria-labelledby="credit_tabs-tab"
+                        >
+                          <div class="col-12 text-center">
+                            <div class="flip-container">
+                              <div class="flipper">
+                                <div class="front">
+                                  <div class="card_credit">
+                                    <div class="card__sim"></div>
+                                    <div class="card__number">
+                                      XXXXXXXXXXXXXXXX
+                                    </div>
+                                    <div class="card__little-number">
+                                      1234
+                                    </div>
+                                    <div class="card__little-letter">
+                                      Good Thru
+                                    </div>
+                                    <div class="card__expiration">
+                                      <div class="card__month">
+                                        XX
+                                      </div>
+                                      <span>/</span>
+                                      <div class="card__year">
+                                        XX
+                                      </div>
+                                    </div>
+                                    <div class="card__name">
+                                      XXXXXX XXXXXX
+                                    </div>
+                                    <div class="card__type">
+                                      <img id="card__image" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="back">
+                                  <div class="card_credit">
+                                    <div class="card__black"></div>
+                                    <div class="card__skyblue"></div>
+                                    <div class="card__cvv">
+                                      XXX
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <form class="credit">
+                              <div id="front">
+                                <div class="block credit">
+                                  <label for="number">Number</label>
+                                  <input
+                                    id="number"
+                                    type="text"
+                                    maxlength="16"
+                                  />
+                                </div>
+                                <div class="block credit">
+                                  <label for="name">Name</label>
+                                  <input id="name" type="text" maxlength="24" />
+                                </div>
+                                <div class="block credit">
+                                  <label for="month">Expiration date</label>
+                                  <input id="month" type="text" maxlength="2" />
+                                  <span>/</span>
+                                  <input id="year" type="text" maxlength="2" />
+                                </div>
+                              </div>
+                              <div id="back">
+                                <div class="block credit">
+                                  <label for="cvv">CVV</label>
+                                  <input id="cvv" type="text" maxlength="3" />
+                                </div>
+                              </div>
+                              <div class="block credit">
+                                <input
+                                  class="button"
+                                  type="submit"
+                                  value="ยืนยันข้อมูล"
+                                />
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="qr_tabs"
+                          role="tabpanel"
+                          aria-labelledby="qr_tabs-tab"
+                        >
+                          คิวอาร์
+                        </div>
                       </div>
-                      <div>
-                        <img src="./images/sponser-adidas.png" />
+                    </div>
+                    <div class="col-12">
+                      <div class="sponser-owl owl-carousel">
+                        <div>
+                          <img src="./images/sponser-nike.png" />
+                        </div>
+                        <div>
+                          <img src="./images/sponser-adidas.png" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -190,173 +414,274 @@
             </div>
           </div>
         </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <img src="./images/main_logo.png" class="footer-logo" />
+            <h5 class="mt-2">มูลนิธิก้าวคนละก้าว</h5>
+            <p>
+              รายละเอียดข้อมูลมูลนิธิแบบสั้นๆ
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">ติดต่อเรา</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">ที่อยู่ : xxxxxxxxxxxx x x x x xxxxx xxx x </a>
+              </li>
+              <li>
+                <a href="#!">โทรศัพท์ : xxx-xxx-xxxx</a>
+              </li>
+              <li>
+                <a href="#!">โทรสาร : xxx-xxx-xxxx</a>
+              </li>
+              <li>
+                <a href="#!">อีเมล : xxxx@xxxx.com</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Social network</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Facebook : มูลนิธิก้าวคนละก้าว</a>
+              </li>
+              <li>
+                <a href="#!">Youtube : มูลนิธิก้าวคนละก้าว</a>
+              </li>
+              <li>
+                <a href="#!">Twitter : มูลนิธิก้าวคนละก้าว</a>
+              </li>
+              <li>
+                <a href="#!">Instagram : มูลนิธิก้าวคนละก้าว</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
       </div>
-    </section>
-  </main>
-  <!-- Footer -->
-  <footer class="page-footer font-small pt-4">
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
-      <!-- Grid row -->
-      <div class="row">
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-          <!-- Content -->
-          <img src="./images/main_logo.png" class="footer-logo" />
-          <h5 class="mt-2">มูลนิธิก้าวคนละก้าว</h5>
-          <p>
-            รายละเอียดข้อมูลมูลนิธิแบบสั้นๆ
-          </p>
-        </div>
-        <!-- Grid column -->
+      <!-- Footer Links -->
 
-        <hr class="clearfix w-100 d-md-none pb-3" />
-
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-          <!-- Links -->
-          <h5 class="text-uppercase">ติดต่อเรา</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">ที่อยู่ : xxxxxxxxxxxx x x x x xxxxx xxx x </a>
-            </li>
-            <li>
-              <a href="#!">โทรศัพท์ : xxx-xxx-xxxx</a>
-            </li>
-            <li>
-              <a href="#!">โทรสาร : xxx-xxx-xxxx</a>
-            </li>
-            <li>
-              <a href="#!">อีเมล : xxxx@xxxx.com</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-          <!-- Links -->
-          <h5 class="text-uppercase">Social network</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Facebook : มูลนิธิก้าวคนละก้าว</a>
-            </li>
-            <li>
-              <a href="#!">Youtube : มูลนิธิก้าวคนละก้าว</a>
-            </li>
-            <li>
-              <a href="#!">Twitter : มูลนิธิก้าวคนละก้าว</a>
-            </li>
-            <li>
-              <a href="#!">Instagram : มูลนิธิก้าวคนละก้าว</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Grid column -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2019 Copyright:
+        <a href="#!"> มูลนิธิก้าวคนละก้าว</a>
       </div>
-      <!-- Grid row -->
-    </div>
-    <!-- Footer Links -->
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLoginLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div
+            class="modal-header bg-060e21 white-text text-center py-4 justify-content-center"
+          >
+            <h5 class="mb-0 text-center">เข้าสู่ระบบ</h5>
+          </div>
+          <div class="modal-body">
+            <div class="card-body px-lg-5 pt-0">
+              <div class="text-center" style="color: #757575;">
+                <div class="md-form">
+                  <input
+                    type="email"
+                    id="materialLoginFormEmail"
+                    class="form-control"
+                  />
+                  <label for="materialLoginFormEmail">อีเมล</label>
+                </div>
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">
-      © 2019 Copyright:
-      <a href="#!"> มูลนิธิก้าวคนละก้าว</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header bg-060e21 white-text text-center py-4 justify-content-center">
-          <h5 class="mb-0 text-center">เข้าสู่ระบบ</h5>
-        </div>
-        <div class="modal-body">
-          <div class="card-body px-lg-5 pt-0">
-            <div class="text-center" style="color: #757575;">
-              <div class="md-form">
-                <input type="email" id="materialLoginFormEmail" class="form-control" />
-                <label for="materialLoginFormEmail">อีเมล</label>
-              </div>
+                <div class="md-form">
+                  <input
+                    type="password"
+                    id="materialLoginFormPassword"
+                    class="form-control"
+                  />
+                  <label for="materialLoginFormPassword">รหัสผ่าน</label>
+                </div>
 
-              <div class="md-form">
-                <input type="password" id="materialLoginFormPassword" class="form-control" />
-                <label for="materialLoginFormPassword">รหัสผ่าน</label>
-              </div>
-
-              <div class="d-flex justify-content-around">
-                <div>
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="materialLoginFormRemember" />
-                    <label class="form-check-label" for="materialLoginFormRemember">จดจำฉัน</label>
+                <div class="d-flex justify-content-around">
+                  <div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="materialLoginFormRemember"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="materialLoginFormRemember"
+                        >จดจำฉัน</label
+                      >
+                    </div>
+                  </div>
+                  <div>
+                    <a href="#!">ลืมรหัสผ่าน</a>
                   </div>
                 </div>
-                <div>
-                  <a href="#!">ลืมรหัสผ่าน</a>
-                </div>
+
+                <button
+                  class="btn btn-login-modal btn-rounded btn-block my-4 waves-effect z-depth-0"
+                >
+                  เข้าสู่ระบบ
+                </button>
+
+                <p>
+                  หากยังไม่ได้เป็นสมาชิก ?
+                  <a href="register.html">สมัครสมาชิกคลิก</a>
+                </p>
+
+                <p>หรือเข้าสู่ระบบด้วย</p>
+                <a type="button" class="btn-floating btn-fb btn-sm">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a type="button" class="btn-floating btn-gplus btn-sm">
+                  <i class="fab fa-google"></i>
+                </a>
               </div>
-
-              <button class="btn btn-login-modal btn-rounded btn-block my-4 waves-effect z-depth-0">
-                เข้าสู่ระบบ
-              </button>
-
-              <p>
-                หากยังไม่ได้เป็นสมาชิก ?
-                <a href="register.html">สมัครสมาชิกคลิก</a>
-              </p>
-
-              <p>หรือเข้าสู่ระบบด้วย</p>
-              <a type="button" class="btn-floating btn-fb btn-sm">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a type="button" class="btn-floating btn-gplus btn-sm">
-                <i class="fab fa-google"></i>
-              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+  </body>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/sweetalert2@8"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"
+  ></script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/compressed/picker.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/compressed/picker.date.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/legacy.js"></script>
-<script>
-  new WOW().init();
-  $(".sponser-owl").owlCarousel({
-    loop: true,
-    margin: 10,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 2,
-        nav: false
-      },
-      600: {
-        items: 3,
-        nav: false
-      },
-      1000: {
-        items: 5,
-        nav: false
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/compressed/picker.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/compressed/picker.date.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/legacy.js"
+  ></script>
+  <script>
+    new WOW().init();
+    $(".sponser-owl").owlCarousel({
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 2,
+          nav: false
+        },
+        600: {
+          items: 3,
+          nav: false
+        },
+        1000: {
+          items: 5,
+          nav: false
+        }
       }
-    }
-  });
-</script>
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $("#back, #front").click(function() {
+        if (this.id == "back") {
+          $(".flip-container").addClass("flip");
+        } else if (this.id == "front") {
+          $(".flip-container").removeClass("flip");
+        }
+      });
+      $("#name, #number, #month, #cvv, #year").bind(
+        "change paste keyup",
+        function() {
+          if (this.id == "name") {
+            $(".card__name").text($(this).val());
+          } else if (this.id == "number") {
+            var VISA_PREFIXES = ["4"]; // Prefixes for VISA cards
+            var MC_PREFIXES = ["5"]; // Prefixes for Master Card cards
+            var field_value = $(this).val();
 
+            if (field_value.charAt(0) === "4") {
+              var prefix = field_value.slice(0, 4);
 
+              if (VISA_PREFIXES.includes(prefix)) {
+                $("#card__image").attr("src", "./images/credit_visa.png");
+              }
+            } else if (field_value.charAt(0) === "5") {
+              var prefix = field_value.slice(0, 2);
+
+              if (MC_PREFIXES.includes(prefix)) {
+                $("#card__image").attr("src", "./images/credit_mc.png");
+              }
+            } else {
+              $("#card__image").attr("src", "./images/credit_none.png");
+            }
+
+            $(".card__number").text(field_value);
+          } else if (this.id == "month") {
+            $(".card__month").text($(this).val());
+          } else if (this.id == "cvv") {
+            $(".card__cvv").text($(this).val());
+          } else if (this.id == "year") {
+            $(".card__year").text($(this).val());
+          }
+        }
+      );
+    });
+  </script>
 </html>

@@ -118,76 +118,80 @@
               <div class="card wow fadeIn card-toon">
                 <div class="card-body px-md-5">
                   <div class="row">
-                    <div class="col-12 text-center">                      
+                    <div class="col-12 text-center">
                       <div class="flip-container">
-                          <div class="flipper">
-                            <div class="front">
-                              <div class="card_credit">
-                                <div class="card__sim"></div>
-                                <div class="card__number">
-                                  XXXXXXXXXXXXXXXX
+                        <div class="flipper">
+                          <div class="front">
+                            <div class="card_credit">
+                              <div class="card__sim"></div>
+                              <div class="card__number">
+                                XXXXXXXXXXXXXXXX
+                              </div>
+                              <div class="card__little-number">
+                                1234
+                              </div>
+                              <div class="card__little-letter">
+                                Good Thru
+                              </div>
+                              <div class="card__expiration">
+                                <div class="card__month">
+                                  XX
                                 </div>
-                                <div class="card__little-number">
-                                  1234
-                                </div>
-                                <div class="card__little-letter">
-                                  Good Thru
-                                </div>
-                                <div class="card__expiration">
-                                  <div class="card__month">
-                                    XX
-                                  </div>
-                                  <span>/</span>
-                                  <div class="card__year">
-                                    XX
-                                  </div>
-                                </div>
-                                <div class="card__name">
-                                  XXXXXX XXXXXX
-                                </div>
-                                <div class="card__type">
-                                  <img id="card__image"></img>
+                                <span>/</span>
+                                <div class="card__year">
+                                  XX
                                 </div>
                               </div>
+                              <div class="card__name">
+                                XXXXXX XXXXXX
+                              </div>
+                              <div class="card__type">
+                                <img id="card__image" />
+                              </div>
                             </div>
-                            <div class="back">
-                              <div class="card_credit">
-                                <div class="card__black"></div>
-                                <div class="card__skyblue"></div>
-                                <div class="card__cvv">
-                                  XXX
-                                </div>
+                          </div>
+                          <div class="back">
+                            <div class="card_credit">
+                              <div class="card__black"></div>
+                              <div class="card__skyblue"></div>
+                              <div class="card__cvv">
+                                XXX
                               </div>
                             </div>
                           </div>
                         </div>
-                        <form class="credit">
-                          <div id="front">
-                            <div class="block credit">
-                              <label for="number">Number</label>
-                              <input id="number" type="text" maxlength="16" />
-                            </div>
-                            <div class="block credit">
-                              <label for="name">Name</label>
-                              <input id="name" type="text" maxlength="24" />
-                            </div>
-                            <div class="block credit">
-                              <label for="month">Expiration date</label>
-                              <input id="month" type="text" maxlength="2" />
-                              <span>/</span>
-                              <input id="year" type="text" maxlength="2" />
-                            </div>
-                          </div>
-                          <div id="back">
-                            <div class="block credit">
-                              <label for="cvv">CVV</label>
-                              <input id="cvv" type="text" maxlength="3" />
-                            </div>
+                      </div>
+                      <form class="credit">
+                        <div id="front">
+                          <div class="block credit">
+                            <label for="number">Number</label>
+                            <input id="number" type="text" maxlength="16" />
                           </div>
                           <div class="block credit">
-                            <input class="button" type="submit" value="ยืนยันข้อมูล" />
+                            <label for="name">Name</label>
+                            <input id="name" type="text" maxlength="24" />
                           </div>
-                        </form>
+                          <div class="block credit">
+                            <label for="month">Expiration date</label>
+                            <input id="month" type="text" maxlength="2" />
+                            <span>/</span>
+                            <input id="year" type="text" maxlength="2" />
+                          </div>
+                        </div>
+                        <div id="back">
+                          <div class="block credit">
+                            <label for="cvv">CVV</label>
+                            <input id="cvv" type="text" maxlength="3" />
+                          </div>
+                        </div>
+                        <div class="block credit">
+                          <input
+                            class="button"
+                            type="submit"
+                            value="ยืนยันข้อมูล"
+                          />
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -474,52 +478,50 @@
     });
   </script>
   <script>
-    $( document ).ready(function() {
-    $("#back, #front").click(function () {
+    $(document).ready(function() {
+      $("#back, #front").click(function() {
         if (this.id == "back") {
-            $(".flip-container").addClass("flip");
+          $(".flip-container").addClass("flip");
+        } else if (this.id == "front") {
+          $(".flip-container").removeClass("flip");
         }
-        else if (this.id == "front") {
-            $(".flip-container").removeClass("flip");
-        }
-    });
-    $("#name, #number, #month, #cvv, #year").bind("change paste keyup", function() {
-        if (this.id == "name") {
+      });
+      $("#name, #number, #month, #cvv, #year").bind(
+        "change paste keyup",
+        function() {
+          if (this.id == "name") {
             $(".card__name").text($(this).val());
-        }
-        else if (this.id == "number") {
+          } else if (this.id == "number") {
             var VISA_PREFIXES = ["4"]; // Prefixes for VISA cards
             var MC_PREFIXES = ["5"]; // Prefixes for Master Card cards
             var field_value = $(this).val();
 
             if (field_value.charAt(0) === "4") {
-                var prefix = field_value.slice(0, 4);
+              var prefix = field_value.slice(0, 4);
 
-                if (VISA_PREFIXES.includes(prefix)) {
-                    $("#card__image").attr("src", "./images/credit_visa.png");
-                }
+              if (VISA_PREFIXES.includes(prefix)) {
+                $("#card__image").attr("src", "./images/credit_visa.png");
+              }
             } else if (field_value.charAt(0) === "5") {
-                var prefix = field_value.slice(0, 2);
+              var prefix = field_value.slice(0, 2);
 
-                if (MC_PREFIXES.includes(prefix)) {
-                    $("#card__image").attr("src", "./images/credit_mc.png");
-                }
+              if (MC_PREFIXES.includes(prefix)) {
+                $("#card__image").attr("src", "./images/credit_mc.png");
+              }
             } else {
-                $("#card__image").attr("src", "./images/credit_none.png");
+              $("#card__image").attr("src", "./images/credit_none.png");
             }
 
             $(".card__number").text(field_value);
-        }
-        else if (this.id == "month") {
+          } else if (this.id == "month") {
             $(".card__month").text($(this).val());
-        }
-        else if (this.id == "cvv") {
+          } else if (this.id == "cvv") {
             $(".card__cvv").text($(this).val());
-        }
-        else if (this.id == "year") {
+          } else if (this.id == "year") {
             $(".card__year").text($(this).val());
+          }
         }
+      );
     });
-});
   </script>
 </html>
