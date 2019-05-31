@@ -69,7 +69,8 @@ html {
   height: 100px;
 }
 .img-logo-about {
-  width: 10vmin;
+  width: 100%;
+  max-width: 25vmin;
   margin-bottom: 1rem;
 }
 .table-preview-running thead tr th {
