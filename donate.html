@@ -279,7 +279,54 @@
                           role="tabpanel"
                           aria-labelledby="qr_tabs-tab"
                         >
-                          คิวอาร์
+                          <div class="row justify-content-center">
+                            <div class="col-12 col-md-6 col-lg-5">
+                              <div class="card">
+                                <div class="card-body">
+                                  <div class="pillmoney text-center">
+                                    <p>จำนวนเงินที่คุณต้องการบริจาค</p>
+                                    <div class="input-group mb-3">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="จำนวนเงิน"
+                                        aria-label="จำนวนเงิน"
+                                        aria-describedby="money-qr"
+                                      />
+                                      <div class="input-group-append">
+                                        <span
+                                          class="input-group-text"
+                                          id="money-qr"
+                                          >บาท</span
+                                        >
+                                      </div>
+                                    </div>
+                                    <button
+                                      class="btn btn-login"
+                                      onclick="openqr();"
+                                    >
+                                      ต่อไป
+                                    </button>
+                                  </div>
+                                  <div class="block-qr text-center">
+                                    <img
+                                      src="./images/credit_visa.png"
+                                      style="height: 50px; margin-bottom: 0.5rem;"
+                                    />
+                                    <img
+                                      src="./images/qr.jpg"
+                                      class="img-fluid mb-2"
+                                    />
+                                    <p><b>ชื่อร้าน</b></p>
+                                    <p>Amoute: .................</p>
+                                    <button class="btn btn-login">
+                                      บริจาค
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -537,5 +584,12 @@
         }
       );
     });
+  </script>
+  <script>
+    $(".block-qr").hide();
+    function openqr() {
+      $(".pillmoney").hide();
+      $(".block-qr").show(400);
+    }
   </script>
 </html>
