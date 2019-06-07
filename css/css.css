@@ -648,6 +648,9 @@ form.credit #number {
   .bg-virsualrun {
     padding-top: 20vmin;
   }
+  .view-index{
+    margin-top: 13vmin;
+  }
 }
 @media (min-width: 768px) {
   .table-my-rank thead tr th,
