@@ -635,6 +635,11 @@ form.credit #number {
   padding-bottom: 10px;
   border-bottom: 1px solid #cde5f0;
 }
+@media (max-width: 375px){
+  .logo-nav{
+    height: 75px;
+  }
+}
 @media (max-width: 575px) {
 }
 
