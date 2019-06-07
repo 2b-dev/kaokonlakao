@@ -17,6 +17,150 @@ html {
   margin-bottom: 1rem;
   font-weight: 500;
 }
+.page-thank {
+  height: 100vh;
+  background-color: transparent;
+  background-image: url("../images/banner_index3.png");
+  background-size: cover;
+  background-position: center center;
+}
+.box-thank {
+  width: 90%;
+  max-width: 400px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(199, 199, 199, 0.5);
+  -moz-box-shadow: 0px 0px 10px 5px rgba(199, 199, 199, 0.5);
+  box-shadow: 0px 0px 10px 5px rgba(199, 199, 199, 0.5);
+}
+.box-thank-body {
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center;
+}
+.box-thank-contain-icon {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+.box-thank-icon {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.box-thank-icon-contain-ani {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-thank-icon-ani {
+  z-index: 2;
+  width: 125px;
+  height: 125px;
+  background-color: #e2f1e8;
+  border-radius: 50%;
+  animation-name: anitrue;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: anitrue;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes anitrue {
+  0% {
+    width: 120px; height: 120px;
+  }
+  50% {
+    width: 150px; height: 150px;
+  }
+  100% {
+    width: 120px; height: 120px;
+  }
+}
+
+/* Standard syntax */
+@keyframes anitrue {
+  0% {
+    width: 120px; height: 120px;
+  }
+  50% {
+    width: 150px; height: 150px;
+  }
+  100% {
+    width: 120px; height: 120px;
+  }
+}
+.box-thank-icon-anifalse {
+  z-index: 2;
+  width: 125px;
+  height: 125px;
+  background-color: #f1e5e5;
+  border-radius: 50%;
+  animation-name: anifalse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: anifalse;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes anifalse {
+  0% {
+    width: 120px; height: 120px;
+  }
+  50% {
+    width: 150px; height: 150px;
+  }
+  100% {
+    width: 120px; height: 120px;
+  }
+}
+
+/* Standard syntax */
+@keyframes anifalse {
+  0% {
+    width: 120px; height: 120px;
+  }
+  50% {
+    width: 150px; height: 150px;
+  }
+  100% {
+    width: 120px; height: 120px;
+  }
+}
+.img-icon-thank {
+  width: 100%;
+  max-width: 120px;
+  z-index: 3;
+}
+.btn-thank{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 105%;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+.btn-thank-true{
+  background-color: #28c86c;
+}
+.btn-thank-false{
+  background-color: #f7274e;
+}
 .text-welcome-3 {
   font-size: 41px;
   margin-bottom: 0;
