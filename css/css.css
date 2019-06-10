@@ -709,6 +709,9 @@ form.credit #number {
   .text-welcome-3:last-of-type::before{
     font-size: 18px;
   }
+  .bg-project-donate-detail{
+    padding-top: 30vmin;
+  }
 }
 @media (min-width: 768px) {
   .table-my-rank thead tr th,
@@ -791,6 +794,9 @@ form.credit #number {
   }
   .text-welcome-3:last-of-type::before{
     font-size: 18px;
+  }
+  .bg-project-donate-detail{
+    padding-top: 23vmin;
   }
 }
 
