@@ -803,6 +803,10 @@ form.credit #number {
   .my-medal {
     width: 50px;
   }
+  .img-art-isan{
+    width: 50vh;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 1199px) {
 }
