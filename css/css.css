@@ -698,6 +698,17 @@ form.credit #number {
   .view-index{
     margin-top: 13vmin;
   }
+  .text-money-donate{
+    font-size: 30px;
+  }
+  .text-welcome-3{
+    font-size: 30px;
+    width: 40px;
+    height: 42px;
+  }
+  .text-welcome-3:last-of-type::before{
+    font-size: 18px;
+  }
 }
 @media (min-width: 768px) {
   .table-my-rank thead tr th,
@@ -769,6 +780,17 @@ form.credit #number {
   }
   .my-medal {
     width: 50px;
+  }
+  .text-money-donate{
+    font-size: 30px;
+  }
+  .text-welcome-3{
+    font-size: 30px;
+    width: 40px;
+    height: 52px;
+  }
+  .text-welcome-3:last-of-type::before{
+    font-size: 18px;
   }
 }
 
