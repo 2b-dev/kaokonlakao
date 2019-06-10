@@ -48,6 +48,7 @@ html {
   width: 100%;
   text-align: center;
 }
+
 .box-thank-icon {
   width: 150px;
   height: 150px;
@@ -161,12 +162,49 @@ html {
 .btn-thank-false{
   background-color: #f7274e;
 }
+.text-money-donate{
+  max-width: 100%;
+  display: flex;
+  font-size: 47px;
+  justify-content: center;
+  align-items: center;
+}
+
 .text-welcome-3 {
-  font-size: 41px;
+  font-size: 41px;  
   margin-bottom: 0;
   font-weight: 600;
-  border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
+  color: #ffffff;
+  width: 45px;
+  height: 65px;
+  margin-left: 2px;
+  margin-right: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;*/
+  background-color: transparent;
+  background-image: url('../images/bg-money-donate.png');
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.text-welcome-3:first-of-type{
+  margin-left: 0;
+}
+.text-welcome-3:last-of-type{
+  margin-right: 0;
+  position: relative;
+}
+.text-welcome-3:last-of-type::before{
+  content: 'บาท';
+  position: absolute;
+  right: 0px;
+  color: #000000;
+  top: 100%;
+  font-size: 22px;
+  font-weight: 500;
 }
 .footer-logo {
   width: 100px;
@@ -175,6 +213,10 @@ html {
 }
 .logo-nav {
   height: 100px;
+  transition: height 500ms ease-in-out;
+}
+.top-nav-collapse .logo-nav{
+  height: 70px;
 }
 .bg-register {
   background-color: #fff;
