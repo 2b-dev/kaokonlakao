@@ -360,8 +360,9 @@ form.credit label {
   cursor: pointer;
   font-weight: 500;
   font-size: 1rem;
+  text-align: left;
 }
-form.credit #cvv {
+/*form.credit #cvv {
   width: 50px;
 }
 form.credit #month,
@@ -373,7 +374,7 @@ form.credit #name {
 }
 form.credit #number {
   width: 240px;
-}
+}*/
 .block.credit {
   display: block;
   margin: 0.5rem 0;
@@ -693,7 +694,7 @@ form.credit #number {
     padding-top: 20vmin;
   }
   .bg-virsualrun {
-    padding-top: 20vmin;
+    padding-top: 35vmin;
   }
   .view-index{
     margin-top: 13vmin;
