@@ -1,814 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>มูลนิธิก้าวคนละก้าว</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/themes/default.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/themes/default.date.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/smartwizard@4.3.1/dist/css/smart_wizard.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/smartwizard@4.3.1/dist/css/smart_wizard_theme_arrows.min.css"
-    />
-    <link rel="stylesheet" href="./css/font.css" />
-    <link rel="stylesheet" href="./css/color.css" />
-    <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/button.css" />
-    <link rel="stylesheet" href="./css/checkbox.css" />
-    <link rel="stylesheet" href="./css/input.css" />
-    <link rel="stylesheet" href="./css/card.css" />
-    <link rel="stylesheet" href="./css/css.css" />
-  </head>
 
-  <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-      <div class="container">
-        <!-- Brand -->
-        <!--<a class="navbar-brand" href="#">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>มูลนิธิก้าวคนละก้าว</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/themes/default.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/themes/default.date.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/smartwizard@4.3.1/dist/css/smart_wizard.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/smartwizard@4.3.1/dist/css/smart_wizard_theme_arrows.min.css" />
+  <link rel="stylesheet" href="./css/font.css" />
+  <link rel="stylesheet" href="./css/color.css" />
+  <link rel="stylesheet" href="./css/nav.css" />
+  <link rel="stylesheet" href="./css/button.css" />
+  <link rel="stylesheet" href="./css/checkbox.css" />
+  <link rel="stylesheet" href="./css/input.css" />
+  <link rel="stylesheet" href="./css/card.css" />
+  <link rel="stylesheet" href="./css/css.css" />
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+      <!-- Brand -->
+      <!--<a class="navbar-brand" href="#">
         <img src="./images/main_logo.png" alt="มูลนิธิก้าวคนละก้าว">
       </a>-->
 
-        <!-- Collapse -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Left -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">หน้าหลัก</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">เกี่ยวกับมูลนิธิ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="project_donate.html">โครงการบริจาค</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="project_run.html">โครงการวิ่ง</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">ข่าวสาร</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="donate.html">ร่วมบริจาค</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-login"
-                data-toggle="modal"
-                data-target="#modalLogin"
-                >เข้าสู่ระบบ</a
-              >
-            </li>
-          </ul>
-        </div>
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">หน้าหลัก</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">เกี่ยวกับมูลนิธิ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project_donate.html">โครงการบริจาค</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="project_run.html">โครงการวิ่ง</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">ข่าวสาร</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">ร่วมบริจาค</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-login" data-toggle="modal" data-target="#modalLogin">เข้าสู่ระบบ</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <main>
-      <section class="bg-project-donate-detail">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-12 mb-3 text-center">
-                      <h4>สมัครวิ่งโครงการ XXXXXXX</h4>
-                    </div>
-                    <div class="col-12">
-                      <div id="smartwizard">
-                        <ul>
-                          <li>
-                            <a href="#select-type"
-                              >ขั้นตอนแรก<br /><small>เลือกประเภท</small></a
-                            >
-                          </li>
-                          <li>
-                            <a href="#detail-runner"
-                              >ขั้นตอนที่ 2<br /><small
-                                >ข้อมูลผู้สมัคร</small
-                              ></a
-                            >
-                          </li>
-                          <li>
-                            <a href="#data-address"
-                              >ขั้นตอนที่ 3<br /><small>ข้อมูลจัดส่ง</small></a
-                            >
-                          </li>
-                          <li>
-                            <a href="#check-data"
-                              >ขั้นตอนที่ 4<br /><small
-                                >สรุปและตรวจสอบข้อมูลผู้สมัคร</small
-                              ></a
-                            >
-                          </li>
-                        </ul>
-                        <div>
-                          <div id="select-type" class="py-3">
-                            <div class="row justify-content-center">
-                              <div class="col-12 col-md-6 col-lg-5 mb-3">
-                                <div class="group-radio">
-                                  <div
-                                    class="card card-radio mb-3"
-                                    data-value="bip"
-                                    data-text1="BIP อย่างเดียว"
-                                    data-text2="100 บาท"
-                                  >
-                                    <div class="card-body">
-                                      <div class="row">
-                                        <div class="col-6">
-                                          <div class="view overlay zoom">
-                                            <img
-                                              src="./images/800x600.png"
-                                              class="img-fluid"
-                                            />
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="col-6 d-flex flex-column justify-content-center align-items-center"
-                                        >
-                                          <h5>BIP อย่างเดียว</h5>
-                                          <h5>100 บาท</h5>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="card card-radio mb-3"
-                                    data-value="shirt"
-                                    data-text1="เสื้อ"
-                                    data-text2="400 บาท"
-                                  >
-                                    <div class="card-body">
-                                      <div class="row">
-                                        <div class="col-6">
-                                          <div class="view overlay zoom">
-                                            <img
-                                              src="./images/800x600.png"
-                                              class="img-fluid"
-                                            />
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="col-6 d-flex flex-column justify-content-center align-items-center"
-                                        >
-                                          <h5>เสื้อ</h5>
-                                          <h5>400 บาท</h5>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="card card-radio mb-3"
-                                    data-value="shirtandbip"
-                                    data-text1="BIP เสื้อ"
-                                    data-text2="500 บาท"
-                                  >
-                                    <div class="card-body">
-                                      <div class="row">
-                                        <div class="col-6">
-                                          <div class="view overlay zoom">
-                                            <img
-                                              src="./images/800x600.png"
-                                              class="img-fluid"
-                                            />
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="col-6 d-flex flex-column justify-content-center align-items-center"
-                                        >
-                                          <h5>BIP เสื้อ</h5>
-                                          <h5>500 บาท</h5>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <input
-                                    type="hidden"
-                                    id="bipshirt-option"
-                                    name="bipshirt-option"
-                                    required
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                class="col-12 col-md-12 col-lg-12 text-center"
-                              >
-                                <a
-                                  id="nxt-step1"
-                                  href="#detail-runner"
-                                  class="btn btn-detail-donate disabled"
-                                  >ต่อไป</a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                          <div id="detail-runner" class="py-3">
-                            <div class="row justify-content-center">
-                              <div
-                                id="append-data-user"
-                                class="col-12 col-md-10 col-lg-8 mb-3"
-                              >
-                                <div class="card mb-3">
-                                  <div class="card-body">
-                                    <div class="row">
-                                      <div class="col-12 col-md-12 mb-3">
-                                        <h5>ข้อมูลคนที่ 1</h5>
-                                      </div>
-                                      <div class="col-12 col-md-6 mb-3">
-                                        <div class="md-form mb-0">
-                                          <input
-                                            type="text"
-                                            id="name_reg_run_1"
-                                            class="form-control"
-                                          />
-                                          <label
-                                            for="name_reg_run_1"
-                                            class="active"
-                                            >ชื่อ-นามสกุล</label
-                                          >
-                                        </div>
-                                      </div>
-                                      <div class="col-12 col-md-6 mb-3">
-                                        <div class="md-form mb-0">
-                                          <input
-                                            type="text"
-                                            id="birthdate_reg_run_1"
-                                            class="form-control datepicker"
-                                          />
-                                          <label for="birthdate_reg_run_1"
-                                            >วันเกิด</label
-                                          >
-                                        </div>
-                                      </div>
-                                      <div class="col-12 mb-3">
-                                        <p>เพศ</p>
-                                        <div class="row">
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
-                                              <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="sex1_reg_run_1"
-                                                name="sex_run_1"
-                                              />
-                                              <label
-                                                class="custom-control-label"
-                                                for="sex1_reg_run_1"
-                                                >ชาย</label
-                                              >
-                                            </div>
-                                          </div>
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
-                                              <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="sex2_reg_run_1"
-                                                name="sex_run_1"
-                                              />
-                                              <label
-                                                class="custom-control-label"
-                                                for="sex2_reg_run_1"
-                                                >หญิง</label
-                                              >
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="col-12 col-md-6 mb-3">
-                                        <div class="md-form mb-0">
-                                          <input
-                                            type="text"
-                                            id="phone_reg_run_1"
-                                            class="form-control"
-                                          />
-                                          <label
-                                            for="phone_reg_run_1"
-                                            class="active"
-                                            >เบอร์ติดต่อฉุกเฉิน</label
-                                          >
-                                        </div>
-                                      </div>
-                                      <div class="col-12 col-md-6 mb-3">
-                                        <div class="md-form mb-0">
-                                          <input
-                                            type="text"
-                                            id="relation_reg_run_1"
-                                            class="form-control"
-                                          />
-                                          <label
-                                            for="relation_reg_run_1"
-                                            class="active"
-                                            >ความสัมพันธ์</label
-                                          >
-                                        </div>
-                                      </div>
-                                      <div class="col-12 mb-3">
-                                        <p>ขนาดไซส์เสื้อ</p>
-                                        <div class="row">
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
-                                              <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="ss_reg_run_1"
-                                                name="size_shirt"
-                                              />
-                                              <label
-                                                class="custom-control-label"
-                                                for="ss_reg_run_1"
-                                                >SS</label
-                                              >
-                                            </div>
-                                          </div>
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
-                                              <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="s_reg_run_1"
-                                                name="size_shirt"
-                                              />
-                                              <label
-                                                class="custom-control-label"
-                                                for="s_reg_run_1"
-                                                >S</label
-                                              >
-                                            </div>
-                                          </div>
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
-                                              <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="m_reg_run_1"
-                                                name="size_shirt"
-                                              />
-                                              <label
-                                                class="custom-control-label"
-                                                for="m_reg_run_1"
-                                                >M</label
-                                              >
-                                            </div>
-                                          </div>
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
-                                              <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="l_reg_run_1"
-                                                name="size_shirt"
-                                              />
-                                              <label
-                                                class="custom-control-label"
-                                                for="l_reg_run_1"
-                                                >L</label
-                                              >
-                                            </div>
-                                          </div>
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
-                                              <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="xl_reg_run_1"
-                                                name="size_shirt"
-                                              />
-                                              <label
-                                                class="custom-control-label"
-                                                for="xl_reg_run_1"
-                                                >XL</label
-                                              >
-                                            </div>
-                                          </div>
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
-                                              <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="2xl_reg_run_1"
-                                                name="size_shirt"
-                                              />
-                                              <label
-                                                class="custom-control-label"
-                                                for="2xl_reg_run_1"
-                                                >2XL</label
-                                              >
-                                            </div>
-                                          </div>
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
-                                              <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="3xl_reg_run_1"
-                                                name="size_shirt"
-                                              />
-                                              <label
-                                                class="custom-control-label"
-                                                for="3xl_reg_run_1"
-                                                >3XL</label
-                                              >
-                                            </div>
-                                          </div>
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
-                                              <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="4xl_reg_run_1"
-                                                name="size_shirt"
-                                              />
-                                              <label
-                                                class="custom-control-label"
-                                                for="4xl_reg_run_1"
-                                                >4XL</label
-                                              >
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-12 text-center">
-                                <a
-                                  id="add-user"
-                                  class="btn btn-detail-donate mb-3"
-                                  >เพิ่มผู้สมัคร</a
-                                >
-                                <p>
-                                  *หมายเหตุ ไม่สามารถเพิ่มผู้สมัครเกิน 10 คน
-                                </p>
-                              </div>
-                              <div class="col-12 text-center">
-                                <a
-                                  id="prev-step2"
-                                  href="#select-type"
-                                  class="btn btn-detail-donate"
-                                  >ย้อนกลับ
-                                </a>
-                                <a
-                                  id="nxt-step2"
-                                  href="#data-address"
-                                  class="btn btn-detail-donate disabled"
-                                  >ต่อไป
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="data-address" class="py-3">
-                            <div class="row justify-content-center">
-                              <div class="col-12 col-md-10 col-lg-8 mb-3">
-                                <div class="card">
-                                  <div class="card-body">
-                                    <div class="row">
-                                      <div class="col-12 mb-3">
-                                        <p>การรับเสื้อและ BIP</p>
-                                        <div class="row">
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
-                                              <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="dataaddress1"
-                                                name="dataaddress"
-                                                value="dataaddress1"
-                                              />
-                                              <label
-                                                class="custom-control-label"
-                                                for="dataaddress1"
-                                                >รับเอง</label
-                                              >
-                                            </div>
-                                          </div>
-                                          <div class="col-6 col-md-3 mb-3">
-                                            <div
-                                              class="custom-control custom-radio custom-control-inline"
-                                            >
-                                              <input
-                                                type="radio"
-                                                class="custom-control-input"
-                                                id="dataaddress2"
-                                                name="dataaddress"
-                                                value="dataaddress2"
-                                              />
-                                              <label
-                                                class="custom-control-label"
-                                                for="dataaddress2"
-                                                >ส่งไปรษณีย์</label
-                                              >
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div id="post1" class="row">
-                                          <div class="col-12">
-                                            <hr />
-                                          </div>
-                                          <div class="col-12 mb-3 text-center">
-                                            <h5>
-                                              สถานที่สำหรับรับเอง
-                                            </h5>
-                                          </div>
-                                          <div class="col-12 mb-3">
-                                            <p>
-                                              XXXXXXXXXX xxx/xxxx หมู่ที่ xxx
-                                              ต.xxxxxx อ.xxxxxxxx จ.xxxxxxxx
-                                              xxxxx โทรศัพท์ xx-xxxx-xxxx
-                                            </p>
-                                          </div>
-                                        </div>
-                                        <div id="post2" class="row">
-                                          <div class="col-12">
-                                            <hr />
-                                          </div>
-                                          <div class="col-12 mb-3 text-center">
-                                            <h5>
-                                              ที่อยู่สำหรับจดส่งทางไปรษณีย์
-                                            </h5>
-                                          </div>
-                                          <div class="col-12 col-md-6 mb-3">
-                                            <div class="md-form mb-0">
-                                              <input
-                                                type="text"
-                                                id="name-sent"
-                                                class="form-control"
-                                                onchange="checkdatasent();"
-                                              />
-                                              <label for="name-sent"
-                                                >ชื่อ-นามสกุล</label
-                                              >
-                                            </div>
-                                          </div>
-                                          <div class="col-12 col-md-6 mb-3">
-                                            <div class="md-form mb-0">
-                                              <input
-                                                type="text"
-                                                id="phonenum-sent"
-                                                class="form-control"
-                                                onchange="checkdatasent();"
-                                              />
-                                              <label for="phonenum-sent"
-                                                >เบอร์ติดต่อ(มือถือ)</label
-                                              >
-                                            </div>
-                                          </div>
-                                          <div class="col-12 mb-3">
-                                            <div class="md-form">
-                                              <textarea
-                                                id="form7"
-                                                class="md-textarea form-control"
-                                                rows="2"
-                                                onchange="checkdatasent();"
-                                              ></textarea>
-                                              <label for="form7">ที่อยู่</label>
-                                            </div>
-                                          </div>
-                                          <div class="col-12 col-md-6 mb-3">
-                                            <div class="md-form mb-0">
-                                              <select
-                                                id="province-sent"
-                                                class="browser-default custom-select select-register"
-                                                onchange="checkdatasent();"
-                                              >
-                                                <option
-                                                  value="0"
-                                                  selected
-                                                  disabled
-                                                  >จังหวัด</option
-                                                >
-                                                <option value="1"
-                                                  >กรุงเทพฯ</option
-                                                >
-                                                <option value="2"
-                                                  >ปทุมธานี</option
-                                                >
-                                              </select>
-                                            </div>
-                                          </div>
-                                          <div class="col-12 col-md-6 mb-3">
-                                            <div class="md-form mb-0">
-                                              <select
-                                                id="district-sent"
-                                                class="browser-default custom-select select-register"
-                                                onchange="checkdatasent();"
-                                              >
-                                                <option
-                                                  value="0"
-                                                  selected
-                                                  disabled
-                                                  >อำเภอ/เขต</option
-                                                >
-                                                <option value="1">xxxxx</option>
-                                                <option value="2"
-                                                  >xxxxxx</option
-                                                >
-                                              </select>
-                                            </div>
-                                          </div>
-                                          <div class="col-12 col-md-6 mb-3">
-                                            <div class="md-form mb-0">
-                                              <select
-                                                id="tumbon-sent"
-                                                class="browser-default custom-select select-register"
-                                                onchange="checkdatasent();"
-                                              >
-                                                <option
-                                                  selected
-                                                  disabled
-                                                  value="0"
-                                                  >ตำบล/แขวง</option
-                                                >
-                                                <option value="1">xxxxx</option>
-                                                <option value="2"
-                                                  >xxxxxx</option
-                                                >
-                                              </select>
-                                            </div>
-                                          </div>
-                                          <div class="col-12 col-md-6 mb-3">
-                                            <div class="md-form mb-0">
-                                              <input
-                                                type="password"
-                                                id="idenpost-sent"
-                                                class="form-control"
-                                                onchange="checkdatasent();"
-                                              />
-                                              <label for="idenpost-sent"
-                                                >รหัสไปรษณีย์</label
-                                              >
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-12 text-center">
-                                <a
-                                  id="prev-step3"
-                                  href="#detail-runner"
-                                  class="btn btn-detail-donate"
-                                  >ย้อนกลับ
-                                </a>
-                                <a
-                                  id="nxt-step3"
-                                  href="#check-data"
-                                  class="btn btn-detail-donate disabled"
-                                  >ต่อไป
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="check-data" class="">
-                            <div class="row">
-                              <div class="col-12 text-center mb-3">
-                                <h5>
-                                  ตรวจสอบและยืนยันข้อมูลผู้สมัคร
-                                </h5>
-                              </div>
-                            </div>
-                            <div class="row justify-content-center">
-                              <div class="col-12 col-md-6 col-lg-5 mb-3">
-                                <div class="card">
+    </div>
+  </nav>
+  <main>
+    <section class="bg-project-donate-detail">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12 mb-3 text-center">
+                    <h4>สมัครวิ่งโครงการ XXXXXXX</h4>
+                  </div>
+                  <div class="col-12">
+                    <div id="smartwizard">
+                      <ul>
+                        <li>
+                          <a href="#select-type">ขั้นตอนแรก<br /><small>เลือกประเภท</small></a>
+                        </li>
+                        <li>
+                          <a href="#detail-runner">ขั้นตอนที่ 2<br /><small>ข้อมูลผู้สมัคร</small></a>
+                        </li>
+                        <li>
+                          <a href="#data-address">ขั้นตอนที่ 3<br /><small>ข้อมูลจัดส่ง</small></a>
+                        </li>
+                        <li>
+                          <a href="#check-data">ขั้นตอนที่ 4<br /><small>สรุปและตรวจสอบข้อมูลผู้สมัคร</small></a>
+                        </li>
+                      </ul>
+                      <div>
+                        <div id="select-type" class="py-3">
+                          <div class="row justify-content-center">
+                            <div class="col-12 col-md-6 col-lg-5 mb-3">
+                              <div class="group-radio">
+                                <div class="card card-radio mb-3" data-value="bip" data-text1="BIP อย่างเดียว"
+                                  data-text2="100 บาท">
                                   <div class="card-body">
                                     <div class="row">
                                       <div class="col-6">
                                         <div class="view overlay zoom">
-                                          <img
-                                            src="./images/800x600.png"
-                                            class="img-fluid"
-                                          />
+                                          <img src="./images/800x600.png" class="img-fluid" />
                                         </div>
                                       </div>
-                                      <div
-                                        class="col-6 d-flex flex-column justify-content-center align-items-center"
-                                      >
-                                        <h5 id="select-bip-check1"></h5>
-                                        <h5 id="select-bip-check2"></h5>
+                                      <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                                        <h5>BIP อย่างเดียว</h5>
+                                        <h5>100 บาท</h5>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                              </div>
-                              <div class="col-12 text-center mb-3">
-                                <h5>ข้อมูลผู้สมัครวิ่ง</h5>
-                              </div>
-                              <div class="col-12 col-md-10 col-lg-8 mb-3">
-                                <div class="card mb-3">
+                                <div class="card card-radio mb-3" data-value="shirt" data-text1="เสื้อ"
+                                  data-text2="400 บาท">
                                   <div class="card-body">
                                     <div class="row">
-                                      <div class="col-12 col-md-12">
-                                        <p><u>ข้อมูลคนที่ 1</u></p>
-                                        <p></p>
+                                      <div class="col-6">
+                                        <div class="view overlay zoom">
+                                          <img src="./images/800x600.png" class="img-fluid" />
+                                        </div>
                                       </div>
-                                      <div class="col-12">
-                                        <p>
-                                          xxxxxx xxxxxxx วันเกิด xxxx เพศ xxx
-                                          เบอร์ติดต่อฉุกเฉิน xxxxxx ความสัมพันธ์
-                                          xxxx ขนาดไซต์เสื้อ xx
-                                        </p>
+                                      <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                                        <h5>เสื้อ</h5>
+                                        <h5>400 บาท</h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card card-radio mb-3" data-value="shirtandbip" data-text1="BIP เสื้อ"
+                                  data-text2="500 บาท">
+                                  <div class="card-body">
+                                    <div class="row">
+                                      <div class="col-6">
+                                        <div class="view overlay zoom">
+                                          <img src="./images/800x600.png" class="img-fluid" />
+                                        </div>
+                                      </div>
+                                      <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                                        <h5>BIP เสื้อ</h5>
+                                        <h5>500 บาท</h5>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <input type="hidden" id="bipshirt-option" name="bipshirt-option" required />
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12 text-center">
+                              <a id="nxt-step1" href="#detail-runner" class="btn btn-detail-donate disabled">ต่อไป</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="detail-runner" class="py-3">
+                          <div class="row justify-content-center">
+                            <div id="append-data-user" class="col-12 col-md-10 col-lg-8 mb-3">
+                              <div class="card mb-3">
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-12 col-md-12 mb-3">
+                                      <h5>ข้อมูลคนที่ 1</h5>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="name_reg_run_1" class="form-control" />
+                                        <label for="name_reg_run_1" class="active">ชื่อ-นามสกุล</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="birthdate_reg_run_1" class="form-control datepicker" />
+                                        <label for="birthdate_reg_run_1">วันเกิด</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                      <p>เพศ</p>
+                                      <div class="row">
+                                        <div class="col-6 col-md-6 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="sex1_reg_run_1"
+                                              name="sex_run_1" />
+                                            <label class="custom-control-label" for="sex1_reg_run_1">ชาย</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-md-6 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="sex2_reg_run_1"
+                                              name="sex_run_1" />
+                                            <label class="custom-control-label" for="sex2_reg_run_1">หญิง</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="nation_reg_run_1" class="form-control" />
+                                        <label for="nation_reg_run_1" class="active">สัญชาติ</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="idpassport_reg_run_1" class="form-control" />
+                                        <label for="idpassport_reg_run_1" class="active">เลขบัตรประจำตัวประชาชน</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="email_reg_run_1" class="form-control" />
+                                        <label for="email_reg_run_1" class="active">อีเมลผู้สมัคร</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="uphone_reg_run_1" class="form-control" />
+                                        <label for="uphone_reg_run_1" class="active">เบอร์ติดต่อ</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="extra_name_reg_run_1" class="form-control" />
+                                        <label for="extra_name_reg_run_1" class="active">ผู้ติดต่อกรณีฉุกเฉิน</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="phone_reg_run_1" class="form-control" />
+                                        <label for="phone_reg_run_1"
+                                          class="active">เบอร์โทรศัพท์ผู้ติดต่อกรณีฉุกเฉิน</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="relation_reg_run_1" class="form-control" />
+                                        <label for="relation_reg_run_1"
+                                          class="active">ความสัมพันธ์กับผู้ติดต่อกรณีฉุกเฉิน</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                      <p>ขนาดไซส์เสื้อ</p>
+                                      <div class="row">
+                                        <div class="col-6 col-md-3 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="ss_reg_run_1"
+                                              name="size_shirt" />
+                                            <label class="custom-control-label" for="ss_reg_run_1">SS</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="s_reg_run_1"
+                                              name="size_shirt" />
+                                            <label class="custom-control-label" for="s_reg_run_1">S</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="m_reg_run_1"
+                                              name="size_shirt" />
+                                            <label class="custom-control-label" for="m_reg_run_1">M</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="l_reg_run_1"
+                                              name="size_shirt" />
+                                            <label class="custom-control-label" for="l_reg_run_1">L</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="xl_reg_run_1"
+                                              name="size_shirt" />
+                                            <label class="custom-control-label" for="xl_reg_run_1">XL</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="2xl_reg_run_1"
+                                              name="size_shirt" />
+                                            <label class="custom-control-label" for="2xl_reg_run_1">2XL</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="3xl_reg_run_1"
+                                              name="size_shirt" />
+                                            <label class="custom-control-label" for="3xl_reg_run_1">3XL</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="4xl_reg_run_1"
+                                              name="size_shirt" />
+                                            <label class="custom-control-label" for="4xl_reg_run_1">4XL</label>
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-12 text-center">
-                                <h5>ข้อมูลการจัดส่ง</h5>
-                              </div>
-                              <div class="col-12 col-md-10 col-lg-8 mb-3">
-                                <div class="card">
-                                  <div class="card-body">
-                                    <p>รับเอง/ส่งไปรษณีย์ ที่ xxxxxxx</p>
+                            </div>
+                            <div class="col-12 text-center">
+                              <a id="add-user" class="btn btn-detail-donate mb-3">เพิ่มผู้สมัคร</a>
+                              <p>
+                                *หมายเหตุ ไม่สามารถเพิ่มผู้สมัครเกิน 10 คน
+                              </p>
+                            </div>
+                            <div class="col-12 text-center">
+                              <a id="prev-step2" href="#select-type" class="btn btn-detail-donate">ย้อนกลับ
+                              </a>
+                              <a id="nxt-step2" href="#data-address" class="btn btn-detail-donate disabled">ต่อไป
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="data-address" class="py-3">
+                          <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-3">
+                              <div class="card">
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-12 mb-3">
+                                      <p>การรับเสื้อและ BIP</p>
+                                      <div class="row">
+                                        <div class="col-6 col-md-3 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="dataaddress1"
+                                              name="dataaddress" value="dataaddress1" />
+                                            <label class="custom-control-label" for="dataaddress1">รับเอง</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="dataaddress2"
+                                              name="dataaddress" value="dataaddress2" />
+                                            <label class="custom-control-label" for="dataaddress2">ส่งไปรษณีย์</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div id="post1" class="row">
+                                        <div class="col-12">
+                                          <hr />
+                                        </div>
+                                        <div class="col-12 mb-3 text-center">
+                                          <h5>
+                                            สถานที่สำหรับรับเอง
+                                          </h5>
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                          <p>
+                                            XXXXXXXXXX xxx/xxxx หมู่ที่ xxx
+                                            ต.xxxxxx อ.xxxxxxxx จ.xxxxxxxx
+                                            xxxxx โทรศัพท์ xx-xxxx-xxxx
+                                          </p>
+                                        </div>
+                                      </div>
+                                      <div id="post2" class="row">
+                                        <div class="col-12">
+                                          <hr />
+                                        </div>
+                                        <div class="col-12 mb-3 text-center">
+                                          <h5>
+                                            ที่อยู่สำหรับจดส่งทางไปรษณีย์
+                                          </h5>
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                          <div class="md-form mb-0">
+                                            <input type="text" id="name-sent" class="form-control"
+                                              onchange="checkdatasent();" />
+                                            <label for="name-sent">ชื่อ-นามสกุล</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                          <div class="md-form mb-0">
+                                            <input type="text" id="phonenum-sent" class="form-control"
+                                              onchange="checkdatasent();" />
+                                            <label for="phonenum-sent">เบอร์ติดต่อ(มือถือ)</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                          <div class="md-form">
+                                            <textarea id="form7" class="md-textarea form-control" rows="2"
+                                              onchange="checkdatasent();"></textarea>
+                                            <label for="form7">ที่อยู่</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                          <div class="md-form mb-0">
+                                            <select id="province-sent"
+                                              class="browser-default custom-select select-register"
+                                              onchange="checkdatasent();">
+                                              <option value="0" selected disabled>จังหวัด</option>
+                                              <option value="1">กรุงเทพฯ</option>
+                                              <option value="2">ปทุมธานี</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                          <div class="md-form mb-0">
+                                            <select id="district-sent"
+                                              class="browser-default custom-select select-register"
+                                              onchange="checkdatasent();">
+                                              <option value="0" selected disabled>อำเภอ/เขต</option>
+                                              <option value="1">xxxxx</option>
+                                              <option value="2">xxxxxx</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                          <div class="md-form mb-0">
+                                            <select id="tumbon-sent"
+                                              class="browser-default custom-select select-register"
+                                              onchange="checkdatasent();">
+                                              <option selected disabled value="0">ตำบล/แขวง</option>
+                                              <option value="1">xxxxx</option>
+                                              <option value="2">xxxxxx</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                          <div class="md-form mb-0">
+                                            <input type="password" id="idenpost-sent" class="form-control"
+                                              onchange="checkdatasent();" />
+                                            <label for="idenpost-sent">รหัสไปรษณีย์</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-12 text-center mb-3">
-                                <h5>ยอดเงินที่ต้องชำระ</h5>
-                              </div>
-                              <div class="col-12 col-md-10 col-lg-8 mb-3">
-                                <div class="card">
-                                  <div class="card-body">
-                                    <p>
-                                      ยอดเงินที่ต้องชำระทั้งหมด :
-                                      <span class="c-b43d3e">xxxxxx</span> บาท
-                                    </p>
+                            </div>
+                            <div class="col-12 text-center">
+                              <a id="prev-step3" href="#detail-runner" class="btn btn-detail-donate">ย้อนกลับ
+                              </a>
+                              <a id="nxt-step3" href="#check-data" class="btn btn-detail-donate disabled">ต่อไป
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="check-data" class="">
+                          <div class="row">
+                            <div class="col-12 text-center mb-3">
+                              <h5>
+                                ตรวจสอบและยืนยันข้อมูลผู้สมัคร
+                              </h5>
+                            </div>
+                          </div>
+                          <div class="row justify-content-center">
+                            <div class="col-12 col-md-6 col-lg-5 mb-3">
+                              <div class="card">
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <div class="view overlay zoom">
+                                        <img src="./images/800x600.png" class="img-fluid" />
+                                      </div>
+                                    </div>
+                                    <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                                      <h5 id="select-bip-check1"></h5>
+                                      <h5 id="select-bip-check2"></h5>
+                                    </div>
                                   </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 text-center mb-3">
+                              <h5>ข้อมูลผู้สมัครวิ่ง</h5>
+                            </div>
+                            <div class="col-12 col-md-10 col-lg-8 mb-3">
+                              <div class="card mb-3">
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-12 col-md-12">
+                                      <p><u>ข้อมูลคนที่ 1</u></p>
+                                      <p></p>
+                                    </div>
+                                    <div class="col-12">
+                                      <p>
+                                        xxxxxx xxxxxxx วันเกิด xxxx เพศ xxx
+                                        เบอร์ติดต่อฉุกเฉิน xxxxxx ความสัมพันธ์
+                                        xxxx ขนาดไซต์เสื้อ xx
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 text-center">
+                              <h5>ข้อมูลการจัดส่ง</h5>
+                            </div>
+                            <div class="col-12 col-md-10 col-lg-8 mb-3">
+                              <div class="card">
+                                <div class="card-body">
+                                  <p>รับเอง/ส่งไปรษณีย์ ที่ xxxxxxx</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 text-center mb-3">
+                              <h5>ยอดเงินที่ต้องชำระ</h5>
+                            </div>
+                            <div class="col-12 col-md-10 col-lg-8 mb-3">
+                              <div class="card">
+                                <div class="card-body">
+                                  <p>
+                                    ยอดเงินที่ต้องชำระทั้งหมด :
+                                    <span class="c-b43d3e">xxxxxx</span> บาท
+                                  </p>
                                 </div>
                               </div>
                             </div>
@@ -822,458 +531,357 @@
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="page-footer font-small pt-4">
-      <div class="container text-center text-md-left">
-        <div class="row">
-          <div class="col-md-6 mt-md-0 mt-3">
-            <img src="./images/main_logo.png" class="footer-logo" />
-            <h5 class="mt-2">มูลนิธิก้าวคนละก้าว</h5>
-            <p>
-              รายละเอียดข้อมูลมูลนิธิแบบสั้นๆ
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <hr class="clearfix w-100 d-md-none pb-3" />
-
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-            <!-- Links -->
-            <h5 class="text-uppercase">ติดต่อเรา</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!">ที่อยู่ : xxxxxxxxxxxx x x x x xxxxx xxx x </a>
-              </li>
-              <li>
-                <a href="#!">โทรศัพท์ : xxx-xxx-xxxx</a>
-              </li>
-              <li>
-                <a href="#!">โทรสาร : xxx-xxx-xxxx</a>
-              </li>
-              <li>
-                <a href="#!">อีเมล : xxxx@xxxx.com</a>
-              </li>
-            </ul>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-            <!-- Links -->
-            <h5 class="text-uppercase">Social network</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!">Facebook : มูลนิธิก้าวคนละก้าว</a>
-              </li>
-              <li>
-                <a href="#!">Youtube : มูลนิธิก้าวคนละก้าว</a>
-              </li>
-              <li>
-                <a href="#!">Twitter : มูลนิธิก้าวคนละก้าว</a>
-              </li>
-              <li>
-                <a href="#!">Instagram : มูลนิธิก้าวคนละก้าว</a>
-              </li>
-            </ul>
-          </div>
-          <!-- Grid column -->
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer font-small pt-4">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <img src="./images/main_logo.png" class="footer-logo" />
+          <h5 class="mt-2">มูลนิธิก้าวคนละก้าว</h5>
+          <p>
+            รายละเอียดข้อมูลมูลนิธิแบบสั้นๆ
+          </p>
         </div>
-        <!-- Grid row -->
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3" />
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Links -->
+          <h5 class="text-uppercase">ติดต่อเรา</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">ที่อยู่ : xxxxxxxxxxxx x x x x xxxxx xxx x </a>
+            </li>
+            <li>
+              <a href="#!">โทรศัพท์ : xxx-xxx-xxxx</a>
+            </li>
+            <li>
+              <a href="#!">โทรสาร : xxx-xxx-xxxx</a>
+            </li>
+            <li>
+              <a href="#!">อีเมล : xxxx@xxxx.com</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Links -->
+          <h5 class="text-uppercase">Social network</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Facebook : มูลนิธิก้าวคนละก้าว</a>
+            </li>
+            <li>
+              <a href="#!">Youtube : มูลนิธิก้าวคนละก้าว</a>
+            </li>
+            <li>
+              <a href="#!">Twitter : มูลนิธิก้าวคนละก้าว</a>
+            </li>
+            <li>
+              <a href="#!">Instagram : มูลนิธิก้าวคนละก้าว</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
       </div>
-      <!-- Footer Links -->
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
 
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">
-        © 2019 Copyright:
-        <a href="#!"> มูลนิธิก้าวคนละก้าว</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-    <div
-      class="modal fade"
-      id="modalLogin"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modalLoginLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div
-            class="modal-header bg-060e21 white-text text-center py-4 justify-content-center"
-          >
-            <h5 class="mb-0 text-center">เข้าสู่ระบบ</h5>
-          </div>
-          <div class="modal-body">
-            <div class="card-body px-lg-5 pt-0">
-              <div class="text-center" style="color: #757575;">
-                <div class="md-form">
-                  <input
-                    type="email"
-                    id="materialLoginFormEmail"
-                    class="form-control"
-                  />
-                  <label for="materialLoginFormEmail">อีเมล</label>
-                </div>
-
-                <div class="md-form">
-                  <input
-                    type="password"
-                    id="materialLoginFormPassword"
-                    class="form-control"
-                  />
-                  <label for="materialLoginFormPassword">รหัสผ่าน</label>
-                </div>
-
-                <div class="d-flex justify-content-around">
-                  <div>
-                    <div class="form-check">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="materialLoginFormRemember"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="materialLoginFormRemember"
-                        >จดจำฉัน</label
-                      >
-                    </div>
-                  </div>
-                  <div>
-                    <a href="#!">ลืมรหัสผ่าน</a>
-                  </div>
-                </div>
-
-                <button
-                  class="btn btn-login-modal btn-rounded btn-block my-4 waves-effect z-depth-0"
-                >
-                  เข้าสู่ระบบ
-                </button>
-
-                <p>
-                  หากยังไม่ได้เป็นสมาชิก ?
-                  <a href="register.html">สมัครสมาชิกคลิก</a>
-                </p>
-
-                <p>หรือเข้าสู่ระบบด้วย</p>
-                <a type="button" class="btn-floating btn-fb btn-sm">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a type="button" class="btn-floating btn-gplus btn-sm">
-                  <i class="fab fa-google"></i>
-                </a>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2019 Copyright:
+      <a href="#!"> มูลนิธิก้าวคนละก้าว</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-060e21 white-text text-center py-4 justify-content-center">
+          <h5 class="mb-0 text-center">เข้าสู่ระบบ</h5>
+        </div>
+        <div class="modal-body">
+          <div class="card-body px-lg-5 pt-0">
+            <div class="text-center" style="color: #757575;">
+              <div class="md-form">
+                <input type="email" id="materialLoginFormEmail" class="form-control" />
+                <label for="materialLoginFormEmail">อีเมล</label>
               </div>
+
+              <div class="md-form">
+                <input type="password" id="materialLoginFormPassword" class="form-control" />
+                <label for="materialLoginFormPassword">รหัสผ่าน</label>
+              </div>
+
+              <div class="d-flex justify-content-around">
+                <div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="materialLoginFormRemember" />
+                    <label class="form-check-label" for="materialLoginFormRemember">จดจำฉัน</label>
+                  </div>
+                </div>
+                <div>
+                  <a href="#!">ลืมรหัสผ่าน</a>
+                </div>
+              </div>
+
+              <button class="btn btn-login-modal btn-rounded btn-block my-4 waves-effect z-depth-0">
+                เข้าสู่ระบบ
+              </button>
+
+              <p>
+                หากยังไม่ได้เป็นสมาชิก ?
+                <a href="register.html">สมัครสมาชิกคลิก</a>
+              </p>
+
+              <p>หรือเข้าสู่ระบบด้วย</p>
+              <a type="button" class="btn-floating btn-fb btn-sm">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a type="button" class="btn-floating btn-gplus btn-sm">
+                <i class="fab fa-google"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/sweetalert2@8"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"
-  ></script>
+  </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
 
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/compressed/picker.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/compressed/picker.date.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/legacy.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/smartwizard@4.3.1/dist/js/jquery.smartWizard.min.js"
-  ></script>
-  <script>
-    var optiondate = {
-      today: "",
-      close: "",
-      clear: "",
-      selectYears: true,
-      selectMonths: true,
-      monthPrev: "&larr;",
-      monthNext: "&rarr;",
-      formatSubmit: "dd/mm/yyyy",
-      monthsFull: [
-        "มกราคม",
-        "กุมภาพันธ์",
-        "มีนาคม",
-        "เมษายน",
-        "พฤษภาคม",
-        "มิถุนายน",
-        "กรกฎาคม",
-        "สิงหาคม",
-        "กันยายน",
-        "ตุลาคม",
-        "พฤศจิกายน",
-        "ธันวาคม"
-      ],
-      monthsShort: [
-        "ม.ค.",
-        "ก.พ.",
-        "มี.ค.",
-        "เม.ย.",
-        "พ.ค.",
-        "มิ.ย.",
-        "ก.ค.",
-        "ส.ค.",
-        "ก.ย.",
-        "ต.ค.",
-        "พ.ย.",
-        "ธ.ค."
-      ],
-      weekdaysShort: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"],
-      weekdaysFull: [
-        "อาทิตย์",
-        "จันทร์",
-        "อังคาร",
-        "พุธ",
-        "พฤหัส",
-        "ศุกร์",
-        "เสาร์"
-      ],
-      klass: {
-        selectMonth: "picker__select--month browser-default",
-        selectYear: "picker__select--year browser-default"
-      },
-      onOpen: function() {
-        $(".picker__header select:first-child option").each(function() {
-          var yearBE = parseInt($(this).val()) + 543;
-          $(this).html(yearBE);
-        });
-      },
-      onSet: function(data) {
-        $(".picker__header select:first-child option").each(function() {
-          //var yearBE = parseInt($(this).val()) + 543;
-          var yearBE = parseInt($(this).val()) + 543;
-          $(this).html(yearBE);
-        });
-      },
-      onClose: function() {
-        var ddd = $("#birthdate").val();
-        /* var newYear = ddd[6] + ddd[7] + ddd[8] + ddd[9];
-      newYear = parseInt(newYear) + 543;
-      $('input[name="_submit"]').val(newYear);*/
-        var aaa = "";
-        aaa =
-          ddd[ddd.length - 4] +
-          ddd[ddd.length - 3] +
-          ddd[ddd.length - 2] +
-          ddd[ddd.length - 1];
-        var str = ddd;
-        var res = str.replace(aaa, "");
-        var bbb = parseInt(aaa) + 543;
-        var correct = res + bbb;
-        $("#birthdate").val(correct);
-      }
-    };
-    new WOW().init();
-    $(document).ready(function() {
-      $("#smartwizard").smartWizard({
-        showStepURLhash: false,
-        useURLhash: true,
-        lang: {
-          next: "ต่อไป",
-          previous: "ย้อนกลับ"
-        },
-        anchorSettings: {
-          anchorClickable: true, // Enable/Disable anchor navigation
-          enableAllAnchors: false, // Activates all anchors clickable all times
-          markDoneStep: true, // add done css
-          enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
-        },
-        toolbarSettings: {
-          toolbarPosition: "none"
-        }
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/compressed/picker.min.js"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/compressed/picker.date.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pickadate@3.5.6/lib/legacy.js"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/smartwizard@4.3.1/dist/js/jquery.smartWizard.min.js"></script>
+<script>
+  var optiondate = {
+    today: "",
+    close: "",
+    clear: "",
+    selectYears: true,
+    selectMonths: true,
+    monthPrev: "&larr;",
+    monthNext: "&rarr;",
+    formatSubmit: "dd/mm/yyyy",
+    monthsFull: [
+      "มกราคม",
+      "กุมภาพันธ์",
+      "มีนาคม",
+      "เมษายน",
+      "พฤษภาคม",
+      "มิถุนายน",
+      "กรกฎาคม",
+      "สิงหาคม",
+      "กันยายน",
+      "ตุลาคม",
+      "พฤศจิกายน",
+      "ธันวาคม"
+    ],
+    monthsShort: [
+      "ม.ค.",
+      "ก.พ.",
+      "มี.ค.",
+      "เม.ย.",
+      "พ.ค.",
+      "มิ.ย.",
+      "ก.ค.",
+      "ส.ค.",
+      "ก.ย.",
+      "ต.ค.",
+      "พ.ย.",
+      "ธ.ค."
+    ],
+    weekdaysShort: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"],
+    weekdaysFull: [
+      "อาทิตย์",
+      "จันทร์",
+      "อังคาร",
+      "พุธ",
+      "พฤหัส",
+      "ศุกร์",
+      "เสาร์"
+    ],
+    klass: {
+      selectMonth: "picker__select--month browser-default",
+      selectYear: "picker__select--year browser-default"
+    },
+    onOpen: function () {
+      $(".picker__header select:first-child option").each(function () {
+        var yearBE = parseInt($(this).val()) + 543;
+        $(this).html(yearBE);
       });
+    },
+    onSet: function (data) {
+      $(".picker__header select:first-child option").each(function () {
+        //var yearBE = parseInt($(this).val()) + 543;
+        var yearBE = parseInt($(this).val()) + 543;
+        $(this).html(yearBE);
+      });
+    },
+    onClose: function () {
+      var ddd = $("#birthdate").val();
+      /* var newYear = ddd[6] + ddd[7] + ddd[8] + ddd[9];
+    newYear = parseInt(newYear) + 543;
+    $('input[name="_submit"]').val(newYear);*/
+      var aaa = "";
+      aaa =
+        ddd[ddd.length - 4] +
+        ddd[ddd.length - 3] +
+        ddd[ddd.length - 2] +
+        ddd[ddd.length - 1];
+      var str = ddd;
+      var res = str.replace(aaa, "");
+      var bbb = parseInt(aaa) + 543;
+      var correct = res + bbb;
+      $("#birthdate").val(correct);
+    }
+  };
+  new WOW().init();
+  $(document).ready(function () {
+    $("#smartwizard").smartWizard({
+      showStepURLhash: false,
+      useURLhash: true,
+      lang: {
+        next: "ต่อไป",
+        previous: "ย้อนกลับ"
+      },
+      anchorSettings: {
+        anchorClickable: true, // Enable/Disable anchor navigation
+        enableAllAnchors: false, // Activates all anchors clickable all times
+        markDoneStep: true, // add done css
+        enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+      },
+      toolbarSettings: {
+        toolbarPosition: "none"
+      }
     });
-    $(".group-radio .card-radio").click(function() {
-      $(this)
-        .parent()
-        .find(".card-radio")
-        .removeClass("selected-radio");
-      $(this).addClass("selected-radio");
-      var valbip = $(this).attr("data-value");
-      var textselect1 = $(this).attr("data-text1");
-      var textselect2 = $(this).attr("data-text2");
-      $("#bipshirt-option").val(valbip);
-      $("#select-bip-check1").text(textselect1);
-      $("#select-bip-check2").text(textselect2);
-      $("#nxt-step1").removeClass("disabled");
-    });
-    $(".datepicker").pickadate(optiondate);
-  </script>
-  <script>
-    var numUser = 1;
-    $("#add-user").click(function() {
-      numUser = numUser + 1;
-      if (numUser < 11) {
-        $("#append-data-user").append(
-          `<div class="card mb-3">
+  });
+  $(".group-radio .card-radio").click(function () {
+    $(this)
+      .parent()
+      .find(".card-radio")
+      .removeClass("selected-radio");
+    $(this).addClass("selected-radio");
+    var valbip = $(this).attr("data-value");
+    var textselect1 = $(this).attr("data-text1");
+    var textselect2 = $(this).attr("data-text2");
+    $("#bipshirt-option").val(valbip);
+    $("#select-bip-check1").text(textselect1);
+    $("#select-bip-check2").text(textselect2);
+    $("#nxt-step1").removeClass("disabled");
+  });
+  $(".datepicker").pickadate(optiondate);
+</script>
+<script>
+  var numUser = 1;
+  $("#add-user").click(function () {
+    numUser = numUser + 1;
+    if (numUser < 11) {
+      $("#append-data-user").append(
+        `<div class="card mb-3">
         <div class="card-body">
         <div class="row">
             <div class="col-12 col-md-12 mb-3">
             <h5>ข้อมูลคนที่ ` +
-            numUser +
-            `</h5>
+        numUser +
+        `</h5>
             </div>
             <div class="col-12 col-md-6 mb-3">
-            <div class="md-form mb-0">
-                <input
-                type="text"
-                id="name_reg_run_` +
-            numUser +
-            `"
-                class="form-control"
-                />
-                <label
-                for="name_reg_run_` +
-            numUser +
-            `"
-                class="active"
-                >ชื่อ-นามสกุล</label
-                >
-            </div>
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-            <div class="md-form mb-0">
-                <input
-                type="text"
-                id="birthdate_reg_run_` +
-            numUser +
-            `"
-                class="form-control datepicker"
-                />
-                <label for="birthdate_reg_run_` +
-            numUser +
-            `"
-                >วันเกิด</label
-                >
-            </div>
-            </div>
-            <div class="col-12 mb-3">
-                                            <p>เพศ</p>
-                                            <div class="row">
-                                              <div class="col-6 col-md-3 mb-3">
-                                                <div
-                                                  class="custom-control custom-radio custom-control-inline"
-                                                >
-                                                  <input
-                                                    type="radio"
-                                                    class="custom-control-input"
-                                                    id="sex1_reg_run_` +
-            numUser +
-            `"
-                                                    name="sex_run_` +
-            numUser +
-            `"
-                                                  />
-                                                  <label
-                                                    class="custom-control-label"
-                                                    for="sex1_reg_run_` +
-            numUser +
-            `"
-                                                    >ชาย</label
-                                                  >
-                                                </div>
-                                              </div>
-                                              <div class="col-6 col-md-3 mb-3">
-                                                <div
-                                                  class="custom-control custom-radio custom-control-inline"
-                                                >
-                                                  <input
-                                                    type="radio"
-                                                    class="custom-control-input"
-                                                    id="sex2_reg_run_` +
-            numUser +
-            `"
-                                                    name="sex_run_` +
-            numUser +
-            `"
-                                                  />
-                                                  <label
-                                                    class="custom-control-label"
-                                                    for="sex2_reg_run_` +
-            numUser +
-            `"
-                                                    >หญิง</label
-                                                  >
-                                                </div>
-                                              </div>
-                                            </div>
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="name_reg_run_`+ numUser + `" class="form-control" />
+                                        <label for="name_reg_run_`+ numUser + `" class="active">ชื่อ-นามสกุล</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="birthdate_reg_run_`+ numUser + `" class="form-control datepicker" />
+                                        <label for="birthdate_reg_run_`+ numUser + `">วันเกิด</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                      <p>เพศ</p>
+                                      <div class="row">
+                                        <div class="col-6 col-md-6 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="sex1_reg_run_`+ numUser + `"
+                                              name="sex_run_`+ numUser + `" />
+                                            <label class="custom-control-label" for="sex1_reg_run_`+ numUser + `">ชาย</label>
                                           </div>
-                                          <div class="col-12 col-md-6 mb-3">
-                                            <div class="md-form mb-0">
-                                              <input
-                                                type="text"
-                                                id="phone_reg_run_` +
-            numUser +
-            `"
-                                                class="form-control"
-                                              />
-                                              <label
-                                                for="phone_reg_run_` +
-            numUser +
-            `"
-                                                class="active"
-                                                >เบอร์ติดต่อฉุกเฉิน</label
-                                              >
-                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-6 mb-3">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="sex2_reg_run_`+ numUser + `"
+                                              name="sex_run_`+ numUser + `" />
+                                            <label class="custom-control-label" for="sex2_reg_run_`+ numUser + `">หญิง</label>
                                           </div>
-                                          <div class="col-12 col-md-6 mb-3">
-                                            <div class="md-form mb-0">
-                                              <input
-                                                type="text"
-                                                id="relation_reg_run_` +
-            numUser +
-            `"
-                                                class="form-control"
-                                              />
-                                              <label
-                                                for="relation_reg_run_` +
-            numUser +
-            `"
-                                                class="active"
-                                                >ความสัมพันธ์</label
-                                              >
-                                            </div>
-                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="nation_reg_run_`+ numUser + `" class="form-control" />
+                                        <label for="nation_reg_run_`+ numUser + `" class="active">สัญชาติ</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="idpassport_reg_run_`+ numUser + `" class="form-control" />
+                                        <label for="idpassport_reg_run_`+ numUser + `" class="active">เลขบัตรประจำตัวประชาชน</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="email_reg_run_`+ numUser + `" class="form-control" />
+                                        <label for="email_reg_run_`+ numUser + `" class="active">อีเมลผู้สมัคร</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="uphone_reg_run_`+ numUser + `" class="form-control" />
+                                        <label for="uphone_reg_run_`+ numUser + `" class="active">เบอร์ติดต่อ</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="extra_name_reg_run_`+ numUser + `" class="form-control" />
+                                        <label for="extra_name_reg_run_`+ numUser + `" class="active">ผู้ติดต่อกรณีฉุกเฉิน</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="phone_reg_run_`+ numUser + `" class="form-control" />
+                                        <label for="phone_reg_run_`+ numUser + `" class="active">เบอร์โทรศัพท์ผู้ติดต่อกรณีฉุกเฉิน</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <div class="md-form mb-0">
+                                        <input type="text" id="relation_reg_run_`+ numUser + `" class="form-control" />
+                                        <label for="relation_reg_run_`+ numUser + `" class="active">ความสัมพันธ์กับผู้ติดต่อกรณีฉุกเฉิน</label>
+                                      </div>
+                                    </div>
             <div class="col-12 mb-3">
             <p>ขนาดไซส์เสื้อ</p>
             <div class="row">
@@ -1285,15 +893,15 @@
                     type="radio"
                     class="custom-control-input"
                     id="ss_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     name="size_shirt"
                     />
                     <label
                     class="custom-control-label"
                     for="ss_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     >SS</label
                     >
                 </div>
@@ -1306,15 +914,15 @@
                     type="radio"
                     class="custom-control-input"
                     id="s_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     name="size_shirt"
                     />
                     <label
                     class="custom-control-label"
                     for="s_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     >S</label
                     >
                 </div>
@@ -1327,15 +935,15 @@
                     type="radio"
                     class="custom-control-input"
                     id="m_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     name="size_shirt"
                     />
                     <label
                     class="custom-control-label"
                     for="m_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     >M</label
                     >
                 </div>
@@ -1348,15 +956,15 @@
                     type="radio"
                     class="custom-control-input"
                     id="l_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     name="size_shirt"
                     />
                     <label
                     class="custom-control-label"
                     for="l_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     >L</label
                     >
                 </div>
@@ -1369,15 +977,15 @@
                     type="radio"
                     class="custom-control-input"
                     id="xl_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     name="size_shirt"
                     />
                     <label
                     class="custom-control-label"
                     for="xl_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     >XL</label
                     >
                 </div>
@@ -1390,15 +998,15 @@
                     type="radio"
                     class="custom-control-input"
                     id="2xl_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     name="size_shirt"
                     />
                     <label
                     class="custom-control-label"
                     for="2xl_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     >2XL</label
                     >
                 </div>
@@ -1411,15 +1019,15 @@
                     type="radio"
                     class="custom-control-input"
                     id="3xl_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     name="size_shirt"
                     />
                     <label
                     class="custom-control-label"
                     for="3xl_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     >3XL</label
                     >
                 </div>
@@ -1432,15 +1040,15 @@
                     type="radio"
                     class="custom-control-input"
                     id="4xl_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     name="size_shirt"
                     />
                     <label
                     class="custom-control-label"
                     for="4xl_reg_run_` +
-            numUser +
-            `"
+        numUser +
+        `"
                     >4XL</label
                     >
                 </div>
@@ -1450,40 +1058,23 @@
         </div>
         </div>
     </div>`
-        );
-        $(".datepicker").pickadate(optiondate);
-      } else {
-        Swal.fire("ผิดพลาด!", "คุณได้เพิ่มผู้สมัครครบ 10 คนแล้ว", "error");
-      }
-    });
-    $("#post1").hide();
-    $("#post2").hide();
-    $("input[name='dataaddress']").change(function() {
-      if ($("#dataaddress1").is(":checked")) {
-        $("#post1").show(200);
-        $("#post2").hide();
-        $("#nxt-step3").removeClass("disabled");
-      }
-      if ($("#dataaddress2").is(":checked")) {
-        $("#post2").show(200);
-        $("#post1").hide();
-        if (
-          $("#dataaddress2").is(":checked") &&
-          $("#name-sent").val() != "" &&
-          $("#phonenum-sent").val() != "" &&
-          $("#form7").val() != "" &&
-          $("#province-sent").val() != "0" &&
-          $("#district-sent").val() != "0" &&
-          $("#tumbon-sent").val() != "0" &&
-          $("#idenpost-sent").val() != ""
-        ) {
-          $("#nxt-step3").removeClass("disabled");
-        } else {
-          $("#nxt-step3").addClass("disabled");
-        }
-      }
-    });
-    function checkdatasent() {
+      );
+      $(".datepicker").pickadate(optiondate);
+    } else {
+      Swal.fire("ผิดพลาด!", "คุณได้เพิ่มผู้สมัครครบ 10 คนแล้ว", "error");
+    }
+  });
+  $("#post1").hide();
+  $("#post2").hide();
+  $("input[name='dataaddress']").change(function () {
+    if ($("#dataaddress1").is(":checked")) {
+      $("#post1").show(200);
+      $("#post2").hide();
+      $("#nxt-step3").removeClass("disabled");
+    }
+    if ($("#dataaddress2").is(":checked")) {
+      $("#post2").show(200);
+      $("#post1").hide();
       if (
         $("#dataaddress2").is(":checked") &&
         $("#name-sent").val() != "" &&
@@ -1499,5 +1090,23 @@
         $("#nxt-step3").addClass("disabled");
       }
     }
-  </script>
+  });
+  function checkdatasent() {
+    if (
+      $("#dataaddress2").is(":checked") &&
+      $("#name-sent").val() != "" &&
+      $("#phonenum-sent").val() != "" &&
+      $("#form7").val() != "" &&
+      $("#province-sent").val() != "0" &&
+      $("#district-sent").val() != "0" &&
+      $("#tumbon-sent").val() != "0" &&
+      $("#idenpost-sent").val() != ""
+    ) {
+      $("#nxt-step3").removeClass("disabled");
+    } else {
+      $("#nxt-step3").addClass("disabled");
+    }
+  }
+</script>
+
 </html>
